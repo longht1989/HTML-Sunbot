@@ -1,0 +1,27 @@
+/* style for episode  */
+
+.episode {
+    &__header {
+        font-family: $font-family-special;
+        color: $brand-danger;
+        line-height: 1.1em;
+        margin-bottom: 32px;
+        padding-top: 64px;
+        font-size: 40px;
+        margin-bottom: 16px;
+        img {
+            max-width: 80px;
+            display: inline-block;
+            margin: 12px 0 0 12px;
+        }
+        @include breakpoint(md) {
+            font-size: 144px;
+            margin-bottom: 0;
+            img {
+                vertical-align: baseline;
+                margin-top: 0;
+                max-width: 160px;
+            }
+        }
+    }
+}

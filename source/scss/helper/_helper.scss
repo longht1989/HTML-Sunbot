@@ -1,0 +1,19 @@
+.link-primary {
+    color: $brand-primary;
+    @include transition(color, 0.2, ease);
+    @include haf {
+        color: $brand-success;
+    }
+}
+
+.clearfix {
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+.pt64 {
+    padding-top: 64px;
+}

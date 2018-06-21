@@ -1,0 +1,113 @@
+/* ====================================
+   All region in project
+   ==================================== */
+
+.area {
+    &__bg {
+        position: relative;
+    }
+    &__clickable {
+        width: 27%;
+        height: 40%;
+        position: absolute;
+        right: 15.3%;
+        bottom: 11%;
+    }
+    &__button {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+
+        img {
+            width: 32px;
+            height: auto;
+        }
+    }
+    &__paragraph {
+        font-size: 36px;
+        line-height: 1.6em;
+        text-align: center;
+        @include breakpoint(xs) {
+            margin-top: 24px;
+            font-size: 24px;
+        }
+    }
+    &__header {
+        font-family: $font-family-special;
+        font-size: 60px;
+        line-height: 1.1em;
+        margin-bottom: 24px;
+        text-align: center;
+        @include breakpoint(xs) {
+            margin-top: 24px;
+            font-size: 32px;
+        }
+    }
+    &-01 {
+        .area__clickable {
+            .area__button {
+                transform: translate(0%, 0%);
+                @include breakpoint(md) {
+                    transform: translate(-50%, 60%);
+                }
+            }
+        }
+    }
+    &-02 {
+        background-color: #D6F7FE;
+        padding: 124px 0;
+        @include breakpoint(xs) {
+            padding: 0 0 64px;
+        }
+    }
+    &-03 {
+        .area__clickable {
+            &-01 {
+                width: 20%;
+                height: 14.8%;
+                position: absolute;
+                right: 44.3%;
+                bottom: 54%;
+                .area__button {
+                    transform: translate(-50%, -50%);
+                    @include breakpoint(md) {
+                        transform: translate(160%, 60%);
+                    }
+                }
+            }
+            &-02 {
+                width: 35%;
+                height: 24.5%;
+                position: absolute;
+                right: 4.3%;
+                bottom: 41%;
+                .area__button {
+                    transform: translate(-50%, -50%);
+                    @include breakpoint(md) {
+                        transform: translate(160%, 60%);
+                    }
+                }
+            }
+        }
+    }
+    &-04 {
+        background-color: #FFF0E3;
+        padding: 124px 0;
+        .area__header {
+            padding-top: 64px;
+        }
+        @include breakpoint(xs) {
+            padding: 64px 0;
+        }
+    }
+    &-05 {
+        background: #F1FDF5;
+        padding: 124px 0;
+        .area__header {
+            padding-top: 64px;
+        }
+        @include breakpoint(xs) {
+            padding: 64px 0;
+        }
+    }
+}
