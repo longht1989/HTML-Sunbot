@@ -100,11 +100,16 @@
         left: 0;
         .area__header {
             padding-top: 124px;
+            @include breakpoint(md) {
+                font-size: 80px;
+                text-transform: uppercase;
+            }
         }
         @include breakpoint(xs) {
             padding: 64px 0;
         }
         .close-btn {
+            cursor: pointer;
             position: fixed;
             top: 5%;
             right: 3%;
@@ -120,11 +125,16 @@
         padding: 124px 0;
         .area__header {
             padding-top: 124px;
+            @include breakpoint(md) {
+                font-size: 80px;
+                text-transform: uppercase;
+            }
         }
         @include breakpoint(xs) {
             padding: 64px 0;
         }
         .close-btn {
+            cursor: pointer;
             position: fixed;
             top: 5%;
             right: 3%;
