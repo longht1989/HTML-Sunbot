@@ -42,6 +42,34 @@
             font-size: 32px;
         }
     }
+    &--popup {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        display: none;
+        @include breakpoint(xs) {
+            padding: 64px 0;
+        }
+        .area__header {
+            padding-top: 64px;
+            @include breakpoint(md) {
+                font-size: 80px;
+                text-transform: uppercase;
+            }
+        }
+        .close-btn {
+            cursor: pointer;
+            position: fixed;
+            top: 5%;
+            right: 3%;
+            img {
+                width: 32px;
+                height: auto;
+            }
+        }
+    }
     &-01 {
         .area__clickable {
             .area__button {
@@ -90,21 +118,9 @@
         }
     }
     &-04 {
-        display: none;
         background-color: #FFF0E3;
         padding: 124px 0;
-        position: fixed;
-        top: 0;
-        bottom: 0;
-        right: 0;
-        left: 0;
-        .area__header {
-            padding-top: 124px;
-            @include breakpoint(md) {
-                font-size: 80px;
-                text-transform: uppercase;
-            }
-        }
+
         @include breakpoint(xs) {
             padding: 64px 0;
         }
@@ -119,30 +135,12 @@
             }
         }
     }
-    &-05 {
-        display: none;
+    &-05,
+    &-07 {
         background: #F1FDF5;
-        padding: 124px 0;
-        .area__header {
-            padding-top: 124px;
-            @include breakpoint(md) {
-                font-size: 80px;
-                text-transform: uppercase;
-            }
-        }
-        @include breakpoint(xs) {
-            padding: 64px 0;
-        }
-        .close-btn {
-            cursor: pointer;
-            position: fixed;
-            top: 5%;
-            right: 3%;
-            img {
-                width: 32px;
-                height: auto;
-            }
-        }
+    }
+    &-06 {
+        background-color: #FFF0E3;
     }
 }
 
@@ -150,5 +148,48 @@ body {
     &.fixed {
         height: 100%;
         overflow: hidden;
+    }
+}
+
+// level 01 - episode 02
+.lv01-ep02 {
+    .area {
+        &-03 {
+            background-color: #fef0e3;
+        }
+        &__clickable-01 {
+            width: 15.7%;
+            height: 20.6%;
+            position: absolute;
+            right: 29.2%;
+            bottom: 40%;
+            .area__button {
+                transform: translate(0, 0);
+            }
+        }
+        &__clickable-02 {
+            width: 13.5%;
+            height: 24.5%;
+            position: absolute;
+            right: 13.7%;
+            bottom: 36%;
+            .area__button {
+                transform: translate(0, 0);
+            }
+        }
+        &__clickable-03 {
+            width: 17%;
+            height: 11.5%;
+            position: absolute;
+            right: 11.7%;
+            bottom: 80%;
+        }
+        &__clickable-04 {
+            width: 12%;
+            height: 11.5%;
+            position: absolute;
+            right: 23.7%;
+            bottom: 80px;
+        }
     }
 }
