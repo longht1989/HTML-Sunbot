@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <title>Sunbot - Level 1 - Episode 5</title>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../App_Themes/img/favicon.ico">
+    <!-- CSS Customization -->
+    <link rel="stylesheet" href="../App_Themes/css/sunbot.min.css">
+    <!-- JS modernizr + Jquery + Components JS-->
+    <script src="../Jscripts/sunbot.min.js"></script>
+</head>
+
+<body>
+    <div class="lv01-ep05">
+        <!-- main content -->
+        <!-- header area -->
+        <div class="area area-01" id="area1">
+            <div class="container-fluid">
+                <h3 class="episode__header text-center animated fadeInDown">Ngôi nhà Sunbot <img src="images/mini-character.png" alt="" class="img-responsive"></h3>
+                <div class="area__bg">
+                    <img class="img-responsive" src="images/lv01-ep01-sc01.png" alt="">
+                </div>
+            </div>
+        </div>
+        <!-- .end header area -->
+        <div class="area area-07" id="area7" style="background-image: url(images/lv01-ep05/kitchen.png);">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h4 class="area__header">Khách đến chơi nhà</h4>
+                        <div class="area__paragraph">
+                            <p>Cốc cốc cốc!</p>
+                            <p>Ai thế nhỉ?</p>
+                            <p>Ồ hóa ra là bạn mèo tím đến thăm chúng mình. Các bé mời bạn mèo</p>
+                            <p>vào phòng khách ngồi chơi nhé!</p>
+                            <p>Ôi Sunbot muốn mời bạn mèo uống nước, ăn bánh, các bé có thể giúp</p>
+                            <p>Sunbot vào phòng bếp tìm bộ tách trà, và đĩa bánh được không?</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- normal area -->
+        <div class="area area-02" id="area2">
+            <div class="area__bg">
+                <img class="img-responsive" src="images/lv01-ep05/kitchen.png" alt="">
+                <a href="#area3" class="area__clickable-01">
+                    <div class="area__button"><img src="images/hint.png" alt=""></div>
+                </a>
+                <a href="#area4" class="area__clickable-02">
+                    <div class="area__button"><img src="images/hint.png" alt=""></div>
+                </a>
+            </div>
+        </div>
+        <div class="area area--popup area-03" id="area3">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-6 col-sm-6 col-md-3 col-md-offset-2">
+                        <img src="images/lv01-ep05/cookie.png" alt="" class="img-responsive">
+                    </div>
+                    <div class="col-xs-6 col-sm-6 col-md-5 col-md-offset-1">
+                        <h4 class="area__header">Bánh</h4>
+                    </div>
+                    <a class="close-btn"><img src="images/close-btn.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+        <div class="area area--popup area-04" id="area4">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-6 col-sm-6 col-md-3 col-md-offset-2">
+                        <img src="images/lv01-ep05/tea cup.png" alt="" class="img-responsive">
+                    </div>
+                    <div class="col-xs-6 col-sm-6 col-md-5 col-md-offset-1">
+                        <h4 class="area__header">Trà</h4>
+                    </div>
+                    <a class="close-btn"><img src="images/close-btn.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+        <!-- .end normal area -->
+        <script type="text/javascript">
+        $(function() {
+            $(".close-btn").click(function() {
+                $("#area3").hide();
+                $("#area4").hide();           
+                $("body").removeClass("fixed");
+            });
+            $('.area__clickable-01 .area__button').click(function() {
+                $("body").addClass("fixed");
+                $("#area3").show();
+            });
+            $('.area__clickable-02 .area__button').click(function() {
+                $("body").addClass("fixed");
+                $("#area4").show();
+            });
+        });
+        </script>
+    </div>
+    <!-- JS Global Customise -->
+    <script src="../Jscripts/custom.js"></script>
+    <!-- Js Dev plugin -->
+    <!--[if lt IE 9]>
+        <script src="../Jscripts/vendor/respond.js"></script>
+    <![endif]-->
+</body>
+
+</html>

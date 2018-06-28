@@ -31,6 +31,9 @@
             margin-top: 24px;
             font-size: 24px;
         }
+        &.is-small {
+            font-size: 18px;
+        }
     }
     &__header {
         font-size: 60px;
@@ -120,7 +123,6 @@
     &-04 {
         background-color: #FFF0E3;
         padding: 124px 0;
-
         @include breakpoint(xs) {
             padding: 64px 0;
         }
@@ -190,6 +192,392 @@ body {
             position: absolute;
             right: 23.7%;
             bottom: 80px;
+        }
+    }
+}
+
+// level 01 - episode 03
+.lv01-ep03 {
+    .area {
+        &-02 {
+            .area__header {
+                margin-top: 0;
+                padding-top: 24px;
+            }
+        }
+        .area__clickable-01 {
+            position: absolute;
+            width: 23.7%;
+            height: 33.7%;
+            left: 15%;
+            top: 3%;
+        }
+        .area__clickable-02 {
+            position: absolute;
+            width: 29.2%;
+            height: 36.7%;
+            left: 61%;
+            top: -0.8%;
+        }
+        .area__clickable-03 {
+            position: absolute;
+            width: 29.2%;
+            height: 36.7%;
+            left: 0%;
+            top: 40.2%;
+        }
+        .area__clickable-04 {
+            position: absolute;
+            width: 37%;
+            height: 36.7%;
+            left: 63%;
+            top: 40.2%;
+        }
+        .area__clickable-05 {
+            position: absolute;
+            width: 26.9%;
+            height: 45.7%;
+            left: 32.3%;
+            top: 55.2%;
+        }
+        &-03,
+        &-05,
+        &-07 {
+            background: #F1FDF5;
+            .img-responsive {
+                max-width: 80%;
+            }
+        }
+        &-04,
+        &-06 {
+            background-color: #FFF0E3;
+            .img-responsive {
+                max-width: 80%;
+            }
+        }
+    }
+}
+
+// level 01 - episode 04
+.lv01-ep04 {
+    .area {
+        &-02 {
+            .area__header {
+                margin-top: 0;
+                padding-top: 24px;
+            }
+        }
+        .area__clickable-01 {
+            position: absolute;
+            width: 21.4%;
+            height: 29.7%;
+            left: 39.4%;
+            top: 0%;
+        }
+        .area__clickable-02 {
+            position: absolute;
+            width: 21.4%;
+            height: 29.7%;
+            left: 0%;
+            top: 35%;
+        }
+        .area__clickable-03 {
+            position: absolute;
+            width: 22%;
+            height: 25.1%;
+            left: 77.7%;
+            top: 37.5%;
+        }
+        .area__clickable-04 {
+            position: absolute;
+            width: 25%;
+            height: 26.7%;
+            left: 37.6%;
+            top: 73.3%;
+        }
+        &-03,
+        &-05,
+        &-07 {
+            background: #F1FDF5;
+            .img-responsive {
+                max-width: 80%;
+            }
+        }
+        &-04,
+        &-06 {
+            background-color: #FFF0E3;
+            .img-responsive {
+                max-width: 80%;
+            }
+        }
+        &--popup {
+            .img-responsive {
+                max-width: 60%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+        &-07 {
+            padding: 32px 0;
+            .area__header {
+                margin-top: 0;
+            }
+        }
+    }
+}
+
+// level 01 - episode 05
+.lv01-ep05 {
+    .area {
+        &-02 {
+            padding: 0;
+            .area__header {
+                margin-top: 0;
+            }
+        }
+        .area__clickable-01 {
+            position: absolute;
+            left: 10%;
+            top: 58%;
+            width: 16.9%;
+            height: 16.8%;
+        }
+        .area__clickable-02 {
+            position: absolute;
+            left: 31%;
+            top: 66%;
+            width: 7.8%;
+            height: 11.7%;
+        }
+        &-03,
+        &-05 {
+            background: #F1FDF5;
+            .img-responsive {
+                max-width: 80%;
+            }
+        }
+        &-04 {
+            background-color: #FFF0E3;
+            .img-responsive {
+                max-width: 80%;
+            }
+        }
+        &-07 {
+            padding: 32px 0;
+            background-size: cover;
+            background-position: center center;
+            background-color: #F1FDF5;
+            position: relative;
+            &::before {
+                background-color: black;
+                opacity: 0.4;
+                content: '';
+                display: block;
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+            }
+            .area__header,
+            .area__paragraph {
+                color: white;
+            }
+        }
+        &--popup {
+            .img-responsive {
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+    }
+}
+
+// level 01 - episode 06
+.lv01-ep06 {
+    .area {
+        &-02 {
+            .area__header {
+                margin-top: 0;
+                padding-top: 24px;
+            }
+        }
+        .area__clickable-01 {
+            position: absolute;
+            left: 2%;
+            top: 77%;
+            width: 17.9%;
+            height: 15.7%;
+        }
+        .area__clickable-02 {
+            position: absolute;
+            left: 42%;
+            top: 17%;
+            width: 57.9%;
+            height: 36.7%;
+        }
+        .area__clickable-03 {
+            position: absolute;
+            left: 73%;
+            top: 84%;
+            width: 16.1%;
+            height: 13.8%;
+        }
+        &-03,
+        &-05 {
+            background: #F1FDF5;
+            .img-responsive {
+                max-width: 80%;
+            }
+        }
+        &-04 {
+            background-color: #FFF0E3;
+            .img-responsive {
+                max-width: 80%;
+            }
+        }
+        &--popup {
+            .img-responsive {
+                max-width: 60%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+    }
+}
+
+// level 01 - episode 07
+.lv01-ep07 {
+    .area {
+        &-02 {
+            padding: 32px 0;
+            background-size: cover;
+            background-position: center center;
+            background-color: #F1FDF5;
+            position: relative;
+            &::before {
+                background-color: black;
+                opacity: 0.4;
+                content: '';
+                display: block;
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+            }
+            .area__header,
+            .area__paragraph {
+                color: white;
+            }
+        }
+        .area__clickable-01 {
+            position: absolute;
+            left: 35%;
+            top: 74%;
+            width: 16.9%;
+            height: 16.8%;
+        }
+        .area__clickable-02 {
+            position: absolute;
+            left: 60%;
+            top: 71%;
+            width: 7.8%;
+            height: 11.7%;
+        }
+        .area__clickable-03 {
+            position: absolute;
+            left: 62%;
+            top: 50%;
+            width: 17.8%;
+            height: 11.7%;
+        }
+        .area__clickable-04 {
+            position: absolute;
+            left: 53%;
+            top: 44%;
+            width: 6.8%;
+            height: 11.7%;
+        }
+        .area__clickable-05 {
+            position: absolute;
+            left: 88%;
+            top: 60%;
+            width: 10.8%;
+            height: 24.7%;
+        }
+        &-05 {
+            background: #F1FDF5;
+            .img-responsive {
+                max-width: 80%;
+            }
+        }
+        &-04 {
+            background-color: #FFF0E3;
+            .img-responsive {
+                max-width: 80%;
+            }
+        }
+
+        &--popup {
+            .img-responsive {
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+    }
+}
+
+// level 01 - episode 09
+.lv01-ep09 {
+    .area {
+        &-02 {}
+        .area__clickable-01 {
+            position: absolute;
+            left: 51%;
+            top: 66%;
+            width: 14.9%;
+            height: 16.8%;
+        }
+        .area__clickable-02 {
+            position: absolute;
+            left: 28%;
+            top: 35%;
+            width: 11.8%;
+            height: 31.7%;
+        }
+        .area__clickable-03 {
+            position: absolute;
+            left: 39.1%;
+            top: 59%;
+            width: 10.2%;
+            height: 24%;
+        }
+        .area__clickable-04 {
+            position: absolute;
+            left: 62%;
+            top: 39%;
+            width: 11.8%;
+            height: 20.7%;
+        }
+        &-05 {
+            background: #F1FDF5;
+            .img-responsive {
+                max-width: 80%;
+            }
+        }
+        &-04 {
+            background-color: #FFF0E3;
+            .img-responsive {
+                max-width: 80%;
+            }
+        }
+
+        &--popup {
+            .img-responsive {
+                margin-left: auto;
+                margin-right: auto;
+            }
         }
     }
 }
