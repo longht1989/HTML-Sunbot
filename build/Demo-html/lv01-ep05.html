@@ -56,37 +56,23 @@
             <div class="area__bg">
                 <img class="img-responsive" src="images/lv01-ep05/kitchen.png" alt="">
                 <a href="#area3" class="area__clickable-01">
-                    <div class="area__button"><img src="images/hint.png" alt=""></div>
+                    <div class="area__button"><img src="images/hint.gif" alt=""></div>
                 </a>
                 <a href="#area4" class="area__clickable-02">
-                    <div class="area__button"><img src="images/hint.png" alt=""></div>
+                    <div class="area__button"><img src="images/hint.gif" alt=""></div>
                 </a>
             </div>
         </div>
         <div class="area area--popup area-03" id="area3">
             <div class="container-fluid">
-                <div class="row">
-                    <div class="col-xs-6 col-sm-6 col-md-3 col-md-offset-2">
-                        <img src="images/lv01-ep05/cookie.png" alt="" class="img-responsive">
-                    </div>
-                    <div class="col-xs-6 col-sm-6 col-md-5 col-md-offset-1">
-                        <h4 class="area__header">Bánh</h4>
-                    </div>
-                    <a class="close-btn"><img src="images/close-btn.png" alt=""></a>
-                </div>
+                <img src="images/lv01-ep05/cookie.png" alt="" class="img-responsive">
+                <a class="close-btn"><img src="images/close-btn.png" alt=""></a>
             </div>
         </div>
         <div class="area area--popup area-04" id="area4">
             <div class="container-fluid">
-                <div class="row">
-                    <div class="col-xs-6 col-sm-6 col-md-3 col-md-offset-2">
-                        <img src="images/lv01-ep05/tea cup.png" alt="" class="img-responsive">
-                    </div>
-                    <div class="col-xs-6 col-sm-6 col-md-5 col-md-offset-1">
-                        <h4 class="area__header">Trà</h4>
-                    </div>
-                    <a class="close-btn"><img src="images/close-btn.png" alt=""></a>
-                </div>
+                <img src="images/lv01-ep05/tea cup.png" alt="" class="img-responsive">
+                <a class="close-btn"><img src="images/close-btn.png" alt=""></a>
             </div>
         </div>
         <!-- .end normal area -->
@@ -94,7 +80,7 @@
         $(function() {
             $(".close-btn").click(function() {
                 $("#area3").hide();
-                $("#area4").hide();           
+                $("#area4").hide();
                 $("body").removeClass("fixed");
             });
             $('.area__clickable-01 .area__button').click(function() {
