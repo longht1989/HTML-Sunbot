@@ -30,7 +30,7 @@
                 <h3 class="episode__header text-center animated fadeInDown">Ngôi nhà Sunbot <img src="images/mini-character.png" alt="" class="img-responsive"></h3>
                 <div class="area__bg">
                     <img class="img-responsive" src="images/lv01-ep01-sc01.png" alt="">
-                    <a href="#area2" class="area__clickable">
+                    <a class="area__clickable">
                         <div class="area__button"><img src="images/hint.gif" alt=""></div>
                     </a>
                 </div>
@@ -99,6 +99,11 @@
             $('.area__clickable-02 .area__button').click(function() {
                 $("body").addClass("fixed");
                 $("#area5").show();
+            });
+            $(".area-01 .area__clickable").click(function (){
+                $('html, body').animate({
+                    scrollTop: $("#area2").offset().top
+                }, 1000);
             });
         });
         </script>
