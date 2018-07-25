@@ -32,6 +32,9 @@
                     <img class="img-responsive" src="images/lv01-ep01-sc01.png" alt="">
                 </div>
             </div>
+            <div class="area-control">
+                <a class="area-next"><img src="../App_Themes/img/next.png" alt=""></a>
+            </div>
         </div>
         <!-- .end header area -->
         <div class="area area-07" id="area7" style="padding:128px 0;background-image: url(images/lv01-ep06/garden01.png);background-size: cover;background-position: center center;background-color: #F1FDF5;">
@@ -43,6 +46,10 @@
                     <p>Chuyên cần xới đất thức</p>
                     <p>Cho nhân cách trưởng thành</p>
                 </div>
+            </div>
+            <div class="area-control">
+                <a class="area-prev"><img src="../App_Themes/img/prev.png" alt=""></a>
+                <a class="area-next"><img src="../App_Themes/img/next.png" alt=""></a>
             </div>
         </div>
         <!-- normal area -->
@@ -61,6 +68,9 @@
                         <div class="area__button"><img src="images/hint.gif" alt=""></div>
                     </a>
                 </div>
+            </div>
+            <div class="area-control">
+                <a class="area-prev"><img src="../App_Themes/img/prev.png" alt=""></a>
             </div>
         </div>
         <div class="area area--popup area-03" id="area3">
@@ -101,6 +111,26 @@
             $('.area__clickable-03 .area__button').click(function() {
                 $("body").addClass("fixed");
                 $("#area5").show();
+            });
+            $(".area-01 .area-next").click(function() {
+                $('html, body').animate({
+                    scrollTop: $("#area7").offset().top
+                }, 500);
+            });
+            $(".area-07 .area-next").click(function() {
+                $('html, body').animate({
+                    scrollTop: $("#area2").offset().top
+                }, 500);
+            });
+            $(".area-07 .area-prev").click(function() {
+                $('html, body').animate({
+                    scrollTop: $("#area1").offset().top
+                }, 500);
+            });
+            $(".area-02 .area-prev").click(function() {
+                $('html, body').animate({
+                    scrollTop: $("#area7").offset().top
+                }, 500);
             });
         });
         </script>

@@ -32,6 +32,9 @@
                     <img class="img-responsive" src="images/lv01-ep01-sc01.png" alt="">
                 </div>
             </div>
+            <div class="area-control">
+                <a class="area-next"><img src="../App_Themes/img/next.png" alt=""></a>
+            </div>
         </div>
         <!-- .end header area -->
         <div class="area area-07" id="area7" style="background-image: url(images/lv01-ep05/kitchen.png);">
@@ -50,6 +53,10 @@
                     </div>
                 </div>
             </div>
+            <div class="area-control">
+                <a class="area-prev"><img src="../App_Themes/img/prev.png" alt=""></a>
+                <a class="area-next"><img src="../App_Themes/img/next.png" alt=""></a>
+            </div>
         </div>
         <!-- normal area -->
         <div class="area area-02" id="area2">
@@ -61,6 +68,9 @@
                 <a href="#area4" class="area__clickable-02">
                     <div class="area__button"><img src="images/hint.gif" alt=""></div>
                 </a>
+            </div>
+            <div class="area-control">
+                <a class="area-prev"><img src="../App_Themes/img/prev.png" alt=""></a>
             </div>
         </div>
         <div class="area area--popup area-03" id="area3">
@@ -90,6 +100,26 @@
             $('.area__clickable-02 .area__button').click(function() {
                 $("body").addClass("fixed");
                 $("#area4").show();
+            });
+            $(".area-01 .area-next").click(function() {
+                $('html, body').animate({
+                    scrollTop: $("#area7").offset().top
+                }, 500);
+            });
+            $(".area-07 .area-next").click(function() {
+                $('html, body').animate({
+                    scrollTop: $("#area2").offset().top
+                }, 500);
+            });
+            $(".area-07 .area-prev").click(function() {
+                $('html, body').animate({
+                    scrollTop: $("#area1").offset().top
+                }, 500);
+            });
+            $(".area-02 .area-prev").click(function() {
+                $('html, body').animate({
+                    scrollTop: $("#area7").offset().top
+                }, 500);
             });
         });
         </script>

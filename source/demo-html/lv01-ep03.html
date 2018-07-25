@@ -32,6 +32,9 @@
                     <img class="img-responsive" src="images/lv01-ep01-sc01.png" alt="">
                 </div>
             </div>
+            <div class="area-control">
+                <a class="area-next"><img src="../App_Themes/img/next.png" alt=""></a>
+            </div>
         </div>
         <!-- .end header area -->
         <!-- normal area -->
@@ -56,6 +59,9 @@
                         <div class="area__button"><img src="images/hint.gif" alt=""></div>
                     </a>
                 </div>
+            </div>
+            <div class="area-control">
+                <a class="area-prev"><img src="../App_Themes/img/prev.png" alt=""></a>
             </div>
         </div>
         <div class="area area--popup area-03" id="area3">
@@ -118,6 +124,16 @@
             $('.area__clickable-05 .area__button').click(function() {
                 $("body").addClass("fixed");
                 $("#area7").show();
+            });
+            $(".area-01 .area-next").click(function() {
+                $('html, body').animate({
+                    scrollTop: $("#area2").offset().top
+                }, 500);
+            });
+            $(".area-02 .area-prev").click(function() {
+                $('html, body').animate({
+                    scrollTop: $("#area1").offset().top
+                }, 500);
             });
         });
         </script>

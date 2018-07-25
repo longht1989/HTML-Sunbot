@@ -3,6 +3,7 @@
    ==================================== */
 
 .area {
+    position: relative;
     &__bg {
         position: relative;
     }
@@ -142,6 +143,28 @@
     }
     &-06 {
         background-color: #FFF0E3;
+    }
+    &-next {
+        position: absolute;
+        bottom: 16px;
+        right: 16px;
+        cursor: pointer;
+        width: 32px;
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+    &-prev {
+        position: absolute;
+        bottom: 16px;
+        left: 16px;
+        cursor: pointer;
+        width: 32px;
+        img {
+            width: 100%;
+            height: auto;
+        }
     }
 }
 

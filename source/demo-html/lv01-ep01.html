@@ -35,6 +35,9 @@
                     </a>
                 </div>
             </div>
+            <div class="area-control">
+                <a class="area-next"><img src="../App_Themes/img/next.png" alt=""></a>
+            </div>
         </div>
         <!-- .end header area -->
         <!-- normal area -->
@@ -58,6 +61,10 @@
                     </div>
                 </div>
             </div>
+            <div class="area-control">
+                <a class="area-prev"><img src="../App_Themes/img/prev.png" alt=""></a>
+                <a class="area-next"><img src="../App_Themes/img/next.png" alt=""></a>
+            </div>
         </div>
         <!-- normal area -->
         <div class="area area-03" id="area3">
@@ -71,6 +78,9 @@
                         <div class="area__button"><img src="images/hint.gif" alt=""></div>
                     </a>
                 </div>
+            </div>
+            <div class="area-control">
+                <a class="area-prev"><img src="../App_Themes/img/prev.png" alt=""></a>
             </div>
         </div>
         <div class="area area--popup area-04" id="area4">
@@ -100,10 +110,30 @@
                 $("body").addClass("fixed");
                 $("#area5").show();
             });
-            $(".area-01 .area__clickable").click(function (){
+            $(".area-01 .area__clickable").click(function() {
                 $('html, body').animate({
                     scrollTop: $("#area2").offset().top
                 }, 1000);
+            });
+            $(".area-01 .area-next").click(function() {
+                $('html, body').animate({
+                    scrollTop: $("#area2").offset().top
+                }, 500);
+            });
+            $(".area-02 .area-next").click(function() {
+                $('html, body').animate({
+                    scrollTop: $("#area3").offset().top
+                }, 500);
+            });
+            $(".area-02 .area-prev").click(function() {
+                $('html, body').animate({
+                    scrollTop: $("#area1").offset().top
+                }, 500);
+            });
+            $(".area-03 .area-prev").click(function() {
+                $('html, body').animate({
+                    scrollTop: $("#area2").offset().top
+                }, 500);
             });
         });
         </script>

@@ -32,6 +32,9 @@
                     <img class="img-responsive" src="images/lv01-ep01-sc01.png" alt="">
                 </div>
             </div>
+            <div class="area-control">
+                <a class="area-next"><img src="../App_Themes/img/next.png" alt=""></a>
+            </div>
         </div>
         <!-- .end header area -->
         <div class="area area-02" id="area2" style="padding: 0; background-color: transparent;">
@@ -52,8 +55,25 @@
                     </div>
                 </div>
             </div>
+            <div class="area-control">
+                <a class="area-prev"><img src="../App_Themes/img/prev.png" alt=""></a>
+            </div>
         </div>
         <!-- popup area -->
+        <script type="text/javascript">
+        $(function() {
+            $(".area-01 .area-next").click(function() {
+                $('html, body').animate({
+                    scrollTop: $("#area2").offset().top
+                }, 500);
+            });
+            $(".area-02 .area-prev").click(function() {
+                $('html, body').animate({
+                    scrollTop: $("#area1").offset().top
+                }, 500);
+            });
+        });
+        </script>
     </div>
     <!-- JS Global Customise -->
     <script src="../Jscripts/custom.js"></script>
