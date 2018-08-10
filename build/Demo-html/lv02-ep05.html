@@ -7,7 +7,7 @@
 <!--<![endif]-->
 
 <head>
-    <title>Sunbot - Level 2 - Episode 1</title>
+    <title>Sunbot - Level 2 - Episode 5</title>
     <!-- Meta -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -22,7 +22,7 @@
 </head>
 
 <body>
-    <div class="lv02-ep01">
+    <div class="lv02-ep05">
         <!-- main content -->
         <!-- header area -->
         <div class="area area-01" id="area1">
@@ -38,17 +38,17 @@
         <!-- normal area -->
         <div class="area area-02" id="area2" style="padding: 24px 0;">
             <div class="container-fluid">
-                <h4 class="area__header">Bé tham gia giao thông</h4>
+                <h4 class="area__header">Bé đi chơi công viên</h4>
                 <div class="area__paragraph">
-                    <p>Đèn đỏ đèn xanh</p>
-                    <p>Dung dăng dung dẻ</p>
-                    <p>Vui vẻ đi chơi</p>
-                    <p>Đèn đỏ báo rồi</p>
-                    <p>Bạn chờ tí nhé !</p>
-                    <p>Dung dăng dung dẻ</p>
-                    <p>Vui vẻ đi chơi</p>
-                    <p>Đèn xanh đã mời</p>
-                    <p>Bạn ơi, đi nhé</p>
+                    <p>Bé chơi đu quay</p>
+                    <p>Cưỡi lên ngựa gỗ</p>
+                    <p>Phi nhanh theo gió</p>
+                    <p>Đố bạn đuổi theo</p>
+                    <p>Bé ngồi thành hàng</p>
+                    <p>Giả làm ngựa gióng</p>
+                    <p>Không đu không đứng</p>
+                    <p>Kẻo lại ngã đau.</p>
+                    <br>
                 </div>
             </div>
             <div class="area-control">
@@ -59,14 +59,14 @@
         <!-- normal area -->
         <div class="area area-03" id="area3" style="padding-bottom:0;">
             <div class="area__bg">
-                <img class="img-responsive" src="images/lv02/lv02-ep01/traffic_light.png" alt="">
+                <img class="img-responsive" src="images/lv02/lv02-ep05/Lv02-05.png" alt="">
                 <a href="#area4" class="area__clickable-01">
                     <div class="area__button"><img src="images/hint.gif" alt=""></div>
                 </a>
                 <a href="#area5" class="area__clickable-02">
                     <div class="area__button"><img src="images/hint.gif" alt=""></div>
                 </a>
-                <a href="#area5" class="area__clickable-03">
+                <a href="#area6" class="area__clickable-03">
                     <div class="area__button"><img src="images/hint.gif" alt=""></div>
                 </a>
             </div>
@@ -76,19 +76,19 @@
         </div>
         <div class="area area--popup area-04" id="area4">
             <div class="container-fluid">
-                <img src="images/lv02/lv02-ep01/RedLight.png" alt="" class="img-responsive">
+                <img src="images/lv02/lv02-ep05/ballkid.png" alt="" class="img-responsive">
                 <a class="close-btn"><img src="images/close-btn.png" alt=""></a>
             </div>
         </div>
         <div class="area area--popup area-05" id="area5">
             <div class="container-fluid">
-                <img src="images/lv02/lv02-ep01/YellowLight.png" alt="" class="img-responsive">
+                <img src="images/lv02/lv02-ep05/slidekid.png" alt="" class="img-responsive">
                 <a class="close-btn"><img src="images/close-btn.png" alt=""></a>
             </div>
         </div>
         <div class="area area--popup area-04" id="area6">
             <div class="container-fluid">
-                <img src="images/lv02/lv02-ep01/GreenLight.png" alt="" class="img-responsive">
+                <img src="images/lv02/lv02-ep05/sandkid.png" alt="" class="img-responsive">
                 <a class="close-btn"><img src="images/close-btn.png" alt=""></a>
             </div>
         </div>
@@ -111,6 +111,10 @@
             $('.area__clickable-03 .area__button').click(function() {
                 $("body").addClass("fixed");
                 $("#area6").show();
+            });
+            $('.area__clickable-04 .area__button').click(function() {
+                $("body").addClass("fixed");
+                $("#area7").show();
             });
             $(".area-01 .area__clickable").click(function() {
                 $('html, body').animate({
