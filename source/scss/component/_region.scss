@@ -586,6 +586,15 @@ body {
     }
 }
 
+//level 02
+[class^="lv02-"] {
+    .episode__header {
+        @include breakpoint(md) {
+            font-size: 80px;
+        }
+    }
+}
+
 //level 02 - episode 01
 .lv02-ep01 {
     .area {
@@ -596,6 +605,9 @@ body {
                 top: 20%;
                 width: 4.9%;
                 height: 26.8%;
+                @include breakpoint(md) {
+                    left: 61%;
+                }
             }
             .area__clickable-02 {
                 position: absolute;
@@ -603,6 +615,9 @@ body {
                 top: 20%;
                 width: 4.9%;
                 height: 26.8%;
+                @include breakpoint(md) {
+                    left: 22%;
+                }
             }
             .area__clickable-03 {
                 position: absolute;
@@ -625,6 +640,10 @@ body {
                 top: 31%;
                 width: 4.9%;
                 height: 26.8%;
+                @include breakpoint(md) {
+                    top: 25%;
+                    left: 25%;
+                }
             }
             .area__clickable-02 {
                 position: absolute;
@@ -632,6 +651,10 @@ body {
                 top: 31%;
                 width: 4.9%;
                 height: 26.8%;
+                @include breakpoint(md) {
+                    top: 25%;
+                    left: 78%;
+                }
             }
             .area__clickable-03 {
                 position: absolute;
@@ -639,6 +662,9 @@ body {
                 top: 71%;
                 width: 4.9%;
                 height: 26.8%;
+                @include breakpoint(md) {
+                    top: 75%;
+                }
             }
             .area__clickable-04 {
                 position: absolute;
@@ -646,6 +672,9 @@ body {
                 top: 71%;
                 width: 4.9%;
                 height: 26.8%;
+                @include breakpoint(md) {
+                    top: 75%;
+                }
             }
         }
     }
@@ -661,6 +690,10 @@ body {
                 top: 31%;
                 width: 4.9%;
                 height: 26.8%;
+                @include breakpoint(md) {
+                    top: 22%;
+                    left: 18%;
+                }
             }
             .area__clickable-02 {
                 position: absolute;
@@ -668,6 +701,10 @@ body {
                 top: 31%;
                 width: 4.9%;
                 height: 26.8%;
+                @include breakpoint(md) {
+                    top: 20%;
+                    left: 60%;
+                }
             }
             .area__clickable-03 {
                 position: absolute;
@@ -675,6 +712,10 @@ body {
                 top: 71%;
                 width: 4.9%;
                 height: 26.8%;
+                @include breakpoint(md) {
+                    left: 46%;
+                    top: 75%;
+                }
             }
             .area__clickable-04 {
                 position: absolute;
@@ -697,6 +738,10 @@ body {
                 top: 45%;
                 width: 4.9%;
                 height: 26.8%;
+                @include breakpoint(md) {
+                    left: 82%;
+                    top: 38%;
+                }
             }
             .area__clickable-02 {
                 position: absolute;
@@ -704,6 +749,10 @@ body {
                 top: 79%;
                 width: 4.9%;
                 height: 20.8%;
+                @include breakpoint(md) {
+                    left: 49%;
+                    top: 75%;
+                }
             }
             .area__clickable-03 {
                 position: absolute;
@@ -726,6 +775,10 @@ body {
                 top: 24%;
                 width: 4.9%;
                 height: 26.8%;
+                @include breakpoint(md) {
+                    left: 30%;
+                    top: 20%;
+                }
             }
             .area__clickable-02 {
                 position: absolute;
@@ -733,6 +786,10 @@ body {
                 top: 30%;
                 width: 4.9%;
                 height: 20.8%;
+                @include breakpoint(md) {
+                    left: 73%;
+                    top: 23%;
+                }
             }
             .area__clickable-03 {
                 position: absolute;
@@ -747,6 +804,10 @@ body {
                 top: 72%;
                 width: 4.9%;
                 height: 26.8%;
+                @include breakpoint(md) {
+                    top: 75%;
+                    height: 24.8%;
+                }
             }
         }
     }
@@ -762,6 +823,10 @@ body {
                 top: 61%;
                 width: 4.9%;
                 height: 26.8%;
+                @include breakpoint(md) {
+                    top: 51%;
+                    left: 27%;
+                }
             }
             .area__clickable-02 {
                 position: absolute;
@@ -769,6 +834,10 @@ body {
                 top: 80%;
                 width: 4.9%;
                 height: 19.8%;
+                @include breakpoint(md) {
+                    left: 75%;
+                    top: 71%;
+                }
             }
             .area__clickable-03 {
                 position: absolute;
@@ -791,6 +860,10 @@ body {
                 top: 28%;
                 width: 4.9%;
                 height: 26.8%;
+                @include breakpoint(md) {
+                    left: 15%;
+                    top: 18%;
+                }
             }
             .area__clickable-02 {
                 position: absolute;
@@ -798,6 +871,10 @@ body {
                 top: 28%;
                 width: 4.9%;
                 height: 19.8%;
+                @include breakpoint(md) {
+                    top: 24%;
+                    left: 64%;
+                }
             }
             .area__clickable-03 {
                 position: absolute;
