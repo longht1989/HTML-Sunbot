@@ -73,8 +73,31 @@
                 height: auto;
             }
         }
+        .img-responsive {
+            @include breakpoint(md) {
+                height: 100%;
+                width: auto;
+            }
+        }
+    }
+    &--textoverlay {
+        position: relative;
+        .textoverlay {
+            position: absolute;
+            top: 10px;
+            left: 0;
+            right: 0;
+            text-align: center;
+            z-index: 3;
+        }
+        &.has-mask {
+            .textoverlay {
+                color: white;
+            }
+        }
     }
     &-01 {
+        position: relative;
         .area__clickable {
             .area__button {
                 transform: translate(0%, 0%);
@@ -122,10 +145,8 @@
         }
     }
     &-04 {
-        background-color: #FFF0E3; // padding: 124px 0;
-        @include breakpoint(xs) {
-            // padding: 64px 0;
-        }
+        background-color: #FFF0E3;
+        @include breakpoint(xs) {}
         .close-btn {
             cursor: pointer;
             position: fixed;
@@ -164,6 +185,20 @@
         img {
             width: 100%;
             height: auto;
+        }
+    }
+    &.has-mask {
+        &::before {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background-color: black;
+            opacity: 0.5;
+            z-index: 0;
         }
     }
 }
@@ -489,6 +524,7 @@ body {
                 color: white;
             }
         }
+
         .area__clickable-01 {
             position: absolute;
             left: 35%;
@@ -496,6 +532,7 @@ body {
             width: 16.9%;
             height: 16.8%;
         }
+
         .area__clickable-02 {
             position: absolute;
             left: 60%;
@@ -503,6 +540,7 @@ body {
             width: 7.8%;
             height: 11.7%;
         }
+
         .area__clickable-03 {
             position: absolute;
             left: 62%;
@@ -510,6 +548,7 @@ body {
             width: 17.8%;
             height: 11.7%;
         }
+
         .area__clickable-04 {
             position: absolute;
             left: 53%;
@@ -517,6 +556,7 @@ body {
             width: 6.8%;
             height: 11.7%;
         }
+
         .area__clickable-05 {
             position: absolute;
             left: 88%;
@@ -524,10 +564,12 @@ body {
             width: 10.8%;
             height: 24.7%;
         }
+
         &-05 {
             background: #F1FDF5;
             .img-responsive {}
         }
+
         &-04 {
             background-color: #FFF0E3;
             .img-responsive {}
@@ -535,6 +577,100 @@ body {
 
         &--popup {
             .img-responsive {}
+        }
+    }
+}
+
+// level 01 - episode 07
+.lv01-ep08 {
+    .area {
+        .area__clickable-01 {
+            position: absolute;
+            left: 39%;
+            top: 0%;
+            width: 25%;
+            height: 27%;
+            .area__button {
+                left: initial;
+                right: 0;
+            }
+        }
+
+        .area__clickable-02 {
+            position: absolute;
+            left: 43%;
+            top: 27%;
+            width: 14.8%;
+            height: 8.7%;
+            .area__button {
+                left: 70%;
+                top: 100%;
+                width: 20%;
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+                @include breakpoint(md) {
+                    top: 70%;
+                    width: 15%;
+                }
+            }
+        }
+        .area__clickable-03 {
+            position: absolute;
+            left: 46%;
+            top: 36%;
+            width: 4.8%;
+            height: 6.7%;
+            @include breakpoint(md) {
+                top: 32%;
+            }
+            .area__button {
+                width: 50%;
+                left: -10%;
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+                @include breakpoint(md) {
+                    left: -18%;
+                }
+            }
+        }
+        .area__clickable-04 {
+            position: absolute;
+            left: 35%;
+            top: 45%;
+            width: 30.8%;
+            height: 11.7%;
+            .area__button {
+                left: initial;
+                right: 0;
+            }
+        }
+        .area__clickable-05 {
+            position: absolute;
+            left: 45%;
+            top: 81%;
+            width: 9.8%;
+            height: 19.7%;
+            .area__button {}
+        }
+
+        &-05 {
+            background: #F1FDF5;
+            .img-responsive {}
+        }
+
+        &-04 {
+            background-color: #FFF0E3;
+            .img-responsive {}
+        }
+
+        &--popup {
+            @include breakpoint(xs) {
+                padding-top: 20px;
+            }
         }
     }
 }

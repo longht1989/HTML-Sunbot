@@ -4,23 +4,32 @@
     &__header {
         color: $brand-danger;
         line-height: 1.1em;
-        margin-bottom: 32px;
-        padding-top: 64px;
         font-size: 40px;
         margin-bottom: 16px;
+        position: absolute;
+        top: 10px;
+        left: 0;
+        right: 0;
+        transform: traslateX(-50%);
+        z-index: 2;
+        text-align: center;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1), -1px -1px 0 rgba(0, 0, 0, 0.1), 1px -1px 0 rgba(0, 0, 0, 0.1), -1px 1px 0 rgba(0, 0, 0, 0.1), 1px 1px 0 rgba(0, 0, 0, 0.1);
         img {
             max-width: 80px;
             display: inline-block;
             margin: 12px 0 0 12px;
         }
         @include breakpoint(md) {
-            font-size: 144px;
+            font-size: 104px;
             margin-bottom: 0;
             img {
                 vertical-align: baseline;
                 margin-top: 0;
                 max-width: 160px;
             }
+        }
+        @include breakpoint(lg) {
+            font-size: 144px;
         }
     }
 }
