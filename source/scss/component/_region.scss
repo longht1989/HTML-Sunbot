@@ -590,6 +590,9 @@ body {
             top: 0%;
             width: 25%;
             height: 27%;
+            @include breakpoint(md) {
+                left: 36%;
+            }
             .area__button {
                 left: initial;
                 right: 0;
@@ -643,6 +646,9 @@ body {
             top: 45%;
             width: 30.8%;
             height: 11.7%;
+            @include breakpoint(md) {
+                left: 29%;
+            }
             .area__button {
                 left: initial;
                 right: 0;
