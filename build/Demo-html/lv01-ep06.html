@@ -53,7 +53,7 @@
             </div>
         </div>
         <!-- normal area -->
-        <div class="area area-02" id="area2">
+        <div class="area area-02" id="area2" style="padding:0;">
             <div class="container-fluid">
                 <h4 class="area__header">Khu vườn của bé</h4>
                 <div class="area__bg">
@@ -91,14 +91,101 @@
                 <a class="close-btn"><img src="images/close-btn.png" alt=""></a>
             </div>
         </div>
+        <div class="area-01 game-01" id="area6">
+            <div class="container-fluid">
+                <h4 class="area__header">Game tương tác</h4>
+                <h3 class="text-center">Nối hình ảnh với chữ tương ứng</h3>
+                <br>
+                <div class="row list-card-a">
+                    <div class="col-xs-3">
+                        <div class="card" game-data="1">
+                            <img src="images/lv01-ep06/game-flower.png" alt="" class="img-responsive">
+                        </div>
+                    </div>
+                    <div class="col-xs-3">
+                        <div class="card" game-data="2">
+                            <img src="images/lv01-ep06/game-fruit.png" alt="" class="img-responsive">
+                        </div>
+                    </div>
+                    <div class="col-xs-3">
+                        <div class="card" game-data="3">
+                            <img src="images/lv01-ep06/game-tree.png" alt="" class="img-responsive">
+                        </div>
+                    </div>
+                    <div class="col-xs-3">
+                        <div class="card" game-data="4">
+                            <img src="images/lv01-ep06/game-watering.png" alt="" class="img-responsive">
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix" style="margin-bottom: 20px;"></div>
+                <div class="row list-card-b">
+                    <div class="col-xs-3">
+                        <div class="card" game-data="3">
+                            <img src="images/lv01-ep06/game-tree-text.png" alt="" class="img-responsive">
+                        </div>
+                    </div>
+                    <div class="col-xs-3">
+                        <div class="card" game-data="1">
+                            <img src="images/lv01-ep06/game-flower-text.png" alt="" class="img-responsive">
+                        </div>
+                    </div>
+                    <div class="col-xs-3">
+                        <div class="card" game-data="4">
+                            <img src="images/lv01-ep06/game-watering-text.png" alt="" class="img-responsive">
+                        </div>
+                    </div>
+                    <div class="col-xs-3">
+                        <div class="card" game-data="2">
+                            <img src="images/lv01-ep06/game-fruit-text.png" alt="" class="img-responsive">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="area-01 game-01" id="area6">
+            <div class="container-fluid">
+                <h4 class="area__header">Game tương tác</h4>
+                <h3 class="text-center">Tìm điểm khách nhau của bức tranh</h3>
+                <br>
+                <img src="images/lv01-ep06/garden compare.png" alt="" class="img-responsive">
+            </div>
+        </div>
+        <!-- correct popup -->
+        <div class="area area--popup area-05" id="answer-true">
+            <div class="container-fluid">
+                <img src="images/correct.png" alt="" class="img-responsive">
+                <a class="close-btn" onclick="close()"><img src="images/close-btn.png" alt=""></a>
+            </div>
+        </div>
+        <!-- wrong popup -->
+        <div class="area area--popup area-04" id="answer-false">
+            <div class="container-fluid">
+                <img src="images/wrong.png" alt="" class="img-responsive">
+                <a class="close-btn" onclick="close()"><img src="images/close-btn.png" alt=""></a>
+            </div>
+        </div>
         <!-- .end normal area -->
         <script type="text/javascript">
         $(function() {
+            function check() {
+                var countselected = $(".card.selected");
+                var carda = $('.list-card-a .card.selected').attr('game-data');
+                var cardb = $('.list-card-b .card.selected').attr('game-data');
+                if ((countselected.length == 2) && (carda == cardb)) {
+                    $('#answer-true').show();
+                } else if ((countselected.length == 2) && (carda != cardb)) {
+                    $('#answer-false').show();
+                }
+            };
             $(".close-btn").click(function() {
                 $("#area3").hide();
                 $("#area4").hide();
                 $("#area5").hide();
+                $("#answer-true").hide();
+                $("#answer-false").hide();
                 $("body").removeClass("fixed");
+                $(".card").removeClass("selected");
             });
             $('.area__clickable-01 .area__button').click(function() {
                 $("body").addClass("fixed");
@@ -132,8 +219,40 @@
                     scrollTop: $("#area7").offset().top
                 }, 500);
             });
+            // js for card selected
+            $(".list-card-a .card").click(function() {
+                $(this).parent().siblings('.col-xs-3').find('.card').removeClass('selected');
+                $(this).addClass('selected');
+                check();
+            });
+            $(".list-card-b .card").click(function() {
+                $(this).parent().siblings('.col-xs-3').find('.card').removeClass('selected');
+                $(this).addClass('selected');
+                check();
+            });
+
         });
         </script>
+        <style type="text/css" media="screen">
+        .game-01 {
+            padding: 32px 0;
+        }
+
+        .card {
+            border-radius: 10px;
+            overflow: hidden;
+            cursor: pointer;
+            transition: all 0.2s linear;
+        }
+
+        .card:hover {
+            transform: scale(0.95);
+        }
+
+        .card.selected {
+            opacity: 0.3;
+        }
+        </style>
     </div>
     <!-- JS Global Customise -->
     <script src="../Jscripts/custom.js"></script>
