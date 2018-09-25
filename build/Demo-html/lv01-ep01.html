@@ -69,18 +69,21 @@
         <!-- normal area -->
         <div class="area area-03" id="area3">
             <div class="container-fluid">
-                <div class="area__bg">
-                    <img class="img-responsive" src="images/lv01-ep01-sc03.png" alt="">
-                    <a href="#area4" class="area__clickable-01">
-                        <div class="area__button"><img src="images/hint.gif" alt=""></div>
-                    </a>
-                    <a href="#area5" class="area__clickable-02">
-                        <div class="area__button"><img src="images/hint.gif" alt=""></div>
-                    </a>
+                <div class="row">
+                    <div class="area__bg">
+                        <img class="img-responsive" src="images/lv01-ep01-sc03.png" alt="">
+                        <a href="#area4" class="area__clickable-01">
+                            <div class="area__button"><img src="images/hint.gif" alt=""></div>
+                        </a>
+                        <a href="#area5" class="area__clickable-02">
+                            <div class="area__button"><img src="images/hint.gif" alt=""></div>
+                        </a>
+                    </div>
                 </div>
             </div>
             <div class="area-control">
                 <a class="area-prev"><img src="../App_Themes/img/prev.png" alt=""></a>
+                <a class="area-next"><img src="../App_Themes/img/next.png" alt=""></a>
             </div>
         </div>
         <div class="area area--popup area-04" id="area4">
@@ -95,12 +98,158 @@
                 <a class="close-btn"><img src="images/close-btn.png" alt=""></a>
             </div>
         </div>
+        <!-- game -->
+        <div class="area-01 game-01" id="area6">
+            <div class="container-fluid">
+                <h4 class="area__header">Game tương tác</h4>
+                <h3 class="text-center">Bé hãy chọn những đồ dùng là một cặp với nhau nhé!</h3>
+                <br>
+                <div class="row list-card-a">
+                    <div class="col-xs-3">
+                        <div class="card" game-data="1">
+                            <img src="images/lv01-ep01/game-mirror.png" alt="" class="img-responsive">
+                        </div>
+                    </div>
+                    <div class="col-xs-3">
+                        <div class="card" game-data="2">
+                            <img src="images/lv01-ep01/game-toothbrush.png" alt="" class="img-responsive">
+                        </div>
+                    </div>
+                    <div class="col-xs-3">
+                        <div class="card" game-data="3">
+                            <img src="images/lv01-ep01/game-towel.png" alt="" class="img-responsive">
+                        </div>
+                    </div>
+                    <div class="col-xs-3">
+                        <div class="card" game-data="4">
+                            <img src="images/lv01-ep01/game-toy.png" alt="" class="img-responsive">
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix" style="margin-bottom: 20px;"></div>
+                <div class="row list-card-b">
+                    <div class="col-xs-3">
+                        <div class="card" game-data="2">
+                            <img src="images/lv01-ep01/game-toothpaste.png" alt="" class="img-responsive">
+                        </div>
+                    </div>
+                    <div class="col-xs-3">
+                        <div class="card" game-data="4">
+                            <img src="images/lv01-ep01/game-bathtub.png" alt="" class="img-responsive">
+                        </div>
+                    </div>
+                    <div class="col-xs-3">
+                        <div class="card" game-data="1">
+                            <img src="images/lv01-ep01/game-sink.png" alt="" class="img-responsive">
+                        </div>
+                    </div>
+                    <div class="col-xs-3">
+                        <div class="card" game-data="3">
+                            <img src="images/lv01-ep01/game-comb.png" alt="" class="img-responsive">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="area-control">
+                <a class="area-prev"><img src="../App_Themes/img/prev.png" alt=""></a>
+                <a class="area-next"><img src="../App_Themes/img/next.png" alt=""></a>
+            </div>
+        </div>
+        <!-- game -->
+        <div class="area-01 game-02" id="area7">
+            <div class="container-fluid">
+                <h4 class="area__header">Game tương tác</h4>
+                <h3 class="text-center">Bé hãy đếm và chọn ra chiếc cốc có 5 bàn chải!</h3>
+                <br>
+                <div class="row">
+                    <div class="col-xs-4">
+                        <div class="card" data-result="false"><img src="images/lv01-ep01/game-toothbrush.png" alt="" class="img-responsive"></div>
+                    </div>
+                    <div class="col-xs-4">
+                        <div class="card" data-result="true"><img src="images/lv01-ep01/game-tb5.png" alt="" class="img-responsive"></div>
+                    </div>
+                    <div class="col-xs-4">
+                        <div class="card" data-result="false"><img src="images/lv01-ep01/game-tb3.png" alt="" class="img-responsive"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="area-control">
+                <a class="area-prev"><img src="../App_Themes/img/prev.png" alt=""></a>
+            </div>
+        </div>
+        <!-- correct popup -->
+        <div class="area area--popup area-05" id="answer-true">
+            <div class="container-fluid">
+                <img src="images/correct.png" alt="" class="img-responsive">
+                <a class="close-btn" onclick="close()"><img src="images/close-btn.png" alt=""></a>
+            </div>
+        </div>
+        <!-- wrong popup -->
+        <div class="area area--popup area-04" id="answer-false">
+            <div class="container-fluid">
+                <img src="images/wrong.png" alt="" class="img-responsive">
+                <a class="close-btn" onclick="close()"><img src="images/close-btn.png" alt=""></a>
+            </div>
+        </div>
+        <style type="text/css" media="screen">
+        .game-01 {
+            padding: 32px 0;
+        }
+
+        .card {
+            border-radius: 10px;
+            overflow: hidden;
+            cursor: pointer;
+            transition: all 0.2s linear;
+        }
+
+        .card:hover {
+            transform: scale(0.95);
+        }
+
+        .card.selected {
+            opacity: 0.3;
+        }
+        </style>
         <script type="text/javascript">
         $(function() {
+            // js for card selected
+            $(".list-card-a .card").click(function() {
+                $(this).parent().siblings('.col-xs-3').find('.card').removeClass('selected');
+                $(this).addClass('selected');
+                check();
+            });
+            $(".list-card-b .card").click(function() {
+                $(this).parent().siblings('.col-xs-3').find('.card').removeClass('selected');
+                $(this).addClass('selected');
+                check();
+            });
+
+            function check() {
+                var countselected = $(".card.selected");
+                var carda = $('.list-card-a .card.selected').attr('game-data');
+                var cardb = $('.list-card-b .card.selected').attr('game-data');
+                if ((countselected.length == 2) && (carda == cardb)) {
+                    $('#answer-true').show();
+                } else if ((countselected.length == 2) && (carda != cardb)) {
+                    $('#answer-false').show();
+                }
+            };
+            // js for select action
+            $("[data-result=true]").on("click", function() {
+                $("#answer-true").show();
+            });
+            $("[data-result=false]").on("click", function() {
+                $("#answer-false").show();
+            });
+            // close action
             $(".close-btn").click(function() {
                 $("#area4").hide();
                 $("#area5").hide();
+                $("#answer-true").hide();
+                $("#answer-false").hide();
                 $("body").removeClass("fixed");
+                $(".card").removeClass("selected");
             });
             $('.area__clickable-01 .area__button').click(function() {
                 $("body").addClass("fixed");
@@ -115,7 +264,7 @@
                     scrollTop: $("#area2").offset().top
                 }, 1000);
             });
-            $(".area-01 .area-next").click(function() {
+            $("#area1 .area-next").click(function() {
                 $('html, body').animate({
                     scrollTop: $("#area2").offset().top
                 }, 500);
@@ -133,6 +282,26 @@
             $(".area-03 .area-prev").click(function() {
                 $('html, body').animate({
                     scrollTop: $("#area2").offset().top
+                }, 500);
+            });
+            $(".area-03 .area-next").click(function() {
+                $('html, body').animate({
+                    scrollTop: $("#area6").offset().top
+                }, 500);
+            });
+            $("#area6 .area-prev").click(function() {
+                $('html, body').animate({
+                    scrollTop: $("#area3").offset().top
+                }, 500);
+            });
+            $("#area6 .area-next").click(function() {
+                $('html, body').animate({
+                    scrollTop: $("#area7").offset().top
+                }, 500);
+            });
+            $("#area7 .area-prev").click(function() {
+                $('html, body').animate({
+                    scrollTop: $("#area6").offset().top
                 }, 500);
             });
         });

@@ -83,6 +83,7 @@
             </div>
             <div class="area-control">
                 <a class="area-prev"><img src="../App_Themes/img/prev.png" alt=""></a>
+                <a class="area-next"><img src="../App_Themes/img/next.png" alt=""></a>
             </div>
         </div>
         <div class="area area--popup area-04" id="area4">
@@ -109,6 +110,95 @@
                 <a class="close-btn"><img src="images/close-btn.png" alt=""></a>
             </div>
         </div>
+        <div class="area area--popup area-07" id="area10">
+            <div class="container-fluid">
+                <img src="images/lv01-ep02/scarf.png" alt="" class="img-responsive">
+                <a class="close-btn"><img src="images/close-btn.png" alt=""></a>
+            </div>
+        </div>
+        <!-- game -->
+        <div class="area-01 game-01" id="area8">
+            <div class="container-fluid">
+                <h4 class="area__header">Game tương tác</h4>
+                <h3 class="text-center">Con hãy tìm ra những đồ dùng được yêu cầu:
+                <br> <i>áo màu cam, áo màu vàng, quần màu đỏ, giày màu vàng</i>.</h3>
+                <br>
+                <div class="row">
+                    <div class="col-xs-3">
+                        <div class="card" data-result="false"><img src="images/lv01-ep02/game-blackshirt.png" alt="" class="img-responsive"></div>
+                    </div>
+                    <div class="col-xs-3">
+                        <div class="card" data-result="false"><img src="images/lv01-ep02/game-yellowpants.png" alt="" class="img-responsive"></div>
+                    </div>
+                    <div class="col-xs-3">
+                        <div class="card" data-result="true"><img src="images/lv01-ep02/game-yellowboots.png" alt="" class="img-responsive"></div>
+                    </div>
+                    <div class="col-xs-3">
+                        <div class="card" data-result="true"><img src="images/lv01-ep02/game-redpants.png" alt="" class="img-responsive"></div>
+                    </div>
+                </div>
+                <div class="clearfix" style="margin-bottom: 20px;"></div>
+                <div class="row">
+                    <div class="col-xs-3">
+                        <div class="card" data-result="false"><img src="images/lv01-ep02/game-redboots.png" alt="" class="img-responsive"></div>
+                    </div>
+                    <div class="col-xs-3">
+                        <div class="card" data-result="true"><img src="images/lv01-ep02/game-greenshirt.png" alt="" class="img-responsive"></div>
+                    </div>
+                    <div class="col-xs-3">
+                        <div class="card" data-result="false"><img src="images/lv01-ep02/game-redcap.png" alt="" class="img-responsive"></div>
+                    </div>
+                    <div class="col-xs-3">
+                        <div class="card" data-result="true"><img src="images/lv01-ep02/game-orangeshirt.png" alt="" class="img-responsive"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="area-control">
+                <a class="area-prev"><img src="../App_Themes/img/prev.png" alt=""></a>
+                <a class="area-next"><img src="../App_Themes/img/next.png" alt=""></a>
+            </div>
+        </div>
+        <div class="area-01 game-01" id="area9">
+            <div class="container-fluid">
+                <h4 class="area__header">Game tương tác</h4>
+                <h3 class="text-center">Con hãy tìm đúng hình ảnh được yêu cầu nhé! Bên trong các hộp có chứa các đồ dùng: <br> <i>hình vuông - giày, hình tam giác - áo, hình tròn - quần, hình chữ nhật - mũ, hình ngũ giác - khăn.</i></h3>
+                <br>
+                <div class="row">
+                    <div class="col-xs-20p">
+                        <div class="card" id="card1"><img src="images/lv01-ep02/game-square.png" alt="" class="img-responsive"></div>
+                    </div>
+                    <div class="col-xs-20p">
+                        <div class="card" id="card2"><img src="images/lv01-ep02/game-triangle.png" alt="" class="img-responsive"></div>
+                    </div>
+                    <div class="col-xs-20p">
+                        <div class="card" id="card3"><img src="images/lv01-ep02/game-rectangle.png" alt="" class="img-responsive"></div>
+                    </div>
+                    <div class="col-xs-20p">
+                        <div class="card" id="card4"><img src="images/lv01-ep02/game-circle.png" alt="" class="img-responsive"></div>
+                    </div>
+                    <div class="col-xs-20p">
+                        <div class="card" id="card5"><img src="images/lv01-ep02/game-polygon.png" alt="" class="img-responsive"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="area-control">
+                <a class="area-prev"><img src="../App_Themes/img/prev.png" alt=""></a>
+            </div>
+        </div>
+        <!-- correct popup -->
+        <div class="area area--popup area-05" id="answer-true">
+            <div class="container-fluid">
+                <img src="images/correct.png" alt="" class="img-responsive">
+                <a class="close-btn" onclick="close()"><img src="images/close-btn.png" alt=""></a>
+            </div>
+        </div>
+        <!-- wrong popup -->
+        <div class="area area--popup area-04" id="answer-false">
+            <div class="container-fluid">
+                <img src="images/wrong.png" alt="" class="img-responsive">
+                <a class="close-btn" onclick="close()"><img src="images/close-btn.png" alt=""></a>
+            </div>
+        </div>
         <!-- .end normal area -->
         <script type="text/javascript">
         $(function() {
@@ -117,25 +207,30 @@
                 $("#area5").hide();
                 $("#area6").hide();
                 $("#area7").hide();
+                $("#area10").hide();
+                $("#answer-true").hide();
+                $("#answer-false").hide();
                 $("body").removeClass("fixed");
+                $(".card").removeClass("selected");
             });
-            $('.area__clickable-01 .area__button').click(function() {
+            $('.area__clickable-01').click(function() {
                 $("body").addClass("fixed");
                 $("#area4").show();
             });
-            $('.area__clickable-02 .area__button').click(function() {
+            $('.area__clickable-02').click(function() {
                 $("body").addClass("fixed");
                 $("#area5").show();
             });
-            $('.area__clickable-03 .area__button').click(function() {
+            $('.area__clickable-03').click(function() {
                 $("body").addClass("fixed");
                 $("#area6").show();
             });
-            $('.area__clickable-04 .area__button').click(function() {
+            $('.area__clickable-04').click(function() {
                 $("body").addClass("fixed");
                 $("#area7").show();
             });
-            $(".area-01 .area-next").click(function() {
+            // switch screen
+            $("#area1 .area-next").click(function() {
                 $('html, body').animate({
                     scrollTop: $("#area2").offset().top
                 }, 500);
@@ -150,13 +245,87 @@
                     scrollTop: $("#area1").offset().top
                 }, 500);
             });
+            $("#area3 .area-next").click(function() {
+                $('html, body').animate({
+                    scrollTop: $("#area8").offset().top
+                }, 500);
+            });
             $(".area-03 .area-prev").click(function() {
                 $('html, body').animate({
                     scrollTop: $("#area2").offset().top
                 }, 500);
             });
+            $("#area8 .area-next").click(function() {
+                $('html, body').animate({
+                    scrollTop: $("#area9").offset().top
+                }, 500);
+            });
+            $("#area8 .area-prev").click(function() {
+                $('html, body').animate({
+                    scrollTop: $("#area3").offset().top
+                }, 500);
+            });
+            $("#area9 .area-prev").click(function() {
+                $('html, body').animate({
+                    scrollTop: $("#area8").offset().top
+                }, 500);
+            });
+            // js for select action
+            $("[data-result=true]").on("click", function() {
+                $("#answer-true").show();
+            });
+            $("[data-result=false]").on("click", function() {
+                $("#answer-false").show();
+            });
+            //game 02
+            $('#card1').click(function() {
+                $("body").addClass("fixed");
+                $("#area7").show();
+            });
+            $('#card2').click(function() {
+                $("body").addClass("fixed");
+                $("#area4").show();
+            });
+            $('#card3').click(function() {
+                $("body").addClass("fixed");
+                $("#area6").show();
+            });
+            $('#card4').click(function() {
+                $("body").addClass("fixed");
+                $("#area5").show();
+            });
+            $('#card5').click(function() {
+                $("body").addClass("fixed");
+                $("#area10").show();
+            });
         });
         </script>
+        <style type="text/css" media="screen">
+        .game-01 {
+            padding: 32px 0;
+        }
+
+        .card {
+            border-radius: 10px;
+            overflow: hidden;
+            cursor: pointer;
+            transition: all 0.2s linear;
+        }
+
+        .card:hover {
+            transform: scale(0.95);
+        }
+
+        .card.selected {
+            opacity: 0.3;
+        }
+
+        .col-xs-20p {
+            width: 20%;
+            float: left;
+            padding: 0 10px;
+        }
+        </style>
     </div>
     <!-- JS Global Customise -->
     <script src="../Jscripts/custom.js"></script>

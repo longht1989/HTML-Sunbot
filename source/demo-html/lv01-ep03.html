@@ -43,25 +43,26 @@
                 <h4 class="area__header">Thức ăn của bé</h4>
                 <div class="area__bg">
                     <img class="img-responsive" src="images/lv01-ep03/meal.png" alt="">
-                    <a href="#area3" class="area__clickable-01">
+                    <a class="area__clickable-01">
                         <div class="area__button"><img src="images/hint.gif" alt=""></div>
                     </a>
-                    <a href="#area4" class="area__clickable-02">
+                    <a class="area__clickable-02">
                         <div class="area__button"><img src="images/hint.gif" alt=""></div>
                     </a>
-                    <a href="#area5" class="area__clickable-03">
+                    <a class="area__clickable-03">
                         <div class="area__button"><img src="images/hint.gif" alt=""></div>
                     </a>
-                    <a href="#area76" class="area__clickable-04">
+                    <a class="area__clickable-04">
                         <div class="area__button"><img src="images/hint.gif" alt=""></div>
                     </a>
-                    <a href="#area7" class="area__clickable-05">
+                    <a class="area__clickable-05">
                         <div class="area__button"><img src="images/hint.gif" alt=""></div>
                     </a>
                 </div>
             </div>
             <div class="area-control">
                 <a class="area-prev"><img src="../App_Themes/img/prev.png" alt=""></a>
+                <a class="area-next"><img src="../App_Themes/img/next.png" alt=""></a>
             </div>
         </div>
         <div class="area area--popup area-03" id="area3">
@@ -95,6 +96,183 @@
             </div>
         </div>
         <!-- .end normal area -->
+        <!-- game -->
+        <div class="area-01 game-01" id="area8">
+            <div class="container-fluid">
+                <h4 class="area__header">Game tương tác</h4>
+                <h3 class="text-center">Các con hãy chọn giúp cô/ thầy loại thức ăn nào có lợi cho sức khỏe nhé!</h3>
+                <br>
+                <div class="row">
+                    <div class="col-xs-4">
+                        <div class="card" id="game-cake">
+                            <img src="images/lv01-ep03/game-cake.png" alt="" class="img-responsive card-front">
+                            <img src="images/lv01-ep03/game-square.png" alt="" class="img-responsive card-back">
+                        </div>
+                    </div>
+                    <div class="col-xs-4">
+                        <div class="card" id="game-cereal">
+                            <img src="images/lv01-ep03/game-cereal.png" alt="" class="img-responsive card-front">
+                            <img src="images/lv01-ep03/game-square.png" alt="" class="img-responsive card-back">
+                        </div>
+                    </div>
+                    <div class="col-xs-4">
+                        <div class="card" id="game-meat">
+                            <img src="images/lv01-ep03/game-meat.png" alt="" class="img-responsive card-front">
+                            <img src="images/lv01-ep03/game-square.png" alt="" class="img-responsive card-back">
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center" style="margin-top: 20px;">
+                    <button class="btn btn-danger btn-lg" id="btn-start">Bắt đầu</button>
+                    <button class="btn btn-success btn-lg" id="btn-refresh">Làm lại</button>
+                </div>
+                <div class="text-center" id="count-down">Hình ảnh sẽ bị ẩn đi sau 5 giây.</div>
+            </div>
+            <div class="area-control">
+                <a class="area-prev"><img src="../App_Themes/img/prev.png" alt=""></a>
+                <a class="area-next"><img src="../App_Themes/img/next.png" alt=""></a>
+            </div>
+        </div>
+        <!-- game 01 popup -->
+        <div class="area area--popup area-03" id="area9">
+            <div class="container-fluid">
+                <img src="images/lv01-ep03/correct-cereal.png" alt="" class="img-responsive">
+                <a class="close-btn"><img src="images/close-btn.png" alt=""></a>
+            </div>
+        </div>
+        <div class="area area--popup area-04" id="area10">
+            <div class="container-fluid">
+                <img src="images/lv01-ep03/wrong-meat.png" alt="" class="img-responsive">
+                <a class="close-btn"><img src="images/close-btn.png" alt=""></a>
+            </div>
+        </div>
+        <div class="area area--popup area-04" id="area11">
+            <div class="container-fluid">
+                <img src="images/lv01-ep03/wrong-cake.png" alt="" class="img-responsive">
+                <a class="close-btn"><img src="images/close-btn.png" alt=""></a>
+            </div>
+        </div>
+        <!-- game 02 -->
+        <hr>
+        <div class="area-01 game-02" id="area12">
+            <div class="container-fluid">
+                <h4 class="area__header">Game tương tác</h4>
+                <h3 class="text-center">Các con hãy chọn vào số có lượng tương ứng trên màn hình nhé!</h3>
+                <br>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <img src="images/lv01-ep03/game-5-cake.png" alt="" class="img-responsive">
+                    </div>
+                </div>
+                <div style="margin-top:20px;"></div>
+                <div class="row">
+                    <div class="col-xs-4 col-sm-offset-2 col-sm-2">
+                        <div class="card" data-result="false">
+                            <img src="images/lv01-ep03/game-no3-pink.png" alt="" class="img-responsive">
+                        </div>
+                    </div>
+                    <div class="col-xs-4 col-sm-offset-1 col-sm-2">
+                        <div class="card" data-result="false">
+                            <img src="images/lv01-ep03/game-no4-pink.png" alt="" class="img-responsive">
+                        </div>
+                    </div>
+                    <div class="col-xs-4 col-sm-offset-1 col-sm-2">
+                        <div class="card" data-result="true">
+                            <img src="images/lv01-ep03/game-no5-pink.png" alt="" class="img-responsive">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="area-control">
+                <a class="area-prev"><img src="../App_Themes/img/prev.png" alt=""></a>
+                <a class="area-next"><img src="../App_Themes/img/next.png" alt=""></a>
+            </div>
+        </div>
+        <div style="margin-top:60px;"></div>
+        <hr>
+        <div class="area-01 game-02" id="area13">
+            <div class="container-fluid">
+                <h4 class="area__header">Game tương tác</h4>
+                <h3 class="text-center">Các con hãy chọn vào số có lượng tương ứng trên màn hình nhé!</h3>
+                <br>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <img src="images/lv01-ep03/game-7-vegetables.png" alt="" class="img-responsive">
+                    </div>
+                </div>
+                <div style="margin-top:20px;"></div>
+                <div class="row">
+                    <div class="col-xs-4 col-sm-offset-2 col-sm-2">
+                        <div class="card" data-result="false">
+                            <img src="images/lv01-ep03/game-no6-green.png" alt="" class="img-responsive">
+                        </div>
+                    </div>
+                    <div class="col-xs-4 col-sm-offset-1 col-sm-2">
+                        <div class="card" data-result="true">
+                            <img src="images/lv01-ep03/game-no7-green.png" alt="" class="img-responsive">
+                        </div>
+                    </div>
+                    <div class="col-xs-4 col-sm-offset-1 col-sm-2">
+                        <div class="card" data-result="false">
+                            <img src="images/lv01-ep03/game-no8-green.png" alt="" class="img-responsive">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="area-control">
+                <a class="area-prev"><img src="../App_Themes/img/prev.png" alt=""></a>
+                <a class="area-next"><img src="../App_Themes/img/next.png" alt=""></a>
+            </div>
+        </div>
+        <div style="margin-top:60px;"></div>
+        <hr>
+        <div class="area-01 game-02" id="area14">
+            <div class="container-fluid">
+                <h4 class="area__header">Game tương tác</h4>
+                <h3 class="text-center">Các con hãy chọn vào số có lượng tương ứng trên màn hình nhé!</h3>
+                <br>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <img src="images/lv01-ep03/game-10-fish.png" alt="" class="img-responsive">
+                    </div>
+                </div>
+                <div style="margin-top:20px;"></div>
+                <div class="row">
+                    <div class="col-xs-4 col-sm-offset-2 col-sm-2">
+                        <div class="card" data-result="false">
+                            <img src="images/lv01-ep03/game-no8-red.png" alt="" class="img-responsive">
+                        </div>
+                    </div>
+                    <div class="col-xs-4 col-sm-offset-1 col-sm-2">
+                        <div class="card" data-result="false">
+                            <img src="images/lv01-ep03/game-no9-red.png" alt="" class="img-responsive">
+                        </div>
+                    </div>
+                    <div class="col-xs-4 col-sm-offset-1 col-sm-2">
+                        <div class="card" data-result="true">
+                            <img src="images/lv01-ep03/game-no10-red.png" alt="" class="img-responsive">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="area-control">
+                <a class="area-prev"><img src="../App_Themes/img/prev.png" alt=""></a>
+            </div>
+        </div>
+        <!-- correct popup -->
+        <div class="area area--popup area-05" id="answer-true">
+            <div class="container-fluid">
+                <img src="images/correct.png" alt="" class="img-responsive">
+                <a class="close-btn" onclick="close()"><img src="images/close-btn.png" alt=""></a>
+            </div>
+        </div>
+        <!-- wrong popup -->
+        <div class="area area--popup area-04" id="answer-false">
+            <div class="container-fluid">
+                <img src="images/wrong.png" alt="" class="img-responsive">
+                <a class="close-btn" onclick="close()"><img src="images/close-btn.png" alt=""></a>
+            </div>
+        </div>
         <script type="text/javascript">
         $(function() {
             $(".close-btn").click(function() {
@@ -103,40 +281,159 @@
                 $("#area5").hide();
                 $("#area6").hide();
                 $("#area7").hide();
+                $("#area9").hide();
+                $("#area10").hide();
+                $("#area11").hide();
+                $("#answer-true").hide();
+                $("#answer-false").hide();
                 $("body").removeClass("fixed");
             });
-            $('.area__clickable-01 .area__button').click(function() {
+            $('.area__clickable-01').click(function() {
                 $("body").addClass("fixed");
                 $("#area3").show();
             });
-            $('.area__clickable-02 .area__button').click(function() {
+            $('.area__clickable-02').click(function() {
                 $("body").addClass("fixed");
                 $("#area4").show();
             });
-            $('.area__clickable-03 .area__button').click(function() {
+            $('.area__clickable-03').click(function() {
                 $("body").addClass("fixed");
                 $("#area5").show();
             });
-            $('.area__clickable-04 .area__button').click(function() {
+            $('.area__clickable-04').click(function() {
                 $("body").addClass("fixed");
                 $("#area6").show();
             });
-            $('.area__clickable-05 .area__button').click(function() {
+            $('.area__clickable-05').click(function() {
                 $("body").addClass("fixed");
                 $("#area7").show();
             });
-            $(".area-01 .area-next").click(function() {
+            $("#area1 .area-next").click(function() {
                 $('html, body').animate({
                     scrollTop: $("#area2").offset().top
                 }, 500);
             });
-            $(".area-02 .area-prev").click(function() {
+            $("#area2 .area-prev").click(function() {
                 $('html, body').animate({
                     scrollTop: $("#area1").offset().top
                 }, 500);
             });
+            $("#area2 .area-next").click(function() {
+                $('html, body').animate({
+                    scrollTop: $("#area8").offset().top
+                }, 500);
+            });
+            $("#area8 .area-prev").click(function() {
+                $('html, body').animate({
+                    scrollTop: $("#area2").offset().top
+                }, 500);
+            });
+            $("#area8 .area-next").click(function() {
+                $('html, body').animate({
+                    scrollTop: $("#area12").offset().top
+                }, 500);
+            });
+            $("#area12 .area-prev").click(function() {
+                $('html, body').animate({
+                    scrollTop: $("#area8").offset().top
+                }, 500);
+            });
+            $("#area12 .area-next").click(function() {
+                $('html, body').animate({
+                    scrollTop: $("#area13").offset().top
+                }, 500);
+            });
+            $("#area13 .area-prev").click(function() {
+                $('html, body').animate({
+                    scrollTop: $("#area12").offset().top
+                }, 500);
+            });
+            $("#area13 .area-next").click(function() {
+                $('html, body').animate({
+                    scrollTop: $("#area14").offset().top
+                }, 500);
+            });
+            $("#area14 .area-prev").click(function() {
+                $('html, body').animate({
+                    scrollTop: $("#area13").offset().top
+                }, 500);
+            });
+            // js for game
+            $('#game-cake .card-back').click(function() {
+                $("body").addClass("fixed");
+                $("#area11").show();
+            });
+            $('#game-meat .card-back').click(function() {
+                $("body").addClass("fixed");
+                $("#area10").show();
+            });
+            $('#game-cereal .card-back').click(function() {
+                $("body").addClass("fixed");
+                $("#area9").show();
+            });
+            $("#btn-start").click(function() {
+                $('.card-front').delay(5000).fadeOut();
+                $('.card-back').delay(5300).fadeIn();
+                $(this).hide();
+                $("#count-down").fadeIn();
+                $("#btn-refresh").delay(5300).fadeIn();
+                $("#count-down").delay(5000).fadeOut();
+            });
+            $("#btn-refresh").click(function() {
+                $('.card-back').fadeOut();
+                $('.card-front').fadeIn();
+                $("#btn-start").fadeIn();
+                $(this).hide();
+                $("#count-down").hide();
+            });
+            // js for select action
+            $("[data-result=true]").on("click", function() {
+                $("#answer-true").show();
+            });
+            $("[data-result=false]").on("click", function() {
+                $("#answer-false").show();
+            });
         });
         </script>
+        <style type="text/css" media="screen">
+        .game-01 {
+            padding: 32px 0;
+        }
+
+        .card {
+            border-radius: 10px;
+            overflow: hidden;
+            cursor: pointer;
+            transition: all 0.2s linear;
+        }
+
+        .card:hover {
+            transform: scale(0.95);
+        }
+
+        .card.selected {
+            opacity: 0.3;
+        }
+
+        .card-back {
+            display: none;
+        }
+
+        .col-xs-20p {
+            width: 20%;
+            float: left;
+            padding: 0 10px;
+        }
+
+        #btn-refresh {
+            display: none;
+        }
+
+        #count-down {
+            display: none;
+            margin-top: 20px;
+        }
+        </style>
     </div>
     <!-- JS Global Customise -->
     <script src="../Jscripts/custom.js"></script>

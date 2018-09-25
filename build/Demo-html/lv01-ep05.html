@@ -37,7 +37,7 @@
             </div>
         </div>
         <!-- .end header area -->
-        <div class="area area-07" id="area7" style="background-image: url(images/lv01-ep05/kitchen.png);">
+        <div class="area area-07" id="area2">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-xs-12">
@@ -59,70 +59,198 @@
             </div>
         </div>
         <!-- normal area -->
-        <div class="area area-02" id="area2">
+        <div class="area area-02" id="area3">
             <div class="area__bg">
-                <img class="img-responsive" src="images/lv01-ep05/kitchen.png" alt="">
-                <a href="#area3" class="area__clickable-01">
+                <img class="img-responsive" src="images/lv01-ep05/livingroom.png" alt="">
+                <a class="area__clickable-01">
                     <div class="area__button"><img src="images/hint.gif" alt=""></div>
                 </a>
-                <a href="#area4" class="area__clickable-02">
+                <a class="area__clickable-02">
                     <div class="area__button"><img src="images/hint.gif" alt=""></div>
                 </a>
             </div>
             <div class="area-control">
                 <a class="area-prev"><img src="../App_Themes/img/prev.png" alt=""></a>
+                <a class="area-next"><img src="../App_Themes/img/next.png" alt=""></a>
             </div>
         </div>
-        <div class="area area--popup area-03" id="area3">
+        <div class="area area--popup area-03" id="area4">
             <div class="container-fluid">
                 <img src="images/lv01-ep05/cookie.png" alt="" class="img-responsive">
                 <a class="close-btn"><img src="images/close-btn.png" alt=""></a>
             </div>
         </div>
-        <div class="area area--popup area-04" id="area4">
+        <div class="area area--popup area-04" id="area5">
             <div class="container-fluid">
                 <img src="images/lv01-ep05/tea cup.png" alt="" class="img-responsive">
                 <a class="close-btn"><img src="images/close-btn.png" alt=""></a>
             </div>
         </div>
         <!-- .end normal area -->
+        <!-- game zone -->
+        <div class="area-01 game-01" id="area6">
+            <div class="container-fluid">
+                <h4 class="area__header">Game tương tác</h4>
+                <h3 class="text-center">Các con hãy nối các hình với hình dạng tương ứng
+                <br>
+                <i>Cái đĩa – hình tròn, Bánh quy – hình tam giác, Cốc – hình ô val, Hộp trà - hình chữ nhật</i></h3>
+                <br>
+                <div class="row list-card-a">
+                    <div class="col-xs-3">
+                        <div class="card" game-data="1">
+                            <img src="images/lv01-ep05/game-cookie.png" alt="" class="img-responsive">
+                        </div>
+                    </div>
+                    <div class="col-xs-3">
+                        <div class="card" game-data="2">
+                            <img src="images/lv01-ep05/game-plate.png" alt="" class="img-responsive">
+                        </div>
+                    </div>
+                    <div class="col-xs-3">
+                        <div class="card" game-data="3">
+                            <img src="images/lv01-ep05/game-box.png" alt="" class="img-responsive">
+                        </div>
+                    </div>
+                    <div class="col-xs-3">
+                        <div class="card" game-data="4">
+                            <img src="images/lv01-ep05/game-cup.png" alt="" class="img-responsive">
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix" style="margin-bottom: 20px;"></div>
+                <div class="row list-card-b">
+                    <div class="col-xs-3">
+                        <div class="card" game-data="4">
+                            <img src="images/lv01-ep05/game-oval.png" alt="" class="img-responsive">
+                        </div>
+                    </div>
+                    <div class="col-xs-3">
+                        <div class="card" game-data="1">
+                            <img src="images/lv01-ep05/game-triangle.png" alt="" class="img-responsive">
+                        </div>
+                    </div>
+                    <div class="col-xs-3">
+                        <div class="card" game-data="3">
+                            <img src="images/lv01-ep05/game-rectangle.png" alt="" class="img-responsive">
+                        </div>
+                    </div>
+                    <div class="col-xs-3">
+                        <div class="card" game-data="2">
+                            <img src="images/lv01-ep05/game-circle.png" alt="" class="img-responsive">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="area-control">
+                <a class="area-prev"><img src="../App_Themes/img/prev.png" alt=""></a>
+            </div>
+        </div>
+        <!-- correct popup -->
+        <div class="area area--popup area-05" id="answer-true">
+            <div class="container-fluid">
+                <img src="images/correct.png" alt="" class="img-responsive">
+                <a class="close-btn" onclick="close()"><img src="images/close-btn.png" alt=""></a>
+            </div>
+        </div>
+        <!-- wrong popup -->
+        <div class="area area--popup area-04" id="answer-false">
+            <div class="container-fluid">
+                <img src="images/wrong.png" alt="" class="img-responsive">
+                <a class="close-btn" onclick="close()"><img src="images/close-btn.png" alt=""></a>
+            </div>
+        </div>
+        <!-- local script -->
         <script type="text/javascript">
         $(function() {
+            function check() {
+                var countselected = $(".card.selected");
+                var carda = $('.list-card-a .card.selected').attr('game-data');
+                var cardb = $('.list-card-b .card.selected').attr('game-data');
+                if ((countselected.length == 2) && (carda == cardb)) {
+                    $('#answer-true').show();
+                } else if ((countselected.length == 2) && (carda != cardb)) {
+                    $('#answer-false').show();
+                }
+            };
             $(".close-btn").click(function() {
-                $("#area3").hide();
                 $("#area4").hide();
+                $("#area5").hide();
+                $("#answer-true").hide();
+                $("#answer-false").hide();
+                $(".card").removeClass("selected");
                 $("body").removeClass("fixed");
             });
-            $('.area__clickable-01 .area__button').click(function() {
-                $("body").addClass("fixed");
-                $("#area3").show();
-            });
-            $('.area__clickable-02 .area__button').click(function() {
+            $('.area__clickable-01').click(function() {
                 $("body").addClass("fixed");
                 $("#area4").show();
             });
-            $(".area-01 .area-next").click(function() {
-                $('html, body').animate({
-                    scrollTop: $("#area7").offset().top
-                }, 500);
+            $('.area__clickable-02').click(function() {
+                $("body").addClass("fixed");
+                $("#area5").show();
             });
-            $(".area-07 .area-next").click(function() {
+            $("#area1 .area-next").click(function() {
                 $('html, body').animate({
                     scrollTop: $("#area2").offset().top
                 }, 500);
             });
-            $(".area-07 .area-prev").click(function() {
+            $("#area2 .area-next").click(function() {
+                $('html, body').animate({
+                    scrollTop: $("#area3").offset().top
+                }, 500);
+            });
+            $("#area2 .area-prev").click(function() {
                 $('html, body').animate({
                     scrollTop: $("#area1").offset().top
                 }, 500);
             });
-            $(".area-02 .area-prev").click(function() {
+            $("#area3 .area-prev").click(function() {
                 $('html, body').animate({
-                    scrollTop: $("#area7").offset().top
+                    scrollTop: $("#area2").offset().top
                 }, 500);
+            });
+            $("#area3 .area-next").click(function() {
+                $('html, body').animate({
+                    scrollTop: $("#area6").offset().top
+                }, 500);
+            });
+            $("#area6 .area-prev").click(function() {
+                $('html, body').animate({
+                    scrollTop: $("#area3").offset().top
+                }, 500);
+            });
+            // js for card selected
+            $(".list-card-a .card").click(function() {
+                $(this).parent().siblings('.col-xs-3').find('.card').removeClass('selected');
+                $(this).addClass('selected');
+                check();
+            });
+            $(".list-card-b .card").click(function() {
+                $(this).parent().siblings('.col-xs-3').find('.card').removeClass('selected');
+                $(this).addClass('selected');
+                check();
             });
         });
         </script>
+        <style type="text/css" media="screen">
+        .game-01 {
+            padding: 32px 0;
+        }
+
+        .card {
+            border-radius: 10px;
+            overflow: hidden;
+            cursor: pointer;
+            transition: all 0.2s linear;
+        }
+
+        .card:hover {
+            transform: scale(0.95);
+        }
+
+        .card.selected {
+            opacity: 0.3;
+        }
+        </style>
     </div>
     <!-- JS Global Customise -->
     <script src="../Jscripts/custom.js"></script>
