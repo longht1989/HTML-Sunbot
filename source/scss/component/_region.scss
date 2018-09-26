@@ -498,26 +498,26 @@ body {
 .lv01-ep07 {
     .area {
         &-02 {
-            padding: 32px 0;
-            background-size: cover;
-            background-position: center center;
-            background-color: #F1FDF5;
-            position: relative;
-            &::before {
-                background-color: black;
-                opacity: 0.4;
-                content: '';
-                display: block;
-                position: absolute;
-                top: 0;
-                right: 0;
-                bottom: 0;
-                left: 0;
-            }
-            .area__header,
-            .area__paragraph {
-                color: white;
-            }
+            // padding: 32px 0;
+            // background-size: cover;
+            // background-position: center center;
+            // background-color: #F1FDF5;
+            // position: relative;
+            // &::before {
+            //     background-color: black;
+            //     opacity: 0.4;
+            //     content: '';
+            //     display: block;
+            //     position: absolute;
+            //     top: 0;
+            //     right: 0;
+            //     bottom: 0;
+            //     left: 0;
+            // }
+            // .area__header,
+            // .area__paragraph {
+            //     color: white;
+            // }
         }
 
         .area__clickable-01 {
