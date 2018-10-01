@@ -143,6 +143,37 @@
             </div>
             <div class="area-control">
                 <a class="area-prev"><img src="../App_Themes/img/prev.png" alt=""></a>
+                <a class="area-next"><img src="../App_Themes/img/next.png" alt=""></a>
+            </div>
+        </div>
+        <hr>
+        <div class="area-01 game-01" id="area7">
+            <div class="container-fluid">
+                <h4 class="area__header">Game tương tác</h4>
+                <h3 class="text-center">Các con hãy chỉ ra đĩa bánh với yêu cầu như sau:<br>
+                <i>có 3 cái mochi, có 4 cái bánh quy, có 5 cái donut </i></h3>
+                <br>
+                <div class="row">
+                    <div class="col-xs-4">
+                        <div class="card" data-result="game-5-cookies">
+                            <img src="images/lv01-ep05/game-donut.png" alt="" class="img-responsive">
+                        </div>
+                    </div>
+                    <div class="col-xs-4">
+                        <div class="card" data-result="game-3-cookies">
+                            <img src="images/lv01-ep05/game-mochi.png" alt="" class="img-responsive">
+                        </div>
+                    </div>
+                    <div class="col-xs-4">
+                        <div class="card" data-result="game-4-cookies">
+                            <img src="images/lv01-ep05/game-biscuit.png" alt="" class="img-responsive">
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix" style="margin-bottom: 20px;"></div>
+            </div>
+            <div class="area-control">
+                <a class="area-prev"><img src="../App_Themes/img/prev.png" alt=""></a>
             </div>
         </div>
         <!-- correct popup -->
@@ -156,6 +187,24 @@
         <div class="area area--popup area-04" id="answer-false">
             <div class="container-fluid">
                 <img src="images/wrong.png" alt="" class="img-responsive">
+                <a class="close-btn" onclick="close()"><img src="images/close-btn.png" alt=""></a>
+            </div>
+        </div>
+        <div class="area area--popup area-05" id="game-5-cookies">
+            <div class="container-fluid">
+                <img src="images/lv01-ep05/game-5-cookies.png" alt="" class="img-responsive">
+                <a class="close-btn" onclick="close()"><img src="images/close-btn.png" alt=""></a>
+            </div>
+        </div>
+        <div class="area area--popup area-05" id="game-4-cookies">
+            <div class="container-fluid">
+                <img src="images/lv01-ep05/game-4-cookies.png" alt="" class="img-responsive">
+                <a class="close-btn" onclick="close()"><img src="images/close-btn.png" alt=""></a>
+            </div>
+        </div>
+        <div class="area area--popup area-05" id="game-3-cookies">
+            <div class="container-fluid">
+                <img src="images/lv01-ep05/game-3-cookies.png" alt="" class="img-responsive">
                 <a class="close-btn" onclick="close()"><img src="images/close-btn.png" alt=""></a>
             </div>
         </div>
@@ -177,6 +226,9 @@
                 $("#area5").hide();
                 $("#answer-true").hide();
                 $("#answer-false").hide();
+                $("#game-5-cookies").hide();
+                $("#game-4-cookies").hide();
+                $("#game-3-cookies").hide();
                 $(".card").removeClass("selected");
                 $("body").removeClass("fixed");
             });
@@ -218,6 +270,16 @@
                     scrollTop: $("#area3").offset().top
                 }, 500);
             });
+            $("#area6 .area-next").click(function() {
+                $('html, body').animate({
+                    scrollTop: $("#area7").offset().top
+                }, 500);
+            });
+            $("#area7 .area-prev").click(function() {
+                $('html, body').animate({
+                    scrollTop: $("#area6").offset().top
+                }, 500);
+            });
             // js for card selected
             $(".list-card-a .card").click(function() {
                 $(this).parent().siblings('.col-xs-3').find('.card').removeClass('selected');
@@ -228,6 +290,15 @@
                 $(this).parent().siblings('.col-xs-3').find('.card').removeClass('selected');
                 $(this).addClass('selected');
                 check();
+            });
+            $("[data-result=game-5-cookies]").on("click", function() {
+                $("#game-5-cookies").show();
+            });
+            $("[data-result=game-4-cookies]").on("click", function() {
+                $("#game-4-cookies").show();
+            });
+            $("[data-result=game-3-cookies]").on("click", function() {
+                $("#game-3-cookies").show();
             });
         });
         </script>

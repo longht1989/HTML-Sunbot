@@ -92,53 +92,159 @@
                 <a class="close-btn"><img src="images/close-btn.png" alt=""></a>
             </div>
         </div>
+        <!-- game zone -->
+        <div class="area-01 game-01" id="area6">
+            <div class="container-fluid">
+                <h4 class="area__header">Game tương tác</h4>
+                <h3 class="text-center">Trẻ chọn bóng sang hình tương ứng</h3>
+                <br>
+                <div class="row list-card-a">
+                    <div class="col-xs-3">
+                        <div class="card" game-data="1">
+                            <img src="images/lv02/lv02-ep01/game-car.png" alt="" class="img-responsive">
+                        </div>
+                    </div>
+                    <div class="col-xs-3">
+                        <div class="card" game-data="2">
+                            <img src="images/lv02/lv02-ep01/game-boat.png" alt="" class="img-responsive">
+                        </div>
+                    </div>
+                    <div class="col-xs-3">
+                        <div class="card" game-data="3">
+                            <img src="images/lv02/lv02-ep01/game-trunk.png" alt="" class="img-responsive">
+                        </div>
+                    </div>
+                    <div class="col-xs-3">
+                        <div class="card" game-data="4">
+                            <img src="images/lv02/lv02-ep01/game-car-alt.png" alt="" class="img-responsive">
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix" style="margin-bottom: 20px;"></div>
+                <div class="row list-card-b">
+                    <div class="col-xs-3">
+                        <div class="card" game-data="4">
+                            <img src="images/lv02/lv02-ep01/game-car-alt-shadow.png" alt="" class="img-responsive">
+                        </div>
+                    </div>
+                    <div class="col-xs-3">
+                        <div class="card" game-data="3">
+                            <img src="images/lv02/lv02-ep01/game-trunk-shadow.png" alt="" class="img-responsive">
+                        </div>
+                    </div>
+                    <div class="col-xs-3">
+                        <div class="card" game-data="2">
+                            <img src="images/lv02/lv02-ep01/game-boat-shadow.png" alt="" class="img-responsive">
+                        </div>
+                    </div>
+                    <div class="col-xs-3">
+                        <div class="card" game-data="1">
+                            <img src="images/lv02/lv02-ep01/game-car-shadow.png" alt="" class="img-responsive">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- correct popup -->
+        <div class="area area--popup area-05" id="answer-true">
+            <div class="container-fluid">
+                <img src="images/correct.png" alt="" class="img-responsive">
+                <a class="close-btn" onclick="close()"><img src="images/close-btn.png" alt=""></a>
+            </div>
+        </div>
+        <!-- wrong popup -->
+        <div class="area area--popup area-04" id="answer-false">
+            <div class="container-fluid">
+                <img src="images/wrong.png" alt="" class="img-responsive">
+                <a class="close-btn" onclick="close()"><img src="images/close-btn.png" alt=""></a>
+            </div>
+        </div>
         <script type="text/javascript">
         $(function() {
+            function check() {
+                var countselected = $(".card.selected");
+                var carda = $('.list-card-a .card.selected').attr('game-data');
+                var cardb = $('.list-card-b .card.selected').attr('game-data');
+                if ((countselected.length == 2) && (carda == cardb)) {
+                    $('#answer-true').show();
+                } else if ((countselected.length == 2) && (carda != cardb)) {
+                    $('#answer-false').show();
+                }
+            };
             $(".close-btn").click(function() {
                 $("#area4").hide();
                 $("#area5").hide();
                 $("#area6").hide();
+                $("#answer-true").hide();
+                $("#answer-false").hide();
                 $("body").removeClass("fixed");
+                $(".card").removeClass("selected");
             });
-            $('.area__clickable-01 .area__button').click(function() {
+            $('.area__clickable-01').click(function() {
                 $("body").addClass("fixed");
                 $("#area4").show();
             });
-            $('.area__clickable-02 .area__button').click(function() {
+            $('.area__clickable-02').click(function() {
                 $("body").addClass("fixed");
                 $("#area5").show();
             });
-            $('.area__clickable-03 .area__button').click(function() {
+            $('.area__clickable-03').click(function() {
                 $("body").addClass("fixed");
                 $("#area6").show();
             });
-            $(".area-01 .area__clickable").click(function() {
-                $('html, body').animate({
-                    scrollTop: $("#area2").offset().top
-                }, 1000);
-            });
-            $(".area-01 .area-next").click(function() {
+            $("#area1 .area-next").click(function() {
                 $('html, body').animate({
                     scrollTop: $("#area2").offset().top
                 }, 500);
             });
-            $(".area-02 .area-next").click(function() {
+            $("#area2 .area-next").click(function() {
                 $('html, body').animate({
                     scrollTop: $("#area3").offset().top
                 }, 500);
             });
-            $(".area-02 .area-prev").click(function() {
+            $("#area2 .area-prev").click(function() {
                 $('html, body').animate({
                     scrollTop: $("#area1").offset().top
                 }, 500);
             });
-            $(".area-03 .area-prev").click(function() {
+            $("#area3 .area-prev").click(function() {
                 $('html, body').animate({
                     scrollTop: $("#area2").offset().top
                 }, 500);
             });
+            // js for card selected
+            $(".list-card-a .card").click(function() {
+                $(this).parent().siblings('.col-xs-3').find('.card').removeClass('selected');
+                $(this).addClass('selected');
+                check();
+            });
+            $(".list-card-b .card").click(function() {
+                $(this).parent().siblings('.col-xs-3').find('.card').removeClass('selected');
+                $(this).addClass('selected');
+                check();
+            });
         });
         </script>
+        <style type="text/css" media="screen">
+        .game-01 {
+            padding: 32px 0;
+        }
+
+        .card {
+            border-radius: 10px;
+            overflow: hidden;
+            cursor: pointer;
+            transition: all 0.2s linear;
+        }
+
+        .card:hover {
+            transform: scale(0.95);
+        }
+
+        .card.selected {
+            opacity: 0.3;
+        }
+        </style>
         <!-- .end normal area -->
         <!-- JS Global Customise -->
         <script src="../Jscripts/custom.js"></script>

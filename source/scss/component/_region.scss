@@ -738,31 +738,28 @@ body {
         &-03 {
             .area__clickable-01 {
                 position: absolute;
-                left: 67%;
-                top: 20%;
+                left: 75%;
+                top: 8%;
                 width: 4.9%;
                 height: 26.8%;
-                @include breakpoint(md) {
-                    left: 61%;
-                }
             }
             .area__clickable-02 {
                 position: absolute;
-                left: 28%;
-                top: 20%;
+                left: 28.3%;
+                top: 11%;
                 width: 4.9%;
                 height: 26.8%;
-                @include breakpoint(md) {
-                    left: 22%;
-                }
             }
             .area__clickable-03 {
                 position: absolute;
-                left: 57.8%;
-                top: 21%;
+                left: 16.8%;
+                top: 8%;
                 width: 4.9%;
                 height: 26.8%;
             }
+        }
+        .area__button {
+            transform: translate(50%, 50%);
         }
     }
 }
