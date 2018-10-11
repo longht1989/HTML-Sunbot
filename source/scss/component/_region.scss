@@ -809,43 +809,33 @@ body {
         &-03 {
             .area__clickable-01 {
                 position: absolute;
-                left: 23.8%;
-                top: 31%;
-                width: 4.9%;
-                height: 26.8%;
-                @include breakpoint(md) {
-                    top: 22%;
-                    left: 18%;
-                }
+                left: 7%;
+                top: 4%;
+                width: 23%;
+                height: 40%;
+                // background-color: blue;
+                // opacity: 0.7;
             }
             .area__clickable-02 {
                 position: absolute;
-                left: 66.8%;
-                top: 31%;
-                width: 4.9%;
-                height: 26.8%;
-                @include breakpoint(md) {
-                    top: 20%;
-                    left: 60%;
-                }
+                left: 54%;
+                top: 4%;
+                width: 20%;
+                height: 38%;
             }
             .area__clickable-03 {
                 position: absolute;
-                left: 46%;
-                top: 71%;
-                width: 4.9%;
-                height: 26.8%;
-                @include breakpoint(md) {
-                    left: 46%;
-                    top: 75%;
-                }
+                left: 30%;
+                top: 46%;
+                width: 24%;
+                height: 48%;
             }
             .area__clickable-04 {
                 position: absolute;
-                left: 84.8%;
-                top: 71%;
-                width: 4.9%;
-                height: 26.8%;
+                left: 74.8%;
+                top: 40%;
+                width: 18%;
+                height: 53%;
             }
         }
     }

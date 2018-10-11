@@ -19,6 +19,8 @@
     <link rel="stylesheet" href="../App_Themes/css/sunbot.min.css">
     <!-- JS modernizr + Jquery + Components JS-->
     <script src="../Jscripts/sunbot.min.js"></script>
+    <script src="../Jscripts/jquery-ui-1.11.4.custom/jquery-ui.min.js"></script>
+    <script src="../Jscripts/jquery-ui-1.11.4.custom/jquery.ui.touch-punch.min.js"></script>
 </head>
 
 <body>
@@ -74,105 +76,377 @@
             </div>
         </div>
         <!-- normal area -->
-        <div class="area area-03" id="area3" style="padding-bottom:0;">
+        <div class="area area-01" id="area3" style="padding: 24px 0;">
+            <div class="container-fluid">
+                <h4 class="area__header">Câu chuyện Ba chú heo con</h4>
+                <div class="area__paragraph row">
+                    <div class="col-xs-12 col-md-6" style="font-size: 18px; line-height: 1.5;">
+                        <p>Một bà mẹ heo sinh được ba chú heo con. Ba chú heo đã trưởng thành, bà mẹ nói với ba chú heo con rằng:</p>
+                        <p>“Các con giờ cũng đã lớn cả rồi. Giờ cũng là lúc ta cho các con ra đi và các con phải tự xây cho mình một căn nhà. Nhưng các con phải cẩn thận, đừng để gặp chó sói mà nó bắt ăn thịt”.</p>
+                        <p>Ba chú heo con bắt đầu lên đường</p>
+                        <p>Đi được một đoạn đường thì 3 chú heo gặp một bác nông dân đang vác trên mình một bó rơm to. Chú heo cả nói với bác: “Bác nông dân ơi, bác cho cháu bó rơm này nhé, cháu sẽ tự làm cho mình một ngôi nhà bằng rơm”.</p>
+                        <p>Bác nông dân vui vẻ trả lời: “Cháu định làm một ngôi nhà bằng rơm thật sao cậu bé, được thôi ta cho cháu cả bó rơm này đó”.</p>
+                        <p>Chú heo cả vui mừng lấy số rơm mà bác nông dân cho và dựng một ngôi nhà bằng rơm. Dựng xong chú nói: “Giờ ta đã có một ngôi nhà bằng rơm để ở, chó sói không bao giờ bắt được ta để ăn thịt nữa”</p>
+                        <p>Chú heo thứ 2 và chú heo út tiếp tục lên đường còn chú heo cả thì ở lại với ngôi nhà bằng rơm vừa làm được. Đi được một đoạn đường thì 2 chú heo gặp một bác tiều phu đang vác trên mình một bó cành cây lớn.</p>
+                        <p>Chú heo thứ 2 nói với bác tiều phu: “Bác tiều phu ơi, bác cho cháu bó cây này, cháu muốn làm một ngôi nhà bằng gỗ</p>
+                        <p>Bác tiều phu mỉm cười nói: “Được thôi cậu bé, bác cho cháu hết số cành cây này đó, nếu được cháu hãy thử dựng cho mình một ngôi nhà xem sao”.</p>
+                        <p>Chú heo thứ hai liền dựng cho mình một ngôi nhà bằng cành cây, dựng xong chú nói: “Ngôi nhà bằng cành cây này nhìn trông chắc chắn hơn ngôi nhà bằng rơm của anh cả rất nhiều, giờ thì không có con sói nào ăn thịt được ta nữa”.</p>
+                    </div>
+                    <div class="col-xs-12 col-md-6" style="font-size: 18px; line-height: 1.5;">
+                        <p>Thế là chú heo út tiếp tục một mình lên đường, còn chú heo thứ hai thì ở lại với ngôi nhà mà chú vừa mới làm xong. Đi được một quãng đường, chú heo út gặp một bác thợ xây đang kéo trên xe rất nhiều viên gạch.</p>
+                        <p>Chú heo út đứng lại chào bác, chú nói: “Bác thợ xây ơi, bác có thể cho cháu số gạch trên được không bác?, cháu sẽ xây cho mình một ngôi nhà bằng gạch”.</p>
+                        <p>” Được thôi, chú bé,” Bác ấy cho chú heo con một số gạch.</p>
+                        <p>Rồi chú heo út tự mình xây một ngôi nhà bằng gạch. Phải mất thời gian khá lâu mới hoàn thành, đó là một ngôi nhà rất chắc chắn.</p>
+                        <p>Chú heo út rất hài lòng với căn nhà của mình. Chú nói, ” Bây giờ, Chó sói sẽ không bao giờ bắt và ăn thịt ta được”</p>
+                        <p>Hôm sau một chó sói xuất hiện trên đường. Nó đi đến ngôi nhà bằng rơm của chú heo cả. Khi trông thấy chó sói, chú heo cả vội vàng chạy vào nhà và đớng cửa lại.</p>
+                        <p>Chó sói gõ cửa và nói, ” Này heo con, này heo con, mở cửa cho ta vào với.”</p>
+                        <p>” Không, không” chú heo con nói. ” Ta đã thề, ta đã thề, Ta không để mi vào.”</p>
+                        <p>” Được rồi Ta bực mình và ta bực mình và Ta sẽ thổi tung căn nhà của ngươi,” chó sói gầm gừ.</p>
+                        <p>Nói rồi nó thổi và nó thổi,nó thổi và nó thổi. Ngôi nhà bằng rơm xập xuống, chú lợn cả trốn sang nhà lợn hai</p>
+                        <p>Sói xám lại đuổi theo tới trước ngôi nhà làm bằng gỗ của Lợn anh hai, nó lấy đà và dùng đầu xô một cái thật mạnh vào căn nhà gỗ, thế là căn nhà bị đổ nghiêng sang một bên. Hai chú Lợn sợ quá, liền chạy đến trốn ở nhà Lợn út.</p>
+                        <p>Sói xám lại đuổi tới nhà của Lợn út, nó cũng hít một hơi thật sâu và thổi thật mạnh, nhưng căn nhà vẫn đứng yên. Nó lại dùng đầu húc mạnh vào tường nhưng căn nhà vẫn không hề suy chuyển, ngược lại đầu Sói xám còn bị sưng lên đau đớn. Sói xám nhìn thấy trên nóc nhà có một cái ống khói, nó bèn nảy ra ý định vào nhà bằng đường ống khói. Nhưng ba chú Lợn con đã chuẩn bị trước rồi, các chú đã đun một nồi nước sôi dưới chân ống khói, đợi Sói xám tự chui xuống. Kết quả là Sói xám rơi trúng vào nồi nước sôi và bị chết bỏng</p>
+                    </div>
+                </div>
+            </div>
+            <div class="area-control">
+                <a class="area-prev"><img src="../App_Themes/img/prev.png" alt=""></a>
+                <a class="area-next"><img src="../App_Themes/img/next.png" alt=""></a>
+            </div>
+        </div>
+        <!-- normal area -->
+        <hr>
+        <div class="area area-03" id="area4" style="padding-bottom:0;">
             <div class="area__bg">
                 <img class="img-responsive" src="images/lv02/lv02-ep03/Lv02-03.png" alt="">
-                <a href="#area4" class="area__clickable-01">
+                <a class="area__clickable area__clickable-01">
                     <div class="area__button"><img src="images/hint.gif" alt=""></div>
                 </a>
-                <a href="#area5" class="area__clickable-02">
+                <a class="area__clickable area__clickable-02">
                     <div class="area__button"><img src="images/hint.gif" alt=""></div>
                 </a>
-                <a href="#area6" class="area__clickable-03">
+                <a class="area__clickable area__clickable-03">
                     <div class="area__button"><img src="images/hint.gif" alt=""></div>
                 </a>
-                <a href="#area7" class="area__clickable-04">
+                <a class="area__clickable area__clickable-04">
                     <div class="area__button"><img src="images/hint.gif" alt=""></div>
                 </a>
             </div>
             <div class="area-control">
                 <a class="area-prev"><img src="../App_Themes/img/prev.png" alt=""></a>
+                <a class="area-next"><img src="../App_Themes/img/next.png" alt=""></a>
             </div>
         </div>
-        <div class="area area--popup area-04" id="area4">
+        <div class="area area--popup area-04" id="area5">
             <div class="container-fluid">
                 <img src="images/lv02/lv02-ep03/woodhouse.png" alt="" class="img-responsive">
                 <a class="close-btn"><img src="images/close-btn.png" alt=""></a>
             </div>
         </div>
-        <div class="area area--popup area-05" id="area5">
+        <div class="area area--popup area-05" id="area6">
             <div class="container-fluid">
                 <img src="images/lv02/lv02-ep03/strawhouse.png" alt="" class="img-responsive">
                 <a class="close-btn"><img src="images/close-btn.png" alt=""></a>
             </div>
         </div>
-        <div class="area area--popup area-04" id="area6">
+        <div class="area area--popup area-04" id="area7">
             <div class="container-fluid">
                 <img src="images/lv02/lv02-ep03/brickhouse.png" alt="" class="img-responsive">
                 <a class="close-btn"><img src="images/close-btn.png" alt=""></a>
             </div>
         </div>
-        <div class="area area--popup area-05" id="area7">
+        <div class="area area--popup area-05" id="area8">
             <div class="container-fluid">
                 <img src="images/lv02/lv02-ep03/apartment.png" alt="" class="img-responsive">
                 <a class="close-btn"><img src="images/close-btn.png" alt=""></a>
             </div>
         </div>
+        <!-- game zone -->
+        <hr>
+        <div class="area-01 game-01" id="area9">
+            <div class="container-fluid">
+                <h4 class="area__header">Game tương tác</h4>
+                <h3 class="text-center">Yêu cầu: trẻ phải sắp xếp thứ tự từ 1 – 5 theo trình tự câu chuyện</h3>
+                <br>
+                <div class="row sortable" id="sortable1">
+                    <div class="col-xs-20p">
+                        <div class="card" data-value="4">
+                            <img src="images/lv02/lv02-ep03/game-no4.png" alt="" class="img-responsive">
+                        </div>
+                    </div>
+                    <div class="col-xs-20p">
+                        <div class="card" data-value="2">
+                            <img src="images/lv02/lv02-ep03/game-no2.png" alt="" class="img-responsive">
+                        </div>
+                    </div>
+                    <div class="col-xs-20p">
+                        <div class="card" data-value="1">
+                            <img src="images/lv02/lv02-ep03/game-no1.png" alt="" class="img-responsive">
+                        </div>
+                    </div>
+                    <div class="col-xs-20p">
+                        <div class="card" data-value="5">
+                            <img src="images/lv02/lv02-ep03/game-no5.png" alt="" class="img-responsive">
+                        </div>
+                    </div>
+                    <div class="col-xs-20p">
+                        <div class="card" data-value="3">
+                            <img src="images/lv02/lv02-ep03/game-no3.png" alt="" class="img-responsive">
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix" style="margin-bottom: 20px;"></div>
+                <div class="text-center">
+                    <button class="btn btn-success btn-lg" id="btn-check-1" onclick="check('sortable1')">Kiểm tra</button>
+                </div>
+            </div>
+            <div class="area-control">
+                <a class="area-prev"><img src="../App_Themes/img/prev.png" alt=""></a>
+                <a class="area-next"><img src="../App_Themes/img/next.png" alt=""></a>
+            </div>
+        </div>
+        <!-- game zone -->
+        <hr>
+        <div class="area-01 game-01" id="area10">
+            <div class="container-fluid">
+                <h4 class="area__header">Game tương tác</h4>
+                <h3 class="text-center">Yêu cầu bé chọn bên nào nặng hơn</h3>
+                <br>
+                <br>
+                <div class="row">
+                    <div class="col-xs-4 col-md-offset-3 col-md-2">
+                        <div class="card" data-result="true">
+                            <img src="images/lv02/lv02-ep03/game-car.png" alt="" class="img-responsive">
+                        </div>
+                    </div>
+                    <div class="col-xs-4 col-md-2">
+                        <div class="card disable">
+                            <img src="images/lv02/lv02-ep03/game-weigh.png" alt="" class="img-responsive">
+                        </div>
+                    </div>
+                    <div class="col-xs-4 col-md-2">
+                        <div class="card" data-result="false">
+                            <img src="images/lv02/lv02-ep03/game-bike.png" alt="" class="img-responsive">
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix" style="margin-bottom: 40px;"></div>
+                <div class="row">
+                    <div class="col-xs-4 col-md-offset-3 col-md-2">
+                        <div class="card" data-result="false">
+                            <img src="images/lv02/lv02-ep03/game-motor.png" alt="" class="img-responsive">
+                        </div>
+                    </div>
+                    <div class="col-xs-4 col-md-2">
+                        <div class="card disable">
+                            <img src="images/lv02/lv02-ep03/game-weigh.png" alt="" class="img-responsive">
+                        </div>
+                    </div>
+                    <div class="col-xs-4 col-md-2">
+                        <div class="card" data-result="true">
+                            <img src="images/lv02/lv02-ep03/game-truck.png" alt="" class="img-responsive">
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix" style="margin-bottom: 40px;"></div>
+                <div class="row">
+                    <div class="col-xs-4 col-md-offset-3 col-md-2">
+                        <div class="card" data-result="false">
+                            <img src="images/lv02/lv02-ep03/game-straw.png" alt="" class="img-responsive">
+                        </div>
+                    </div>
+                    <div class="col-xs-4 col-md-2">
+                        <div class="card disable">
+                            <img src="images/lv02/lv02-ep03/game-weigh.png" alt="" class="img-responsive">
+                        </div>
+                    </div>
+                    <div class="col-xs-4 col-md-2">
+                        <div class="card" data-result="true">
+                            <img src="images/lv02/lv02-ep03/game-brick.png" alt="" class="img-responsive">
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix" style="margin-bottom: 40px;"></div>
+                <div class="row">
+                    <div class="col-xs-4 col-md-offset-3 col-md-2">
+                        <div class="card" data-result="false">
+                            <img src="images/lv02/lv02-ep03/game-wood.png" alt="" class="img-responsive">
+                        </div>
+                    </div>
+                    <div class="col-xs-4 col-md-2">
+                        <div class="card disable">
+                            <img src="images/lv02/lv02-ep03/game-weigh.png" alt="" class="img-responsive">
+                        </div>
+                    </div>
+                    <div class="col-xs-4 col-md-2">
+                        <div class="card" data-result="true">
+                            <img src="images/lv02/lv02-ep03/game-apartment.png" alt="" class="img-responsive">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="area-control">
+                <a class="area-prev"><img src="../App_Themes/img/prev.png" alt=""></a>
+            </div>
+        </div>
+        <!-- correct popup -->
+        <div class="area area--popup area-05" id="answer-true">
+            <div class="container-fluid">
+                <img src="images/correct.png" alt="" class="img-responsive">
+                <a class="close-btn" onclick="close()"><img src="images/close-btn.png" alt=""></a>
+            </div>
+        </div>
+        <!-- wrong popup -->
+        <div class="area area--popup area-04" id="answer-false">
+            <div class="container-fluid">
+                <img src="images/wrong.png" alt="" class="img-responsive">
+                <a class="close-btn" onclick="close()"><img src="images/close-btn.png" alt=""></a>
+            </div>
+        </div>
         <script type="text/javascript">
         $(function() {
             $(".close-btn").click(function() {
-                $("#area4").hide();
                 $("#area5").hide();
                 $("#area6").hide();
                 $("#area7").hide();
+                $("#area8").hide();
+                $("#answer-true").hide();
+                $("#answer-false").hide();
                 $("body").removeClass("fixed");
             });
-            $('.area__clickable-01 .area__button').click(function() {
+            $('.area__clickable').click(function() {
                 $("body").addClass("fixed");
-                $("#area4").show();
             });
-            $('.area__clickable-02 .area__button').click(function() {
-                $("body").addClass("fixed");
+            $('.area__clickable-01').click(function() {
                 $("#area5").show();
             });
-            $('.area__clickable-03 .area__button').click(function() {
-                $("body").addClass("fixed");
+            $('.area__clickable-02').click(function() {
                 $("#area6").show();
             });
-            $('.area__clickable-04 .area__button').click(function() {
-                $("body").addClass("fixed");
+            $('.area__clickable-03').click(function() {
                 $("#area7").show();
             });
-            $(".area-01 .area__clickable").click(function() {
-                $('html, body').animate({
-                    scrollTop: $("#area2").offset().top
-                }, 1000);
+            $('.area__clickable-04').click(function() {
+                $("#area8").show();
             });
-            $(".area-01 .area-next").click(function() {
+            $("#area1 .area-next").click(function() {
                 $('html, body').animate({
                     scrollTop: $("#area2").offset().top
                 }, 500);
             });
-            $(".area-02 .area-next").click(function() {
+            $("#area2 .area-next").click(function() {
                 $('html, body').animate({
                     scrollTop: $("#area3").offset().top
                 }, 500);
             });
-            $(".area-02 .area-prev").click(function() {
+            $("#area2 .area-prev").click(function() {
                 $('html, body').animate({
                     scrollTop: $("#area1").offset().top
                 }, 500);
             });
-            $(".area-03 .area-prev").click(function() {
+            $("#area3 .area-prev").click(function() {
                 $('html, body').animate({
                     scrollTop: $("#area2").offset().top
                 }, 500);
             });
+            $("#area3 .area-next").click(function() {
+                $('html, body').animate({
+                    scrollTop: $("#area4").offset().top
+                }, 500);
+            });
+            $("#area4 .area-prev").click(function() {
+                $('html, body').animate({
+                    scrollTop: $("#area3").offset().top
+                }, 500);
+            });
+            $("#area4 .area-next").click(function() {
+                $('html, body').animate({
+                    scrollTop: $("#area9").offset().top
+                }, 500);
+            });
+            $("#area9 .area-prev").click(function() {
+                $('html, body').animate({
+                    scrollTop: $("#area4").offset().top
+                }, 500);
+            });
+            $("#area9 .area-next").click(function() {
+                $('html, body').animate({
+                    scrollTop: $("#area10").offset().top
+                }, 500);
+            });
+            $("#area10 .area-prev").click(function() {
+                $('html, body').animate({
+                    scrollTop: $("#area9").offset().top
+                }, 500);
+            });
+            // sortable & dragable
+            $(".sortable").sortable({
+                revert: true
+            });
+            $("#draggable").draggable({
+                connectToSortable: ".sortable",
+                helper: "clone",
+                revert: "invalid"
+            });
+            $("ul, li").disableSelection();
+            // true/false answer
+            $("[data-result=false]").on("click", function() {
+                $("#answer-false").show();
+            });
+            $("[data-result=true]").on("click", function() {
+                $("#answer-true").show();
+            });
         });
+
+        function check(quest_id) {
+            var data = $("#" + quest_id + " .card");
+            var istrue = true;
+            for (i = 0; i < data.length - 1; i++) {
+                if (data[i].getAttribute('data-value') > data[i + 1].getAttribute('data-value')) {
+                    istrue = false;
+                    break;
+                }
+            }
+            if (istrue) {
+                $("#answer-true").show();
+            } else {
+                $("#answer-false").show();
+            }
+        }
         </script>
         <!-- .end normal area -->
         <!-- JS Global Customise -->
         <script src="../Jscripts/custom.js"></script>
+        <style type="text/css" media="screen">
+        .game-01 {
+            padding: 32px 0;
+        }
+
+        .card {
+            border-radius: 10px;
+            overflow: hidden;
+            cursor: pointer;
+            transition: all 0.2s linear;
+        }
+
+        .card:hover {
+            transform: scale(0.95);
+        }
+
+        .card.selected {
+            opacity: 0.3;
+        }
+
+        .card.disable:hover {
+            transform: none;
+            cursor: default;
+        }
+
+        .col-xs-20p {
+            width: 20%;
+            float: left;
+            padding: 0 10px;
+        }
+        </style>
         <!-- Js Dev plugin -->
         <!--[if lt IE 9]>
             <script src="../Jscripts/vendor/respond.js"></script>
