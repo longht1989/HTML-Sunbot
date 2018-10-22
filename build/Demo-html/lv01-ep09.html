@@ -169,24 +169,52 @@
                 <h3 class="text-center">Bé hãy tìm cho cô những số sau: 6,7,8,9</h3>
                 <br>
                 <div class="row">
-                    <div class="col-xs-3"><img data-result="true" src="images/lv01-ep09/n9.png" alt="" class="img-responsive"></div>
+                    <div class="col-xs-3"><img data-target="game-9-books" src="images/lv01-ep09/n9.png" alt="" class="img-responsive"></div>
                     <div class="col-xs-3"><img data-result="false" src="images/lv01-ep09/n5.png" alt="" class="img-responsive"></div>
-                    <div class="col-xs-3"><img data-result="true" src="images/lv01-ep09/n3.png" alt="" class="img-responsive"></div>
+                    <div class="col-xs-3"><img data-result="false" src="images/lv01-ep09/n3.png" alt="" class="img-responsive"></div>
                     <div class="col-xs-3"><img data-result="false" src="images/lv01-ep09/n4.png" alt="" class="img-responsive"></div>
                     <div class="clearfix" style="margin-bottom: 20px;"></div>
                     <div class="col-xs-3"><img data-result="false" src="images/lv01-ep09/n3.png" alt="" class="img-responsive"></div>
-                    <div class="col-xs-3"><img data-result="true" src="images/lv01-ep09/n8.png" alt="" class="img-responsive"></div>
-                    <div class="col-xs-3"><img data-result="true" src="images/lv01-ep09/n9-1.png" alt="" class="img-responsive"></div>
-                    <div class="col-xs-3"><img data-result="true" src="images/lv01-ep09/n6.png" alt="" class="img-responsive"></div>
+                    <div class="col-xs-3"><img data-target="game-8-books" src="images/lv01-ep09/n8.png" alt="" class="img-responsive"></div>
+                    <div class="col-xs-3"><img data-target="game-9-books" src="images/lv01-ep09/n9-1.png" alt="" class="img-responsive"></div>
+                    <div class="col-xs-3"><img data-target="game-6-books" src="images/lv01-ep09/n6.png" alt="" class="img-responsive"></div>
                     <div class="clearfix" style="margin-bottom: 20px;"></div>
                     <div class="col-xs-3"><img data-result="false" src="images/lv01-ep09/n2.png" alt="" class="img-responsive"></div>
                     <div class="col-xs-3"><img data-result="false" src="images/lv01-ep09/n1.png" alt="" class="img-responsive"></div>
-                    <div class="col-xs-3"><img data-result="true" src="images/lv01-ep09/n7.png" alt="" class="img-responsive"></div>
-                    <div class="col-xs-3"><img data-result="true" src="images/lv01-ep09/n8-1.png" alt="" class="img-responsive"></div>
+                    <div class="col-xs-3"><img data-target="game-7-books" src="images/lv01-ep09/n7.png" alt="" class="img-responsive"></div>
+                    <div class="col-xs-3"><img data-target="game-8-books" src="images/lv01-ep09/n8-1.png" alt="" class="img-responsive"></div>
                 </div>
             </div>
         </div>
-        <!-- correc popup -->
+        <!-- 6 books popup -->
+        <div class="area area--popup area-05" id="game-6-books">
+            <div class="container-fluid">
+                <img src="images/lv01-ep09/game-6-books.png" alt="" class="img-responsive">
+                <a class="close-btn"><img src="images/close-btn.png" alt=""></a>
+            </div>
+        </div>
+        <!-- 7 books popup -->
+        <div class="area area--popup area-05" id="game-7-books">
+            <div class="container-fluid">
+                <img src="images/lv01-ep09/game-7-books.png" alt="" class="img-responsive">
+                <a class="close-btn"><img src="images/close-btn.png" alt=""></a>
+            </div>
+        </div>
+        <!-- 8 books popup -->
+        <div class="area area--popup area-05" id="game-8-books">
+            <div class="container-fluid">
+                <img src="images/lv01-ep09/game-8-books.png" alt="" class="img-responsive">
+                <a class="close-btn"><img src="images/close-btn.png" alt=""></a>
+            </div>
+        </div>
+        <!-- 9 books popup -->
+        <div class="area area--popup area-05" id="game-9-books">
+            <div class="container-fluid">
+                <img src="images/lv01-ep09/game-9-books.png" alt="" class="img-responsive">
+                <a class="close-btn"><img src="images/close-btn.png" alt=""></a>
+            </div>
+        </div>
+        <!-- correct popup -->
         <div class="area area--popup area-05" id="answer-true">
             <div class="container-fluid">
                 <img src="images/correct.png" alt="" class="img-responsive">
@@ -225,6 +253,7 @@
             $("#area5").hide();
             $("#area6").hide();
             $("#area7").hide();
+            $('.area--popup').hide();
             $("#answer-false").hide();
             $("#answer-true").hide();
             $("body").removeClass("fixed");
@@ -270,6 +299,18 @@
         });
         $("[data-result=false]").on("click", function() {
             $("#answer-false").show();
+        });
+        $("[data-target=game-6-books]").on("click", function() {
+            $("#game-6-books").show();
+        });
+        $("[data-target=game-7-books]").on("click", function() {
+            $("#game-7-books").show();
+        });
+        $("[data-target=game-8-books]").on("click", function() {
+            $("#game-8-books").show();
+        });
+        $("[data-target=game-9-books]").on("click", function() {
+            $("#game-9-books").show();
         });
     });
     </script>

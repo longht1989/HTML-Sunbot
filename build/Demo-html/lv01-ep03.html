@@ -102,7 +102,7 @@
                 <h4 class="area__header">Game tương tác</h4>
                 <h3 class="text-center">Các con hãy chọn giúp cô/ thầy loại thức ăn nào có lợi cho sức khỏe nhé!</h3>
                 <br>
-                <div class="row">
+                <div class="row" id="shuffle">
                     <div class="col-xs-4">
                         <div class="card" id="game-cake">
                             <img src="images/lv01-ep03/game-cake.png" alt="" class="img-responsive card-front">
@@ -274,6 +274,13 @@
             </div>
         </div>
         <script type="text/javascript">
+        function shuffle() {
+            var parent = $("#shuffle");
+            var divs = parent.children('.col-xs-4');
+            while (divs.length) {
+                parent.append(divs.splice(Math.floor(Math.random() * divs.length), 1)[0]);
+            }
+        }
         $(function() {
             $(".close-btn").click(function() {
                 $("#area3").hide();
@@ -359,6 +366,7 @@
                 }, 500);
             });
             // js for game
+            shuffle();
             $('#game-cake .card-back').click(function() {
                 $("body").addClass("fixed");
                 $("#area11").show();
@@ -380,6 +388,7 @@
                 $("#count-down").delay(5000).fadeOut();
             });
             $("#btn-refresh").click(function() {
+                shuffle();
                 $('.card-back').fadeOut();
                 $('.card-front').fadeIn();
                 $("#btn-start").fadeIn();

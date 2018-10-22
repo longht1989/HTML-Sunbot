@@ -37,7 +37,7 @@
             </div>
         </div>
         <!-- .end header area -->
-        <div class="area area-07" id="area7" style="padding:128px 0;background-image: url(images/lv01-ep06/garden01.png);background-size: cover;background-position: center center;background-color: #F1FDF5;">
+        <div class="area area-07" id="area7" style="padding:128px 0;background-image: url(images/lv01-ep06/garden01.png);background-size: cover;background-position: bottom;background-color: white;background-repeat: no-repeat;">
             <div class="container-fluid">
                 <h4 class="area__header">Làm vườn</h4>
                 <div class="area__paragraph">
@@ -146,9 +146,25 @@
         <div class="area-01 game-01" id="area6">
             <div class="container-fluid">
                 <h4 class="area__header">Game tương tác</h4>
-                <h3 class="text-center">Tìm điểm khách nhau của bức tranh</h3>
+                <h3 class="text-center">Tìm điểm khách nhau của bức tranh 
+                <br><i>( chạm vào hình ảnh bên trái )</i></h3>
                 <br>
-                <img src="images/lv01-ep06/garden compare.png" alt="" class="img-responsive">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6">
+                        <div class="game-origin">
+                            <img src="images/lv01-ep06/garden-origin.png" alt="" class="img-responsive">
+                            <a class="clickable-01" data-result="true"></a>
+                            <a class="clickable-02" data-result="true"></a>
+                            <a class="clickable-03" data-result="true"></a>
+                            <a class="clickable-04" data-result="true"></a>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6">
+                        <div class="game-extend">
+                            <img src="images/lv01-ep06/garden-extend.png" alt="" class="img-responsive">
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <!-- correct popup -->
@@ -230,6 +246,9 @@
                 $(this).addClass('selected');
                 check();
             });
+            $("[data-result=true]").on("click", function() {
+                $("#answer-true").show();
+            });
         });
         </script>
         <style type="text/css" media="screen">
@@ -250,6 +269,46 @@
 
         .card.selected {
             opacity: 0.3;
+        }
+
+        .game-origin {
+            position: relative;
+        }
+
+        .game-origin .clickable-01 {
+            cursor: pointer;
+            position: absolute;
+            width: 40%;
+            height: 54%;
+            top: 0%;
+            left: 53%;
+        }
+
+        .game-origin .clickable-02 {
+            cursor: pointer;
+            position: absolute;
+            width: 19%;
+            height: 39%;
+            top: 16%;
+            left: 28%;
+        }
+
+        .game-origin .clickable-03 {
+            cursor: pointer;
+            position: absolute;
+            width: 16%;
+            height: 22%;
+            top: 74%;
+            left: 78%;
+        }
+
+        .game-origin .clickable-04 {
+            cursor: pointer;
+            position: absolute;
+            top: 69%;
+            left: 19%;
+            height: 19%;
+            width: 7%;
         }
         </style>
     </div>
