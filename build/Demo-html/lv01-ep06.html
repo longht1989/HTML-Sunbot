@@ -58,13 +58,13 @@
                 <h4 class="area__header">Khu vườn của bé</h4>
                 <div class="area__bg">
                     <img class="img-responsive" src="images/lv01-ep06/garden.png" alt="">
-                    <a href="#area3" class="area__clickable-01">
+                    <a class="area__clickable-01">
                         <div class="area__button"><img src="images/hint.gif" alt=""></div>
                     </a>
-                    <a href="#area4" class="area__clickable-02">
+                    <a class="area__clickable-02">
                         <div class="area__button"><img src="images/hint.gif" alt=""></div>
                     </a>
-                    <a href="#area5" class="area__clickable-03">
+                    <a class="area__clickable-03">
                         <div class="area__button"><img src="images/hint.gif" alt=""></div>
                     </a>
                 </div>
@@ -203,15 +203,15 @@
                 $("body").removeClass("fixed");
                 $(".card").removeClass("selected");
             });
-            $('.area__clickable-01 .area__button').click(function() {
+            $('.area__clickable-01').click(function() {
                 $("body").addClass("fixed");
                 $("#area3").show();
             });
-            $('.area__clickable-02 .area__button').click(function() {
+            $('.area__clickable-02').click(function() {
                 $("body").addClass("fixed");
                 $("#area4").show();
             });
-            $('.area__clickable-03 .area__button').click(function() {
+            $('.area__clickable-03').click(function() {
                 $("body").addClass("fixed");
                 $("#area5").show();
             });

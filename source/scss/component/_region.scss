@@ -4,9 +4,11 @@
 
 .area {
     position: relative;
+
     &__bg {
         position: relative;
     }
+
     &__clickable {
         width: 27%;
         height: 40%;
@@ -14,6 +16,7 @@
         right: 15.3%;
         bottom: 11%;
     }
+
     &__button {
         position: absolute;
         top: 50%;
@@ -24,28 +27,34 @@
             height: auto;
         }
     }
+
     &__paragraph {
         font-size: 36px;
         line-height: 1.6em;
         text-align: center;
+
         @include breakpoint(xs) {
             margin-top: 24px;
             font-size: 24px;
         }
+
         &.is-small {
             font-size: 18px;
         }
     }
+
     &__header {
         font-size: 60px;
         line-height: 1.1em;
         margin-bottom: 24px;
         text-align: center;
+
         @include breakpoint(xs) {
             margin-top: 24px;
             font-size: 32px;
         }
     }
+
     &--popup {
         position: fixed;
         top: 0;
@@ -54,26 +63,32 @@
         left: 0;
         display: none;
         z-index: 2;
+
         @include breakpoint(xs) {
             // padding: 64px 0;
         }
+
         .area__header {
             padding-top: 64px;
+
             @include breakpoint(md) {
                 font-size: 80px;
                 text-transform: uppercase;
             }
         }
+
         .close-btn {
             cursor: pointer;
             position: fixed;
             top: 5%;
             right: 3%;
+
             img {
                 width: 32px;
                 height: auto;
             }
         }
+
         .img-responsive {
             @include breakpoint(md) {
                 // height: 100%;
@@ -81,8 +96,10 @@
             }
         }
     }
+
     &--textoverlay {
         position: relative;
+
         .textoverlay {
             position: absolute;
             top: 10px;
@@ -91,30 +108,37 @@
             text-align: center;
             z-index: 3;
         }
+
         &.has-mask {
             .textoverlay {
                 color: white;
             }
         }
     }
+
     &-01 {
         position: relative;
+
         .area__clickable {
             .area__button {
                 transform: translate(0%, 0%);
+
                 @include breakpoint(md) {
                     transform: translate(-50%, 60%);
                 }
             }
         }
     }
+
     &-02 {
         background-color: #D6F7FE;
         padding: 124px 0;
+
         @include breakpoint(xs) {
             padding: 0 0 64px;
         }
     }
+
     &-03 {
         .area__clickable {
             &-01 {
@@ -123,21 +147,26 @@
                 position: absolute;
                 right: 44.3%;
                 bottom: 54%;
+
                 .area__button {
                     transform: translate(-50%, -50%);
+
                     @include breakpoint(md) {
                         transform: translate(160%, 60%);
                     }
                 }
             }
+
             &-02 {
                 width: 35%;
                 height: 24.5%;
                 position: absolute;
                 right: 4.3%;
                 bottom: 41%;
+
                 .area__button {
                     transform: translate(-50%, -50%);
+
                     @include breakpoint(md) {
                         transform: translate(160%, 60%);
                     }
@@ -145,49 +174,60 @@
             }
         }
     }
+
     &-04 {
         background-color: #FFF0E3;
+
         @include breakpoint(xs) {}
+
         .close-btn {
             cursor: pointer;
             position: fixed;
             top: 5%;
             right: 3%;
+
             img {
                 width: 32px;
                 height: auto;
             }
         }
     }
+
     &-05,
     &-07 {
         background: #F1FDF5;
     }
+
     &-06 {
         background-color: #FFF0E3;
     }
+
     &-next {
         position: absolute;
         bottom: 16px;
         right: 16px;
         cursor: pointer;
         width: 32px;
+
         img {
             width: 100%;
             height: auto;
         }
     }
+
     &-prev {
         position: absolute;
         bottom: 16px;
         left: 16px;
         cursor: pointer;
         width: 32px;
+
         img {
             width: 100%;
             height: auto;
         }
     }
+
     &.has-mask {
         &::before {
             content: '';
@@ -229,26 +269,31 @@ body {
         &-03 {
             background-color: #fef0e3;
         }
+
         &__clickable-01 {
             width: 15.7%;
             height: 24.6%;
             position: absolute;
             right: 29.2%;
             bottom: 35%;
+
             .area__button {
                 transform: translate(0, 0);
             }
         }
+
         &__clickable-02 {
             width: 13.5%;
             height: 27%;
             position: absolute;
             right: 13.7%;
             bottom: 31.5%;
+
             .area__button {
                 transform: translate(0, 0);
             }
         }
+
         &__clickable-03 {
             width: 17%;
             height: 11.5%;
@@ -256,6 +301,7 @@ body {
             right: 11.7%;
             bottom: 86%;
         }
+
         &__clickable-04 {
             width: 12%;
             height: 11.5%;
@@ -271,10 +317,12 @@ body {
     .area {
         &-02 {
             padding: 32px 0 0;
+
             .area__header {
                 margin: 0;
             }
         }
+
         .area__clickable-01 {
             position: absolute;
             width: 20%;
@@ -282,6 +330,7 @@ body {
             left: 5.6%;
             top: 13%;
         }
+
         .area__clickable-02 {
             position: absolute;
             width: 26.7%;
@@ -289,6 +338,7 @@ body {
             left: 67.8%;
             top: 9.7%;
         }
+
         .area__clickable-03 {
             position: absolute;
             width: 23.8%;
@@ -296,6 +346,7 @@ body {
             left: 35%;
             top: 12.5%;
         }
+
         .area__clickable-04 {
             position: absolute;
             width: 28%;
@@ -303,6 +354,7 @@ body {
             left: 17.5%;
             top: 60.2%;
         }
+
         .area__clickable-05 {
             position: absolute;
             width: 17.1%;
@@ -310,18 +362,23 @@ body {
             left: 60.1%;
             top: 54.2%;
         }
+
         .area__button {
             transform: translate(50%, 50%);
         }
+
         &-03,
         &-05,
         &-07 {
             background: #F1FDF5;
+
             .img-responsive {}
         }
+
         &-04,
         &-06 {
             background-color: #FFF0E3;
+
             .img-responsive {}
         }
     }
@@ -336,6 +393,7 @@ body {
                 padding-top: 24px;
             }
         }
+
         .area__clickable-01 {
             position: absolute;
             width: 15.7%;
@@ -343,6 +401,7 @@ body {
             left: 29%;
             top: 32%;
         }
+
         .area__clickable-02 {
             position: absolute;
             width: 15.4%;
@@ -350,6 +409,7 @@ body {
             left: 2.8%;
             top: 37%;
         }
+
         .area__clickable-03 {
             position: absolute;
             width: 15.4%;
@@ -357,6 +417,7 @@ body {
             left: 82%;
             top: 36.6%;
         }
+
         .area__clickable-04 {
             position: absolute;
             width: 15.5%;
@@ -364,24 +425,30 @@ body {
             left: 55.6%;
             top: 31%;
         }
+
         .area__button {
             transform: translate(50%, 50%);
         }
+
         &-03,
         &-05,
         &-07 {
             background: #F1FDF5;
+
             .img-responsive {
                 // max-width: 80%;
             }
         }
+
         &-04,
         &-06 {
             background-color: #FFF0E3;
+
             .img-responsive {
                 // max-width: 80%;
             }
         }
+
         &--popup {
             .img-responsive {
                 // max-width: 60%;
@@ -389,8 +456,10 @@ body {
                 margin-right: auto;
             }
         }
+
         &-07 {
             padding: 32px 0;
+
             .area__header {
                 margin-top: 0;
             }
@@ -403,10 +472,12 @@ body {
     .area {
         &-02 {
             padding: 0;
+
             .area__header {
                 margin-top: 0;
             }
         }
+
         .area__clickable-01 {
             position: absolute;
             left: 16%;
@@ -414,6 +485,7 @@ body {
             width: 13.6%;
             height: 11%;
         }
+
         .area__clickable-02 {
             position: absolute;
             left: 38.7%;
@@ -421,24 +493,31 @@ body {
             width: 6.8%;
             height: 12%;
         }
+
         &-03,
         &-05 {
             background: #F1FDF5;
+
             .img-responsive {}
         }
+
         &-04 {
             background-color: #FFF0E3;
+
             .img-responsive {}
         }
+
         &-07 {
             padding: 32px 0;
         }
+
         &--popup {
             .img-responsive {
                 margin-left: auto;
                 margin-right: auto;
             }
         }
+
         .area__button {
             transform: translate(50%, 50%);
         }
@@ -454,6 +533,7 @@ body {
                 padding-top: 24px;
             }
         }
+
         .area__clickable-01 {
             position: absolute;
             left: 2%;
@@ -461,6 +541,7 @@ body {
             width: 17.9%;
             height: 15.7%;
         }
+
         .area__clickable-02 {
             position: absolute;
             left: 42%;
@@ -468,6 +549,7 @@ body {
             width: 57.9%;
             height: 36.7%;
         }
+
         .area__clickable-03 {
             position: absolute;
             left: 73%;
@@ -475,15 +557,20 @@ body {
             width: 16.1%;
             height: 13.8%;
         }
+
         &-03,
         &-05 {
             background: #F1FDF5;
+
             .img-responsive {}
         }
+
         &-04 {
             background-color: #FFF0E3;
+
             .img-responsive {}
         }
+
         &--popup {
             .img-responsive {
 
@@ -562,11 +649,13 @@ body {
 
         &-05 {
             background: #F1FDF5;
+
             .img-responsive {}
         }
 
         &-04 {
             background-color: #FFF0E3;
+
             .img-responsive {}
         }
 
@@ -585,9 +674,11 @@ body {
             top: 0%;
             width: 25%;
             height: 27%;
+
             @include breakpoint(md) {
                 left: 36%;
             }
+
             .area__button {
                 left: initial;
                 right: 0;
@@ -600,71 +691,86 @@ body {
             top: 27%;
             width: 14.8%;
             height: 8.7%;
+
             .area__button {
                 left: 70%;
                 top: 100%;
                 width: 20%;
+
                 img {
                     width: 100%;
                     height: auto;
                 }
+
                 @include breakpoint(md) {
                     top: 70%;
                     width: 15%;
                 }
             }
         }
+
         .area__clickable-03 {
             position: absolute;
             left: 46%;
             top: 36%;
             width: 4.8%;
             height: 6.7%;
+
             @include breakpoint(md) {
                 top: 32%;
             }
+
             .area__button {
                 width: 50%;
                 left: -10%;
+
                 img {
                     width: 100%;
                     height: auto;
                 }
+
                 @include breakpoint(md) {
                     left: -18%;
                 }
             }
         }
+
         .area__clickable-04 {
             position: absolute;
             left: 35%;
             top: 45%;
             width: 30.8%;
             height: 11.7%;
+
             @include breakpoint(md) {
                 left: 29%;
             }
+
             .area__button {
                 left: initial;
                 right: 0;
             }
         }
+
         .area__clickable-05 {
             position: absolute;
             left: 45%;
             top: 81%;
             width: 9.8%;
             height: 19.7%;
+
             .area__button {}
         }
 
         &-05 {
             background: #F1FDF5;
+
             .img-responsive {}
         }
 
         &-04 {
             background-color: #FFF0E3;
+
             .img-responsive {}
         }
 
@@ -680,6 +786,7 @@ body {
 .lv01-ep09 {
     .area {
         &-02 {}
+
         .area__clickable-01 {
             position: absolute;
             left: 51%;
@@ -687,6 +794,7 @@ body {
             width: 14.9%;
             height: 16.8%;
         }
+
         .area__clickable-02 {
             position: absolute;
             left: 28%;
@@ -694,6 +802,7 @@ body {
             width: 11.8%;
             height: 31.7%;
         }
+
         .area__clickable-03 {
             position: absolute;
             left: 39.1%;
@@ -701,6 +810,7 @@ body {
             width: 10.2%;
             height: 24%;
         }
+
         .area__clickable-04 {
             position: absolute;
             left: 62%;
@@ -708,12 +818,16 @@ body {
             width: 11.8%;
             height: 20.7%;
         }
+
         &-05 {
             background: #F1FDF5;
+
             .img-responsive {}
         }
+
         &-04 {
             background-color: #FFF0E3;
+
             .img-responsive {}
         }
 
@@ -733,6 +847,7 @@ body {
             width: 17%;
             height: 37%;
         }
+
         &__clickable-02 {
             position: absolute;
             left: 43%;
@@ -740,6 +855,7 @@ body {
             width: 13.5%;
             height: 37%;
         }
+
         &__clickable-03 {
             position: absolute;
             left: 70%;
@@ -747,6 +863,7 @@ body {
             width: 18%;
             height: 37%;
         }
+
         &__clickable-04 {
             position: absolute;
             left: 43%;
@@ -754,6 +871,7 @@ body {
             width: 15%;
             height: 33%;
         }
+
         &__button {
             transform: translate(50%, 50%);
         }
@@ -780,6 +898,7 @@ body {
                 width: 4.9%;
                 height: 26.8%;
             }
+
             .area__clickable-02 {
                 position: absolute;
                 left: 28.3%;
@@ -787,6 +906,7 @@ body {
                 width: 4.9%;
                 height: 26.8%;
             }
+
             .area__clickable-03 {
                 position: absolute;
                 left: 16.8%;
@@ -795,6 +915,7 @@ body {
                 height: 26.8%;
             }
         }
+
         .area__button {
             transform: translate(50%, 50%);
         }
@@ -812,6 +933,7 @@ body {
                 width: 26.9%;
                 height: 42%;
             }
+
             .area__clickable-02 {
                 position: absolute;
                 left: 51%;
@@ -819,6 +941,7 @@ body {
                 width: 39%;
                 height: 42%;
             }
+
             .area__clickable-03 {
                 position: absolute;
                 left: 11%;
@@ -826,6 +949,7 @@ body {
                 width: 27%;
                 height: 40%;
             }
+
             .area__clickable-04 {
                 position: absolute;
                 left: 50.8%;
@@ -833,6 +957,7 @@ body {
                 width: 38%;
                 height: 40%;
             }
+
             .area__button {
                 transform: translate(100%, 100%);
             }
@@ -852,6 +977,7 @@ body {
                 height: 40%; // background-color: blue;
                 // opacity: 0.7;
             }
+
             .area__clickable-02 {
                 position: absolute;
                 left: 54%;
@@ -859,6 +985,7 @@ body {
                 width: 20%;
                 height: 38%;
             }
+
             .area__clickable-03 {
                 position: absolute;
                 left: 30%;
@@ -866,6 +993,7 @@ body {
                 width: 24%;
                 height: 48%;
             }
+
             .area__clickable-04 {
                 position: absolute;
                 left: 74.8%;
@@ -883,32 +1011,26 @@ body {
         &-03 {
             .area__clickable-01 {
                 position: absolute;
-                left: 88%;
-                top: 45%;
-                width: 4.9%;
-                height: 26.8%;
-                @include breakpoint(md) {
-                    left: 82%;
-                    top: 38%;
-                }
+                left: 63%;
+                top: 11%;
+                width: 31%;
+                height: 50%;
             }
+
             .area__clickable-02 {
                 position: absolute;
-                left: 52%;
-                top: 79%;
-                width: 4.9%;
-                height: 20.8%;
-                @include breakpoint(md) {
-                    left: 49%;
-                    top: 75%;
-                }
+                left: 27%;
+                top: 54%;
+                width: 35%;
+                height: 41%;
             }
+
             .area__clickable-03 {
                 position: absolute;
-                left: 27%;
-                top: 26%;
-                width: 4.9%;
-                height: 26.8%;
+                left: 6%;
+                top: 15%;
+                width: 36%;
+                height: 33%;
             }
         }
     }
@@ -924,22 +1046,26 @@ body {
                 top: 24%;
                 width: 4.9%;
                 height: 26.8%;
+
                 @include breakpoint(md) {
                     left: 30%;
                     top: 20%;
                 }
             }
+
             .area__clickable-02 {
                 position: absolute;
                 left: 80%;
                 top: 30%;
                 width: 4.9%;
                 height: 20.8%;
+
                 @include breakpoint(md) {
                     left: 73%;
                     top: 23%;
                 }
             }
+
             .area__clickable-03 {
                 position: absolute;
                 left: 34%;
@@ -947,12 +1073,14 @@ body {
                 width: 4.9%;
                 height: 26.8%;
             }
+
             .area__clickable-04 {
                 position: absolute;
                 left: 80%;
                 top: 72%;
                 width: 4.9%;
                 height: 26.8%;
+
                 @include breakpoint(md) {
                     top: 75%;
                     height: 24.8%;
@@ -972,22 +1100,26 @@ body {
                 top: 61%;
                 width: 4.9%;
                 height: 26.8%;
+
                 @include breakpoint(md) {
                     top: 51%;
                     left: 27%;
                 }
             }
+
             .area__clickable-02 {
                 position: absolute;
                 left: 80%;
                 top: 80%;
                 width: 4.9%;
                 height: 19.8%;
+
                 @include breakpoint(md) {
                     left: 75%;
                     top: 71%;
                 }
             }
+
             .area__clickable-03 {
                 position: absolute;
                 left: 82%;
@@ -1009,22 +1141,26 @@ body {
                 top: 28%;
                 width: 4.9%;
                 height: 26.8%;
+
                 @include breakpoint(md) {
                     left: 15%;
                     top: 18%;
                 }
             }
+
             .area__clickable-02 {
                 position: absolute;
                 left: 69%;
                 top: 28%;
                 width: 4.9%;
                 height: 19.8%;
+
                 @include breakpoint(md) {
                     top: 24%;
                     left: 64%;
                 }
             }
+
             .area__clickable-03 {
                 position: absolute;
                 left: 36%;
@@ -1032,6 +1168,7 @@ body {
                 width: 4.9%;
                 height: 23%;
             }
+
             .area__clickable-04 {
                 position: absolute;
                 left: 84%;
