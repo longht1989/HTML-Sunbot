@@ -122,7 +122,6 @@
             </div>
         </div>
         <!-- game zone -->
-        <hr>
         <div class="area-01 game-01" id="area9">
             <div class="container-fluid">
                 <h4 class="area__header">Game tương tác</h4>
@@ -163,6 +162,112 @@
                 <div class="clearfix" style="margin-bottom: 20px;"></div>
                 <div class="text-center">
                     <button class="btn btn-success btn-lg" id="btn-check" onclick="check('sortable')">Kiểm tra</button>
+                </div>
+            </div>
+            <div class="area-control">
+                <a class="area-prev"><img src="../App_Themes/img/prev.png" alt=""></a>
+                <a class="area-next"><img src="../App_Themes/img/next.png" alt=""></a>
+            </div>
+        </div>
+        <!-- game zone -->
+        <br>
+        <hr>
+        <div class="area-01 game-01" id="area10">
+            <div class="container-fluid">
+                <h4 class="area__header">Game tương tác</h4>
+                <h3 class="text-center">Cô sẽ đọc đủ 3 điều kiện, trẻ sẽ chọn ra đúng hình ảnh có đủ những điều kiện đó</h3>
+                <br>
+                <h3 class="text-center">
+                <ul>
+                    <li>– Ở ngoài trời</li>
+                    <li>– Nằm trên cây</li>
+                    <li>– Là nơi chú chim sinh ra</li>
+                </ul>
+                </h3>
+                <br>
+                <div class="row">
+                    <div class="col-xs-3">
+                        <div class="card" data-result="false">
+                            <img src="images/lv02/lv02-ep07/game-aquarium.png" alt="" class="img-responsive">
+                        </div>
+                    </div>
+                    <div class="col-xs-3">
+                        <div class="card" data-result="false">
+                            <img src="images/lv02/lv02-ep07/game-house.png" alt="" class="img-responsive">
+                        </div>
+                    </div>
+                    <div class="col-xs-3">
+                        <div class="card" data-result="true">
+                            <img src="images/lv02/lv02-ep07/game-nest.png" alt="" class="img-responsive">
+                        </div>
+                    </div>
+                    <div class="col-xs-3">
+                        <div class="card" data-result="false">
+                            <img src="images/lv02/lv02-ep07/game-moutain.png" alt="" class="img-responsive">
+                        </div>
+                    </div>
+                </div>
+                <br><hr><br>
+                <h3 class="text-center">
+                <ul>
+                    <li>– Là vật che đầu</li>
+                    <li>– Dùng khi ngoài trời </li>
+                    <li>– Có thể giữ cơ thể khô ráo khi trời mưa</li>
+                </ul>
+                </h3>
+                <br>
+                <div class="row">
+                    <div class="col-xs-3">
+                        <div class="card" data-result="false">
+                            <img src="images/lv02/lv02-ep07/game-shirt.png" alt="" class="img-responsive">
+                        </div>
+                    </div>
+                    <div class="col-xs-3">
+                        <div class="card" data-result="true">
+                            <img src="images/lv02/lv02-ep07/game-umbrella.png" alt="" class="img-responsive">
+                        </div>
+                    </div>
+                    <div class="col-xs-3">
+                        <div class="card" data-result="false">
+                            <img src="images/lv02/lv02-ep07/game-hat.png" alt="" class="img-responsive">
+                        </div>
+                    </div>
+                    <div class="col-xs-3">
+                        <div class="card" data-result="false">
+                            <img src="images/lv02/lv02-ep07/game-desk.png" alt="" class="img-responsive">
+                        </div>
+                    </div>
+                </div>
+                <br><hr><br>
+                <h3 class="text-center">
+                <ul>
+                    <li>– Là xe 4 bánh</li>
+                    <li>– Có 5 chỗ ngồi </li>
+                    <li>–  Giúp mọi người di chuyển nhanh hơn</li>
+                </ul>
+                </h3>
+                <br>
+                <div class="row">
+                    <div class="col-xs-3">
+                        <div class="card" data-result="false">
+                            <img src="images/lv02/lv02-ep07/game-truck.png" alt="" class="img-responsive">
+                        </div>
+                    </div>
+                    <div class="col-xs-3">
+                        <div class="card" data-result="false">
+                            <img src="images/lv02/lv02-ep07/game-motor.png" alt="" class="img-responsive">
+                        </div>
+                    </div>
+                    <div class="col-xs-3">
+                        <div class="card" data-result="false">
+                            <img src="images/lv02/lv02-ep07/game-bike.png" alt="" class="img-responsive">
+                        </div>
+                    </div>
+                    <div class="col-xs-3">
+                        <div class="card" data-result="true">
+                            <img src="images/lv02/lv02-ep07/game-car.png" alt="" class="img-responsive">
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="area-control">
@@ -259,6 +364,9 @@
             $("[data-result=true]").on("click", function() {
             $("#answer-true").show();
             });
+            $("[data-result=false]").on("click", function() {
+            $("#answer-false").show();
+            });
             // game 2
             // sortable & dragable
             $(".sortable").sortable({
@@ -296,10 +404,10 @@
             height: 22%;
             }
             .lv02-ep07 .area__clickable-02{
-            top: 6%;
-            left: 60%;
+            top: 5%;
+            left: 56%;
             width: 25%;
-            height: 27%;
+            height: 30%;
             }
             .lv02-ep07 .area__clickable-03{
             position: absolute;

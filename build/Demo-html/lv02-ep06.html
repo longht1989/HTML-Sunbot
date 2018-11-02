@@ -38,9 +38,9 @@
         <!-- normal area -->
         <div class="area area-02" id="area2" style="padding: 24px 0;">
             <div class="container-fluid">
-                <h4 class="area__header">Cùng chơi thể thao</h4>
+                <h4 class="area__header" style="color: #da3e21;">Cùng chơi thể thao</h4>
                 <div class="area__paragraph">
-                    <p>Bé thể dục</p>
+                    <h4 class="text-center text-uppercase" style="font-size: 48px">Bé thể dục</h4>
                     <p>Nghe lời cô dặn</p>
                     <p>Chăm tập thể thao</p>
                     <p>Đôi má hồng hào</p>
@@ -105,60 +105,108 @@
         <div class="area-01 game-01" id="area8">
             <div class="container-fluid">
                 <h4 class="area__header">Game tương tác</h4>
-                <h3 class="text-center">Nối hình ảnh với chữ tương ứng</h3>
+                <h3 class="text-center">Cô đọc chữ để trẻ lựa chọn hình ảnh đúng trong ba hình ảnh</h3>
                 <br>
-                <div class="row list-card-a">
-                    <div class="col-xs-20p">
-                        <div class="card" game-data="1">
-                            <img src="images/lv02/lv02-ep06/game-football.png" alt="" class="img-responsive">
-                        </div>
-                    </div>
-                    <div class="col-xs-20p">
-                        <div class="card" game-data="2">
-                            <img src="images/lv02/lv02-ep06/game-swim.png" alt="" class="img-responsive">
-                        </div>
-                    </div>
-                    <div class="col-xs-20p">
-                        <div class="card" game-data="3">
-                            <img src="images/lv02/lv02-ep06/game-martial.png" alt="" class="img-responsive">
-                        </div>
-                    </div>
-                    <div class="col-xs-20p">
-                        <div class="card" game-data="4">
-                            <img src="images/lv02/lv02-ep06/game-volleyball.png" alt="" class="img-responsive">
-                        </div>
-                    </div>
-                    <div class="col-xs-20p">
-                        <div class="card" game-data="5">
-                            <img src="images/lv02/lv02-ep06/game-badminton.png" alt="" class="img-responsive">
+                <div class="row">
+                    <div class="col-xs-2 col-xs-offset-5">
+                        <div class="card disable" game-data="1">
+                            <img src="images/lv02/lv02-ep06/game-football-text.png" alt="" class="img-responsive">
                         </div>
                     </div>
                 </div>
                 <div class="clearfix" style="margin-bottom: 20px;"></div>
-                <div class="row list-card-b">
-                    <div class="col-xs-20p">
-                        <div class="card" game-data="4">
-                            <img src="images/lv02/lv02-ep06/game-volleyball-text.png" alt="" class="img-responsive">
+                <div class="row">
+                    <div class="col-xs-offset-3 col-xs-2">
+                        <div class="card" data-result="true">
+                            <img src="images/lv02/lv02-ep06/game-football.png" alt="" class="img-responsive">
                         </div>
                     </div>
-                    <div class="col-xs-20p">
-                        <div class="card" game-data="1">
-                            <img src="images/lv02/lv02-ep06/game-football-text.png" alt="" class="img-responsive">
+                    <div class="col-xs-2">
+                        <div class="card" data-result="false">
+                            <img src="images/lv02/lv02-ep06/game-swim.png" alt="" class="img-responsive">
                         </div>
                     </div>
-                    <div class="col-xs-20p">
-                        <div class="card" game-data="5">
+                    <div class="col-xs-2">
+                        <div class="card" data-result="false">
+                            <img src="images/lv02/lv02-ep06/game-martial.png" alt="" class="img-responsive">
+                        </div>
+                    </div>
+                </div>
+                <br><hr><br>
+                <div class="row">
+                    <div class="col-xs-2 col-xs-offset-5">
+                        <div class="card disable" game-data="1">
                             <img src="images/lv02/lv02-ep06/game-badminton-text.png" alt="" class="img-responsive">
                         </div>
                     </div>
-                    <div class="col-xs-20p">
-                        <div class="card" game-data="3">
+                </div>
+                <div class="clearfix" style="margin-bottom: 20px;"></div>
+                <div class="row">
+                    <div class="col-xs-offset-3 col-xs-2">
+                        <div class="card" data-result="false">
+                            <img src="images/lv02/lv02-ep06/game-volleyball.png" alt="" class="img-responsive">
+                        </div>
+                    </div>
+                    <div class="col-xs-2">
+                        <div class="card" data-result="true">
+                            <img src="images/lv02/lv02-ep06/game-badminton.png" alt="" class="img-responsive">
+                        </div>
+                    </div>
+                    <div class="col-xs-2">
+                        <div class="card" data-result="false">
+                            <img src="images/lv02/lv02-ep06/game-swim.png" alt="" class="img-responsive">
+                        </div>
+                    </div>
+                </div>
+                <br><hr><br>
+                <div class="row">
+                    <div class="col-xs-2 col-xs-offset-5">
+                        <div class="card disable" game-data="1">
                             <img src="images/lv02/lv02-ep06/game-martial-text.png" alt="" class="img-responsive">
                         </div>
                     </div>
-                    <div class="col-xs-20p">
-                        <div class="card" game-data="2">
-                            <img src="images/lv02/lv02-ep06/game-swim-text.png" alt="" class="img-responsive">
+                </div>
+                <div class="clearfix" style="margin-bottom: 20px;"></div>
+                <div class="row">
+                    <div class="col-xs-offset-3 col-xs-2">
+                        <div class="card" data-result="false">
+                            <img src="images/lv02/lv02-ep06/game-football.png" alt="" class="img-responsive">
+                        </div>
+                    </div>
+                    <div class="col-xs-2">
+                        <div class="card" data-result="false">
+                            <img src="images/lv02/lv02-ep06/game-volleyball.png" alt="" class="img-responsive">
+                        </div>
+                    </div>
+                    <div class="col-xs-2">
+                        <div class="card" data-result="true">
+                            <img src="images/lv02/lv02-ep06/game-martial.png" alt="" class="img-responsive">
+                        </div>
+                    </div>
+                </div>
+                <br><hr><br>
+                <div class="row">
+                    <div class="col-xs-2 col-xs-offset-5">
+                        <div class="card disable" game-data="1">
+                            <img src="images/lv02/lv02-ep06/game-volleyball-text.png" alt="" class="img-responsive">
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix" style="margin-bottom: 20px;"></div>
+                <div class="row">
+                    <div class="col-xs-offset-3 col-xs-2">
+                        <div class="card" data-result="false">
+                            <img src="images/lv02/lv02-ep06/game-swim.png" alt="" class="img-responsive">
+                        </div>
+                    </div>
+                    <div class="col-xs-2">
+                        <div class="card" data-result="true">
+                            <img src="images/lv02/lv02-ep06/game-volleyball.png" alt="" class="img-responsive">
+                        </div>
+                    </div>
+                    <div class="col-xs-2">
+                        <div class="card" data-result="false">
+                            <img src="images/lv02/lv02-ep06/game-badminton.png" alt="" class="img-responsive">
                         </div>
                     </div>
                 </div>
@@ -374,6 +422,9 @@
             $("[data-result=true]").on("click", function() {
             $("#answer-true").show();
             });
+            $("[data-result=false]").on("click", function() {
+            $("#answer-false").show();
+            });
             // game 2
             // sortable & dragable
             $(".sortable").sortable({
@@ -421,6 +472,10 @@
             }
             .card.selected {
             opacity: 0.3;
+            }
+            .card.disable:hover {
+            transform: none;
+            cursor: default;
             }
             .col-xs-20p {
             width: 20%;
