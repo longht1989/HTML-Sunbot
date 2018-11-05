@@ -1,0 +1,22 @@
+/* style for card */
+.card {
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.2s linear;
+
+    &:hover {
+        transform: scale(0.95);
+    }
+
+    &.selected {
+        opacity: 0.3;
+    }
+
+    &.disable {
+        &:hover {
+            transform: none;
+            cursor: default;
+        }
+    }
+}

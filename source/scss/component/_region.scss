@@ -1078,40 +1078,28 @@ body {
 // level 02 - episode 08
 .lv02-ep08 {
     .area {
-        &-03 {
-            .area__clickable-01 {
-                position: absolute;
-                left: 31%;
-                top: 61%;
-                width: 4.9%;
-                height: 26.8%;
+        .area__clickable-01 {
+            position: absolute;
+            left: 8%;
+            top: 18%;
+            width: 30%;
+            height: 53%;
+        }
 
-                @include breakpoint(md) {
-                    top: 51%;
-                    left: 27%;
-                }
-            }
+        .area__clickable-02 {
+            position: absolute;
+            left: 63%;
+            top: 58%;
+            width: 25%;
+            height: 32%;
+        }
 
-            .area__clickable-02 {
-                position: absolute;
-                left: 80%;
-                top: 80%;
-                width: 4.9%;
-                height: 19.8%;
-
-                @include breakpoint(md) {
-                    left: 75%;
-                    top: 71%;
-                }
-            }
-
-            .area__clickable-03 {
-                position: absolute;
-                left: 82%;
-                top: 17%;
-                width: 4.9%;
-                height: 26.8%;
-            }
+        .area__clickable-03 {
+            position: absolute;
+            left: 52%;
+            top: 9%;
+            width: 38%;
+            height: 28%;
         }
     }
 }
