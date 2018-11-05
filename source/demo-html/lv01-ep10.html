@@ -381,7 +381,7 @@
             }
             .game-card{
             height: 100%;
-            min-height: 500px;
+            min-height: 350px;
             padding-bottom: 20px;
             }
             @media screen and (min-width: 1024px) {
@@ -401,7 +401,7 @@
             }
             .game .card {
             width: 25%;
-            height: 200px;
+            height: 160px;
             float: left;
             padding: 5px;
             text-align: center;
@@ -412,6 +412,12 @@
             cursor: pointer;
             z-index: 50;
             -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+            }
+            @media screen and (min-width: 1024px) {
+            .game .card {
+                width: 12%;
+            height: 180px;
+            }
             }
             @-webkit-keyframes matchAnim {
             0% {
@@ -599,9 +605,5 @@
     </div>
     <!-- JS Global Customise -->
     <script src="../Jscripts/custom.js"></script>
-    <!-- Js Dev plugin -->
-    <!--[if lt IE 9]>
-    <script src="../Jscripts/vendor/respond.js"></script>
-    <![endif]-->
 </body>
 </html>

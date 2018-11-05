@@ -25,20 +25,16 @@
         <!-- header area -->
         <div class="area area-01" id="area1">
             <h3 class="episode__header text-center animated fadeInDown" style="position: absolute; top:0;left:0;right:0;z-index: 10;padding-top: 20px;color:white; text-shadow: 2px 2px 0 rgba(0,0,0,.35), -1px -1px 0 rgba(0,0,0,.35),1px -1px 0 rgba(0,0,0,.35), -1px 1px 0 rgba(0,0,0,.35), 1px 1px 0 rgba(0,0,0,.35);">Khu phố Sunbot</h3>
-            <div class="area__bg">
-                <img class="img-responsive" src="images/lv02/sunbot_street.png" alt="">
-            </div>
-            <div class="area-control">
-                <a class="area-next"><img src="../App_Themes/img/next.png" alt=""></a>
-            </div>
+            <div class="area__bg"><img class="img-responsive" src="images/lv02/sunbot_street.png" alt=""></div>
+            <div class="area-control"><a class="area-next"><img src="http://admin.sunbot.vn/build/App_Themes/img/next.png" alt=""></a></div>
         </div>
         <!-- .end header area -->
         <!-- normal area -->
         <div class="area area-02" id="area2" style="padding: 0; background: none;">
             <img class="img-responsive" src="images/lv02/lv02-ep08/Lv02-08.png" alt="">
             <div class="area-control">
-                <a class="area-prev"><img src="../App_Themes/img/prev.png" alt=""></a>
-                <a class="area-next"><img src="../App_Themes/img/next.png" alt=""></a>
+                <a class="area-prev"><img src="http://admin.sunbot.vn/build/App_Themes/img/prev.png" alt=""></a>
+                <a class="area-next"><img src="http://admin.sunbot.vn/build/App_Themes/img/next.png" alt=""></a>
             </div>
         </div>
         <!-- normal area -->
@@ -56,7 +52,7 @@
                 </a>
             </div>
             <div class="area-control">
-                <a class="area-prev"><img src="../App_Themes/img/prev.png" alt=""></a>
+                <a class="area-prev"><img src="http://admin.sunbot.vn/build/App_Themes/img/prev.png" alt=""></a>
             </div>
         </div>
         <div class="area area--popup area-04" id="area4">
@@ -81,48 +77,285 @@
         <div class="area-01 game-01" id="area7">
             <div class="container-fluid">
                 <h4 class="area__header">Game tương tác</h4>
-                <h3 class="text-center">Trẻ hãy sắp xếp cây hoa theo sự phát triển</h3>
+                <h3 class="text-center">Yêu cầu: Trẻ sẽ tìm lần lượt các thông tin sau. A12, B15, C10, D16, E8, F7, G12, H14, I6</h3>
                 <br>
-                <div class="row sortable" id="sortable">
+                <br>
+                <div class="row">
+                    <div class="col-xs-10 col-xs-offset-1">
+                        <div class="card disable"><img src="images/lv02/lv02-ep08/game-screen.png" alt="" class="img-responsive"></div>
+                    </div>
+                </div>
+                <br>
+                <br>
+                <!-- row a -->
+                <div class="row">
                     <div class="col-xs-2">
-                        <div class="card" data-value="2">
-                            <img src="images/lv02/lv02-ep07/game-seed.png" alt="" class="img-responsive">
-                        </div>
+                        <div class="card disable"><img class="img-responsive" src="images/lv02/lv02-ep08/game-text-a.png" alt=""></div>
                     </div>
                     <div class="col-xs-2">
-                        <div class="card" data-value="4">
-                            <img src="images/lv02/lv02-ep07/game-growing.png" alt="" class="img-responsive">
-                        </div>
+                        <div class="card" data-result="false"><img class="img-responsive" src="images/lv02/lv02-ep08/game-chair-11.png" alt=""></div>
                     </div>
                     <div class="col-xs-2">
-                        <div class="card" data-value="1">
-                            <img src="images/lv02/lv02-ep07/game-soil.png" alt="" class="img-responsive">
-                        </div>
+                        <div class="card" data-result="true"><img class="img-responsive" src="images/lv02/lv02-ep08/game-chair-12.png" alt=""></div>
                     </div>
                     <div class="col-xs-2">
-                        <div class="card" data-value="3">
-                            <img src="images/lv02/lv02-ep07/game-water.png" alt="" class="img-responsive">
-                        </div>
+                        <div class="card" data-result="false"><img class="img-responsive" src="images/lv02/lv02-ep08/game-chair-13.png" alt=""></div>
                     </div>
                     <div class="col-xs-2">
-                        <div class="card" data-value="6">
-                            <img src="images/lv02/lv02-ep07/game-grown.png" alt="" class="img-responsive">
-                        </div>
+                        <div class="card" data-result="false"><img class="img-responsive" src="images/lv02/lv02-ep08/game-chair-14.png" alt=""></div>
                     </div>
                     <div class="col-xs-2">
-                        <div class="card" data-value="5">
-                            <img src="images/lv02/lv02-ep07/game-sprout.png" alt="" class="img-responsive">
+                        <div class="card" data-result="false"><img class="img-responsive" src="images/lv02/lv02-ep08/game-chair-15.png" alt=""></div>
+                    </div>
+                </div>
+                <!-- row b -->
+                <br>
+                <br>
+                <div class="row">
+                    <div class="col-xs-2">
+                        <div class="card disable"><img class="img-responsive" src="images/lv02/lv02-ep08/game-text-b.png" alt=""></div>
+                    </div>
+                    <div class="col-xs-2">
+                        <div class="card" data-result="false"><img class="img-responsive" src="images/lv02/lv02-ep08/game-chair-13.png" alt=""></div>
+                    </div>
+                    <div class="col-xs-2">
+                        <div class="card" data-result="false"><img class="img-responsive" src="images/lv02/lv02-ep08/game-chair-14.png" alt=""></div>
+                    </div>
+                    <div class="col-xs-2">
+                        <div class="card" data-result="true"><img class="img-responsive" src="images/lv02/lv02-ep08/game-chair-15.png" alt=""></div>
+                    </div>
+                    <div class="col-xs-2">
+                        <div class="card" data-result="false"><img class="img-responsive" src="images/lv02/lv02-ep08/game-chair-16.png" alt=""></div>
+                    </div>
+                    <div class="col-xs-2">
+                        <div class="card" data-result="false"><img class="img-responsive" src="images/lv02/lv02-ep08/game-chair-17.png" alt=""></div>
+                    </div>
+                </div>
+                <!-- row c -->
+                <br>
+                <br>
+                <div class="row">
+                    <div class="col-xs-2">
+                        <div class="card disable"><img class="img-responsive" src="images/lv02/lv02-ep08/game-text-c.png" alt=""></div>
+                    </div>
+                    <div class="col-xs-2">
+                        <div class="card" data-result="false"><img class="img-responsive" src="images/lv02/lv02-ep08/game-chair-6.png" alt=""></div>
+                    </div>
+                    <div class="col-xs-2">
+                        <div class="card" data-result="false"><img class="img-responsive" src="images/lv02/lv02-ep08/game-chair-7.png" alt=""></div>
+                    </div>
+                    <div class="col-xs-2">
+                        <div class="card" data-result="false"><img class="img-responsive" src="images/lv02/lv02-ep08/game-chair-8.png" alt=""></div>
+                    </div>
+                    <div class="col-xs-2">
+                        <div class="card" data-result="false"><img class="img-responsive" src="images/lv02/lv02-ep08/game-chair-9.png" alt=""></div>
+                    </div>
+                    <div class="col-xs-2">
+                        <div class="card" data-result="true"><img class="img-responsive" src="images/lv02/lv02-ep08/game-chair-10.png" alt=""></div>
+                    </div>
+                </div>
+                <!-- row d -->
+                <br>
+                <br>
+                <div class="row">
+                    <div class="col-xs-2">
+                        <div class="card disable"><img class="img-responsive" src="images/lv02/lv02-ep08/game-text-d.png" alt=""></div>
+                    </div>
+                    <div class="col-xs-2">
+                        <div class="card" data-result="false"><img class="img-responsive" src="images/lv02/lv02-ep08/game-chair-13.png" alt=""></div>
+                    </div>
+                    <div class="col-xs-2">
+                        <div class="card" data-result="false"><img class="img-responsive" src="images/lv02/lv02-ep08/game-chair-14.png" alt=""></div>
+                    </div>
+                    <div class="col-xs-2">
+                        <div class="card" data-result="false"><img class="img-responsive" src="images/lv02/lv02-ep08/game-chair-15.png" alt=""></div>
+                    </div>
+                    <div class="col-xs-2">
+                        <div class="card" data-result="true"><img class="img-responsive" src="images/lv02/lv02-ep08/game-chair-16.png" alt=""></div>
+                    </div>
+                    <div class="col-xs-2">
+                        <div class="card" data-result="false"><img class="img-responsive" src="images/lv02/lv02-ep08/game-chair-17.png" alt=""></div>
+                    </div>
+                </div>
+                <!-- row e -->
+                <br>
+                <br>
+                <div class="row">
+                    <div class="col-xs-2">
+                        <div class="card disable"><img class="img-responsive" src="images/lv02/lv02-ep08/game-text-e.png" alt=""></div>
+                    </div>
+                    <div class="col-xs-2">
+                        <div class="card" data-result="false"><img class="img-responsive" src="images/lv02/lv02-ep08/game-chair-5.png" alt=""></div>
+                    </div>
+                    <div class="col-xs-2">
+                        <div class="card" data-result="false"><img class="img-responsive" src="images/lv02/lv02-ep08/game-chair-6.png" alt=""></div>
+                    </div>
+                    <div class="col-xs-2">
+                        <div class="card" data-result="false"><img class="img-responsive" src="images/lv02/lv02-ep08/game-chair-7.png" alt=""></div>
+                    </div>
+                    <div class="col-xs-2">
+                        <div class="card" data-result="true"><img class="img-responsive" src="images/lv02/lv02-ep08/game-chair-8.png" alt=""></div>
+                    </div>
+                    <div class="col-xs-2">
+                        <div class="card" data-result="false"><img class="img-responsive" src="images/lv02/lv02-ep08/game-chair-9.png" alt=""></div>
+                    </div>
+                </div>
+                <!-- row f -->
+                <br>
+                <br>
+                <div class="row">
+                    <div class="col-xs-2">
+                        <div class="card disable"><img class="img-responsive" src="images/lv02/lv02-ep08/game-text-f.png" alt=""></div>
+                    </div>
+                    <div class="col-xs-2">
+                        <div class="card" data-result="false"><img class="img-responsive" src="images/lv02/lv02-ep08/game-chair-5.png" alt=""></div>
+                    </div>
+                    <div class="col-xs-2">
+                        <div class="card" data-result="false"><img class="img-responsive" src="images/lv02/lv02-ep08/game-chair-6.png" alt=""></div>
+                    </div>
+                    <div class="col-xs-2">
+                        <div class="card" data-result="true"><img class="img-responsive" src="images/lv02/lv02-ep08/game-chair-7.png" alt=""></div>
+                    </div>
+                    <div class="col-xs-2">
+                        <div class="card" data-result="false"><img class="img-responsive" src="images/lv02/lv02-ep08/game-chair-8.png" alt=""></div>
+                    </div>
+                    <div class="col-xs-2">
+                        <div class="card" data-result="false"><img class="img-responsive" src="images/lv02/lv02-ep08/game-chair-9.png" alt=""></div>
+                    </div>
+                </div>
+                <!-- row g -->
+                <br>
+                <br>
+                <div class="row">
+                    <div class="col-xs-2">
+                        <div class="card disable"><img class="img-responsive" src="images/lv02/lv02-ep08/game-text-g.png" alt=""></div>
+                    </div>
+                    <div class="col-xs-2">
+                        <div class="card" data-result="false"><img class="img-responsive" src="images/lv02/lv02-ep08/game-chair-11.png" alt=""></div>
+                    </div>
+                    <div class="col-xs-2">
+                        <div class="card" data-result="true"><img class="img-responsive" src="images/lv02/lv02-ep08/game-chair-12.png" alt=""></div>
+                    </div>
+                    <div class="col-xs-2">
+                        <div class="card" data-result="false"><img class="img-responsive" src="images/lv02/lv02-ep08/game-chair-13.png" alt=""></div>
+                    </div>
+                    <div class="col-xs-2">
+                        <div class="card" data-result="false"><img class="img-responsive" src="images/lv02/lv02-ep08/game-chair-14.png" alt=""></div>
+                    </div>
+                    <div class="col-xs-2">
+                        <div class="card" data-result="false"><img class="img-responsive" src="images/lv02/lv02-ep08/game-chair-15.png" alt=""></div>
+                    </div>
+                </div>
+                <!-- row h -->
+                <br>
+                <br>
+                <div class="row">
+                    <div class="col-xs-2">
+                        <div class="card disable"><img class="img-responsive" src="images/lv02/lv02-ep08/game-text-h.png" alt=""></div>
+                    </div>
+                    <div class="col-xs-2">
+                        <div class="card" data-result="false"><img class="img-responsive" src="images/lv02/lv02-ep08/game-chair-11.png" alt=""></div>
+                    </div>
+                    <div class="col-xs-2">
+                        <div class="card" data-result="false"><img class="img-responsive" src="images/lv02/lv02-ep08/game-chair-12.png" alt=""></div>
+                    </div>
+                    <div class="col-xs-2">
+                        <div class="card" data-result="false"><img class="img-responsive" src="images/lv02/lv02-ep08/game-chair-13.png" alt=""></div>
+                    </div>
+                    <div class="col-xs-2">
+                        <div class="card" data-result="true"><img class="img-responsive" src="images/lv02/lv02-ep08/game-chair-14.png" alt=""></div>
+                    </div>
+                    <div class="col-xs-2">
+                        <div class="card" data-result="false"><img class="img-responsive" src="images/lv02/lv02-ep08/game-chair-15.png" alt=""></div>
+                    </div>
+                </div>
+                <!-- row i -->
+                <br>
+                <br>
+                <div class="row">
+                    <div class="col-xs-2">
+                        <div class="card disable"><img class="img-responsive" src="images/lv02/lv02-ep08/game-text-i.png" alt=""></div>
+                    </div>
+                    <div class="col-xs-2">
+                        <div class="card" data-result="false"><img class="img-responsive" src="images/lv02/lv02-ep08/game-chair-5.png" alt=""></div>
+                    </div>
+                    <div class="col-xs-2">
+                        <div class="card" data-result="true"><img class="img-responsive" src="images/lv02/lv02-ep08/game-chair-6.png" alt=""></div>
+                    </div>
+                    <div class="col-xs-2">
+                        <div class="card" data-result="false"><img class="img-responsive" src="images/lv02/lv02-ep08/game-chair-7.png" alt=""></div>
+                    </div>
+                    <div class="col-xs-2">
+                        <div class="card" data-result="false"><img class="img-responsive" src="images/lv02/lv02-ep08/game-chair-8.png" alt=""></div>
+                    </div>
+                    <div class="col-xs-2">
+                        <div class="card" data-result="false"><img class="img-responsive" src="images/lv02/lv02-ep08/game-chair-9.png" alt=""></div>
+                    </div>
+                </div>
+                <div class="clearfix" style="margin-bottom: 20px;"></div>
+            </div>
+            <div class="area-control">
+                <a class="area-prev"><img src="http://admin.sunbot.vn/build/App_Themes/img/prev.png" alt=""></a>
+                <a class="area-next"><img src="http://admin.sunbot.vn/build/App_Themes/img/next.png" alt=""></a>
+            </div>
+        </div>
+        <br><br><hr>
+        <!-- game zone -->
+        <div class="area-01 game-01" id="area7">
+            <div class="container-fluid">
+                <h4 class="area__header">Game tương tác</h4>
+                <h3 class="text-center">Yêu cầu: Trẻ chạm vào hình ảnh – xuất hiện chữ phía bên dưới</h3>
+                <br>
+                <br>
+                <div class="row">
+                    <div class="col-xs-3 col-xs-offset-3">
+                        <div class="card" data-card="card1">
+                            <img class="img-responsive" src="images/lv02/lv02-ep08/game-goto-school.png" alt="">
+                            <img class="img-responsive card-desc" src="images/lv02/lv02-ep08/game-goto-school-desc.png" alt="" data-desc="card1">
+                        </div>
+                    </div>
+                    <div class="col-xs-3">
+                        <div class="card" data-card="card1">
+                            <img class="img-responsive" src="images/lv02/lv02-ep08/game-goout-school.png" alt="">
+                            <img class="img-responsive card-desc" src="images/lv02/lv02-ep08/game-goout-school-desc.png" alt="" data-desc="card1">
+                        </div>
+                    </div>
+                </div>
+                <br><br><br><br>
+                <div class="row">
+                    <div class="col-xs-3 col-xs-offset-3">
+                        <div class="card" data-card="card2">
+                            <img class="img-responsive" src="images/lv02/lv02-ep08/game-before-meal.png" alt="">
+                            <img class="img-responsive card-desc" src="images/lv02/lv02-ep08/game-before-meal-desc.png" alt="" data-desc="card2">
+                        </div>
+                    </div>
+                    <div class="col-xs-3">
+                        <div class="card" data-card="card2">
+                            <img class="img-responsive" src="images/lv02/lv02-ep08/game-after-meal.png" alt="">
+                            <img class="img-responsive card-desc" src="images/lv02/lv02-ep08/game-after-meal-desc.png" alt="" data-desc="card2">
+                        </div>
+                    </div>
+                </div>
+                <br><br><br><br>
+                <div class="row">
+                    <div class="col-xs-3 col-xs-offset-3">
+                        <div class="card" data-card="card3">
+                            <img class="img-responsive" src="images/lv02/lv02-ep08/game-public-area.png" alt="">
+                            <img class="img-responsive card-desc" src="images/lv02/lv02-ep08/game-public-area-desc.png" alt="" data-desc="card3">
+                        </div>
+                    </div>
+                    <div class="col-xs-3">
+                        <div class="card" data-card="card3">
+                            <img class="img-responsive" src="images/lv02/lv02-ep08/game-queue.png" alt="">
+                            <img class="img-responsive card-desc" src="images/lv02/lv02-ep08/game-queue-desc.png" alt="" data-desc="card3">
                         </div>
                     </div>
                 </div>
                 <div class="clearfix" style="margin-bottom: 20px;"></div>
-                <div class="text-center">
-                    <button class="btn btn-success btn-lg" id="btn-check" onclick="check('sortable')">Kiểm tra</button>
-                </div>
             </div>
             <div class="area-control">
-                <a class="area-prev"><img src="../App_Themes/img/prev.png" alt=""></a>
-                <a class="area-next"><img src="../App_Themes/img/next.png" alt=""></a>
+                <a class="area-prev"><img src="http://admin.sunbot.vn/build/App_Themes/img/prev.png" alt=""></a>
+                <a class="area-next"><img src="http://admin.sunbot.vn/build/App_Themes/img/next.png" alt=""></a>
             </div>
         </div>
         <!-- correct popup -->
@@ -139,61 +372,74 @@
                 <a class="close-btn" onclick="close()"><img src="images/close-btn.png" alt=""></a>
             </div>
         </div>
-        <script type="text/javascript">
-            $(function() {
-            $(".close-btn").click(function() {
-            $("#area4").hide();
-            $("#area5").hide();
-            $("#area6").hide();
-            $(".area--popup").hide();
-            $("body").removeClass("fixed");
-            });
-            $('.area__clickable-01').click(function() {
-            $("body").addClass("fixed");
-            $("#area4").show();
-            });
-            $('.area__clickable-02').click(function() {
-            $("body").addClass("fixed");
-            $("#area5").show();
-            });
-            $('.area__clickable-03').click(function() {
-            $("body").addClass("fixed");
-            $("#area6").show();
-            });
-            $(".area-01 .area__clickable").click(function() {
-            $('html, body').animate({
-            scrollTop: $("#area2").offset().top
-            }, 1000);
-            });
-            $(".area-01 .area-next").click(function() {
-            $('html, body').animate({
-            scrollTop: $("#area2").offset().top
-            }, 500);
-            });
-            $(".area-02 .area-next").click(function() {
-            $('html, body').animate({
-            scrollTop: $("#area3").offset().top
-            }, 500);
-            });
-            $(".area-02 .area-prev").click(function() {
-            $('html, body').animate({
-            scrollTop: $("#area1").offset().top
-            }, 500);
-            });
-            $(".area-03 .area-prev").click(function() {
-            $('html, body').animate({
-            scrollTop: $("#area2").offset().top
-            }, 500);
-            });
-            });
-        </script>
-        <!-- .end normal area -->
-        <!-- JS Global Customise -->
-        <script src="../Jscripts/custom.js"></script>
-        <!-- Js Dev plugin -->
-        <!--[if lt IE 9]>
-        <script src="../Jscripts/vendor/respond.js"></script>
-        <![endif]-->
     </div>
+    <script type="text/javascript">
+        $(function() {
+        $(".close-btn").click(function() {
+        $("#area4").hide();
+        $("#area5").hide();
+        $("#area6").hide();
+        $(".area--popup").hide();
+        $("body").removeClass("fixed");
+        });
+        $('.area__clickable-01').click(function() {
+        $("body").addClass("fixed");
+        $("#area4").show();
+        });
+        $('.area__clickable-02').click(function() {
+        $("body").addClass("fixed");
+        $("#area5").show();
+        });
+        $('.area__clickable-03').click(function() {
+        $("body").addClass("fixed");
+        $("#area6").show();
+        });
+        $(".area-01 .area__clickable").click(function() {
+        $('html, body').animate({
+        scrollTop: $("#area2").offset().top
+        }, 1000);
+        });
+        $(".area-01 .area-next").click(function() {
+        $('html, body').animate({
+        scrollTop: $("#area2").offset().top
+        }, 500);
+        });
+        $(".area-02 .area-next").click(function() {
+        $('html, body').animate({
+        scrollTop: $("#area3").offset().top
+        }, 500);
+        });
+        $(".area-02 .area-prev").click(function() {
+        $('html, body').animate({
+        scrollTop: $("#area1").offset().top
+        }, 500);
+        });
+        $(".area-03 .area-prev").click(function() {
+        $('html, body').animate({
+        scrollTop: $("#area2").offset().top
+        }, 500);
+        });
+        $("[data-result=true]").on("click", function() {
+        $("#answer-true").show();
+        });
+        $("[data-result=false]").on("click", function() {
+        $("#answer-false").show();
+        });
+        $(".card").on("click", function() {
+        var _card = $(this).attr("data-card");
+        $("[data-desc="+_card+"]").fadeIn();
+        $("[data-card="+_card+"]").addClass("disable");
+        });
+        });
+    </script>
+    <style type="text/css" media="screen">
+        .card-desc{
+        margin-top: 10px;
+        display: none;
+        }
+    </style>
+    <!-- .end normal area -->
+    <!-- JS Global Customise -->
+    <script src="../Jscripts/custom.js"></script>
 </body>
 </html>
