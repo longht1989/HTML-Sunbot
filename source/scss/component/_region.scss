@@ -1,7 +1,6 @@
 /* ====================================
-   All region in project
-   ==================================== */
-
+All region in project
+==================================== */
 .area {
     position: relative;
 
@@ -573,7 +572,6 @@ body {
 
         &--popup {
             .img-responsive {
-
                 margin-left: auto;
                 margin-right: auto;
             }
@@ -1110,44 +1108,34 @@ body {
         &-03 {
             .area__clickable-01 {
                 position: absolute;
-                left: 21%;
-                top: 28%;
-                width: 4.9%;
-                height: 26.8%;
-
-                @include breakpoint(md) {
-                    left: 15%;
-                    top: 18%;
-                }
+                left: 8%;
+                top: 12%;
+                width: 19.9%;
+                height: 29%;
             }
 
             .area__clickable-02 {
                 position: absolute;
-                left: 69%;
-                top: 28%;
-                width: 4.9%;
-                height: 19.8%;
-
-                @include breakpoint(md) {
-                    top: 24%;
-                    left: 64%;
-                }
+                left: 47%;
+                top: 15%;
+                width: 31%;
+                height: 24%;
             }
 
             .area__clickable-03 {
                 position: absolute;
-                left: 36%;
-                top: 70%;
-                width: 4.9%;
-                height: 23%;
+                left: 23%;
+                top: 57%;
+                width: 23%;
+                height: 31%;
             }
 
             .area__clickable-04 {
                 position: absolute;
-                left: 84%;
-                top: 70%;
-                width: 4.9%;
-                height: 23%;
+                left: 73%;
+                top: 50%;
+                width: 20%;
+                height: 38%;
             }
         }
     }
