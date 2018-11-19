@@ -93,19 +93,19 @@
                 <br>
                 <div class="row sortable" id="sortable">
                     <div class="col-xs-20p">
-                        <p class="card" data-value="5"><img src="images/lv02/lv02-ep09/game-couple-5.png" alt="" class="img-responsive"></p>
+                        <p class="card" data-value="d-e"><img src="images/lv02/lv02-ep09/game-couple-5.png" alt="" class="img-responsive"></p>
                     </div>
                     <div class="col-xs-20p">
-                        <p class="card" data-value="1"><img src="images/lv02/lv02-ep09/game-couple-1.png" alt="" class="img-responsive"></p>
+                        <p class="card" data-value="e-a"><img src="images/lv02/lv02-ep09/game-couple-1.png" alt="" class="img-responsive"></p>
                     </div>
                     <div class="col-xs-20p">
-                        <p class="card" data-value="4"><img src="images/lv02/lv02-ep09/game-couple-4.png" alt="" class="img-responsive"></p>
+                        <p class="card" data-value="c-d"><img src="images/lv02/lv02-ep09/game-couple-4.png" alt="" class="img-responsive"></p>
                     </div>
                     <div class="col-xs-20p">
-                        <p class="card" data-value="3"><img src="images/lv02/lv02-ep09/game-couple-3.png" alt="" class="img-responsive"></p>
+                        <p class="card" data-value="b-c"><img src="images/lv02/lv02-ep09/game-couple-3.png" alt="" class="img-responsive"></p>
                     </div>
                     <div class="col-xs-20p">
-                        <p class="card" data-value="2"><img src="images/lv02/lv02-ep09/game-couple-2.png" alt="" class="img-responsive"></p>
+                        <p class="card" data-value="a-b"><img src="images/lv02/lv02-ep09/game-couple-2.png" alt="" class="img-responsive"></p>
                     </div>
                 </div>
                 <div class="clearfix" style="margin-bottom: 20px;"></div>
@@ -239,93 +239,96 @@
             </div>
         </div>
         <script type="text/javascript">
-            $(function() {
+        $(function() {
             $(".close-btn").click(function() {
-            $("#area4").hide();
-            $("#area5").hide();
-            $("#area6").hide();
-            $("#area7").hide();
-            $('.area--popup').hide();
-            $("body").removeClass("fixed");
+                $("#area4").hide();
+                $("#area5").hide();
+                $("#area6").hide();
+                $("#area7").hide();
+                $('.area--popup').hide();
+                $("body").removeClass("fixed");
             });
             $('.area__clickable-01').click(function() {
-            $("body").addClass("fixed");
-            $("#area4").show();
+                $("body").addClass("fixed");
+                $("#area4").show();
             });
             $('.area__clickable-02').click(function() {
-            $("body").addClass("fixed");
-            $("#area5").show();
+                $("body").addClass("fixed");
+                $("#area5").show();
             });
             $('.area__clickable-03').click(function() {
-            $("body").addClass("fixed");
-            $("#area6").show();
+                $("body").addClass("fixed");
+                $("#area6").show();
             });
             $('.area__clickable-04').click(function() {
-            $("body").addClass("fixed");
-            $("#area7").show();
+                $("body").addClass("fixed");
+                $("#area7").show();
             });
             $(".area-01 .area__clickable").click(function() {
-            $('html, body').animate({
-            scrollTop: $("#area2").offset().top
-            }, 1000);
+                $('html, body').animate({
+                    scrollTop: $("#area2").offset().top
+                }, 1000);
             });
             $(".area-01 .area-next").click(function() {
-            $('html, body').animate({
-            scrollTop: $("#area2").offset().top
-            }, 500);
+                $('html, body').animate({
+                    scrollTop: $("#area2").offset().top
+                }, 500);
             });
             $(".area-02 .area-next").click(function() {
-            $('html, body').animate({
-            scrollTop: $("#area3").offset().top
-            }, 500);
+                $('html, body').animate({
+                    scrollTop: $("#area3").offset().top
+                }, 500);
             });
             $(".area-02 .area-prev").click(function() {
-            $('html, body').animate({
-            scrollTop: $("#area1").offset().top
-            }, 500);
+                $('html, body').animate({
+                    scrollTop: $("#area1").offset().top
+                }, 500);
             });
             $(".area-03 .area-prev").click(function() {
-            $('html, body').animate({
-            scrollTop: $("#area2").offset().top
-            }, 500);
+                $('html, body').animate({
+                    scrollTop: $("#area2").offset().top
+                }, 500);
             });
             // sortable & dragable
             $(".sortable").sortable({
-            revert: true
+                revert: true
             });
             $("#draggable").draggable({
-            connectToSortable: ".sortable",
-            helper: "clone",
-            revert: "invalid"
+                connectToSortable: ".sortable",
+                helper: "clone",
+                revert: "invalid"
             });
             $("ul, li").disableSelection();
             // game 2
             // true/false answer
             $("[data-result=false]").on("click", function() {
-            console.log("Answer is wrong");
-            $("#answer-false").show();
+                console.log("Answer is wrong");
+                $("#answer-false").show();
             });
             //
             $("[data-target=true]").on("click", function() {
-            $(this).closest('.row').find("[data-result=true]").addClass('correct');
-            $(this).closest('.row').find("[data-result=false]").off('click');
+                $(this).closest('.row').find("[data-result=true]").addClass('correct');
+                $(this).closest('.row').find("[data-result=false]").off('click');
             });
-            });
-            function check(quest_id) {
+        });
+
+        function check(quest_id) {
             var data = $("#" + quest_id + " .card");
             var istrue = true;
             for (i = 0; i < data.length - 1; i++) {
-            if (data[i].getAttribute('data-value') > data[i + 1].getAttribute('data-value')) {
-            istrue = false;
-            break;
-            }
+                var before = data[i].getAttribute('data-value');
+                var after = data[i + 1].getAttribute('data-value');
+                if (before.split("-")[1] != after.split("-")[0]) {
+                    istrue = false;
+                    break;
+                }
             }
             if (istrue) {
-            $("#answer-true").show();
+                $("#answer-true").show();
             } else {
-            $("#answer-false").show();
+                $("#answer-false").show();
             }
-            }
+        }
         </script>
         <style type="text/css" media="screen">
             padding: 0;
