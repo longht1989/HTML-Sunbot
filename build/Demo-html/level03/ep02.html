@@ -151,6 +151,39 @@
                 </div>
             </div>
         </div>
+        <!-- game zone 2 -->
+        <div class="area-01 game-01" id="area9">
+            <div class="container-fluid">
+                <h4 class="area__header">Game tương tác</h4>
+                <h3 class="text-center">Chọn hình ảnh để ghép thành sunbot hoàn chỉnh</h3>
+                <br>
+                <div class="row">
+                    <div class="col-xs-6 col-xs-offset-3">
+                        <div class="card" game-data="1">
+                            <p><img src="../images/lv03/ep02/game-sunbot-sliced.png" alt="" class="img-responsive"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix" style="margin-bottom: 20px;"></div>
+                <div class="row">
+                    <div class="col-xs-4">
+                        <div class="card" data-result="false">
+                            <p><img src="../images/lv03/ep02/game-sunbot-shadow-bot.png" alt="" class="img-responsive"></p>
+                        </div>
+                    </div>
+                    <div class="col-xs-4">
+                        <div class="card" data-result="false">
+                            <p><img src="../images/lv03/ep02/game-sunbot-shadow-top.png" alt="" class="img-responsive"></p>
+                        </div>
+                    </div>
+                    <div class="col-xs-4">
+                        <div class="card" data-result="sunbotcorrect">
+                            <p><img src="../images/lv03/ep02/game-sunbot-shadow-mid.png" alt="" class="img-responsive"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <!-- correct popup -->
         <div class="area area--popup area-05" id="answer-true">
             <div class="container-fluid">
@@ -162,6 +195,13 @@
         <div class="area area--popup area-04" id="answer-false">
             <div class="container-fluid">
                 <img src="http://admin.sunbot.vn/build/Demo-html/images/wrong.png" alt="" class="img-responsive">
+                <a class="close-btn" onclick="close()"><img src="../images/close-btn.png" alt=""></a>
+            </div>
+        </div>
+         <!-- sunbot correct popup -->
+        <div class="area area--popup area-05" id="sunbotcorrect">
+            <div class="container-fluid">
+                <img src="../images/lv03/ep02/sunbot-correct.png" alt="" class="img-responsive">
                 <a class="close-btn" onclick="close()"><img src="../images/close-btn.png" alt=""></a>
             </div>
         </div>
@@ -243,6 +283,13 @@
                 $('#answer-false').show();
             }
         };
+        // js for game 2
+        $("[data-result=sunbotcorrect]").on("click", function() {
+            $("#sunbotcorrect").show();
+        });
+        $("[data-result=false]").on("click", function() {
+            $("#answer-false").show();
+        });
         </script>
         <!-- .end normal area -->
         <style type="text/css" media="screen">
