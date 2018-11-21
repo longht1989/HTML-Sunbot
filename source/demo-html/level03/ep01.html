@@ -113,88 +113,208 @@
                 <h4 class="area__header">Game tương tác</h4>
                 <h3 class="text-center">Cô giáo đọc từ, bé chọn hình</h3>
                 <br>
-                <div class="text-center" id="start1"><button class="btn btn-success" onclick="cardAppend()">Bắt đầu</button></div>
-                <div class="row" id="ListText">
-                    <div class="col-xs-6 col-sm-4">
+                <!-- game 1 part 1 -->
+                <div class="row">
+                    <div class="col-xs-2 col-xs-offset-5">
                         <div class="card disable" data-value="gameschool">
                             <p><img src="../images/lv03/ep01/game-text-school.png" alt="" class="img-responsive"></p>
                         </div>
                     </div>
-                    <div class="col-xs-6 col-sm-4">
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-xs-2 col-xs-offset-2">
+                        <div class="card" data-value="gameschool" data-result="true">
+                            <p><img src="../images/lv03/ep01/game-school.png" alt="" class="img-responsive"></p>
+                        </div>
+                    </div>
+                    <div class="col-xs-2">
+                        <div class="card" data-value="gameclassroom" data-result="false">
+                            <p><img src="../images/lv03/ep01/game-classroom.png" alt="" class="img-responsive"></p>
+                        </div>
+                    </div>
+                    <div class="col-xs-2">
+                        <div class="card" data-value="gameteacher" data-result="false">
+                            <p><img src="../images/lv03/ep01/game-teacher.png" alt="" class="img-responsive"></p>
+                        </div>
+                    </div>
+                    <div class="col-xs-2">
+                        <div class="card" data-value="gamepupil" data-result="false">
+                            <p><img src="../images/lv03/ep01/game-pupil.png" alt="" class="img-responsive"></p>
+                        </div>
+                    </div>
+                </div>
+                <!-- game 1 part 2 -->
+                <div class="col-xs-10 col-xs-offset-1">
+                    <br>
+                    <hr>
+                </div>
+                <div class="row">
+                    <div class="col-xs-2 col-xs-offset-5">
                         <div class="card disable" data-value="gameclassroom">
                             <p><img src="../images/lv03/ep01/game-text-classroom.png" alt="" class="img-responsive"></p>
                         </div>
                     </div>
-                    <div class="col-xs-6 col-sm-4">
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-xs-2 col-xs-offset-2">
+                        <div class="card" data-value="gamepupil" data-result="false">
+                            <p><img src="../images/lv03/ep01/game-pupil.png" alt="" class="img-responsive"></p>
+                        </div>
+                    </div>
+                    <div class="col-xs-2">
+                        <div class="card" data-value="gameschool" data-result="false">
+                            <p><img src="../images/lv03/ep01/game-school.png" alt="" class="img-responsive"></p>
+                        </div>
+                    </div>
+                    <div class="col-xs-2">
+                        <div class="card" data-value="gameteacher" data-result="false">
+                            <p><img src="../images/lv03/ep01/game-teacher.png" alt="" class="img-responsive"></p>
+                        </div>
+                    </div>
+                    <div class="col-xs-2">
+                        <div class="card" data-value="gameclassroom" data-result="true">
+                            <p><img src="../images/lv03/ep01/game-classroom.png" alt="" class="img-responsive"></p>
+                        </div>
+                    </div>
+                </div>
+                <!-- game 1 part 3 -->
+                <div class="col-xs-10 col-xs-offset-1">
+                    <br>
+                    <hr>
+                </div>
+                <div class="row">
+                    <div class="col-xs-2 col-xs-offset-5">
                         <div class="card disable" data-value="gameteacher">
                             <p><img src="../images/lv03/ep01/game-text-teacher.png" alt="" class="img-responsive"></p>
                         </div>
                     </div>
-                    <div class="col-xs-6 col-sm-4">
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-xs-2 col-xs-offset-2">
+                        <div class="card" data-value="gameclassroom" data-result="false">
+                            <p><img src="../images/lv03/ep01/game-classroom.png" alt="" class="img-responsive"></p>
+                        </div>
+                    </div>
+                    <div class="col-xs-2">
+                        <div class="card" data-value="gameteacher" data-result="true">
+                            <p><img src="../images/lv03/ep01/game-teacher.png" alt="" class="img-responsive"></p>
+                        </div>
+                    </div>
+                    <div class="col-xs-2">
+                        <div class="card" data-value="gameschool" data-result="false">
+                            <p><img src="../images/lv03/ep01/game-school.png" alt="" class="img-responsive"></p>
+                        </div>
+                    </div>
+                    <div class="col-xs-2">
+                        <div class="card" data-value="gamepupil" data-result="false">
+                            <p><img src="../images/lv03/ep01/game-pupil.png" alt="" class="img-responsive"></p>
+                        </div>
+                    </div>
+                </div>
+                <!-- game 1 part 4 -->
+                <div class="col-xs-10 col-xs-offset-1">
+                    <br>
+                    <hr>
+                </div>
+                <div class="row">
+                    <div class="col-xs-2 col-xs-offset-5">
                         <div class="card disable" data-value="gamepupil">
                             <p><img src="../images/lv03/ep01/game-text-pupil.png" alt="" class="img-responsive"></p>
                         </div>
                     </div>
                 </div>
                 <br>
-                <div class="row" id="ListImage">
-                    <div class="col-xs-6 col-sm-3">
-                        <div class="card disable" data-value="gameschool" onclick="check($(this).attr('data-value'))">
-                            <p><img src="../images/lv03/ep01/game-school.png" alt="" class="img-responsive"></p>
-                        </div>
-                    </div>
-                    <div class="col-xs-6 col-sm-3">
-                        <div class="card disable" data-value="gameclassroom" onclick="check($(this).attr('data-value'))">
-                            <p><img src="../images/lv03/ep01/game-classroom.png" alt="" class="img-responsive"></p>
-                        </div>
-                    </div>
-                    <div class="col-xs-6 col-sm-3">
-                        <div class="card disable" data-value="gameteacher" onclick="check($(this).attr('data-value'))">
+                <div class="row">
+                    <div class="col-xs-2 col-xs-offset-2">
+                        <div class="card" data-value="gameteacher" data-result="false">
                             <p><img src="../images/lv03/ep01/game-teacher.png" alt="" class="img-responsive"></p>
                         </div>
                     </div>
-                    <div class="col-xs-6 col-sm-3">
-                        <div class="card disable" data-value="gamepupil" onclick="check($(this).attr('data-value'))">
+                    <div class="col-xs-2">
+                        <div class="card" data-value="gameclassroom" data-result="false">
+                            <p><img src="../images/lv03/ep01/game-classroom.png" alt="" class="img-responsive"></p>
+                        </div>
+                    </div>
+                    <div class="col-xs-2">
+                        <div class="card" data-value="gamepupil" data-result="true">
                             <p><img src="../images/lv03/ep01/game-pupil.png" alt="" class="img-responsive"></p>
+                        </div>
+                    </div>
+                    <div class="col-xs-2">
+                        <div class="card" data-value="gameschool" data-result="false">
+                            <p><img src="../images/lv03/ep01/game-school.png" alt="" class="img-responsive"></p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <br>
+        <hr>
         <!-- game zone 2-->
-        <div class="area-01 game-01" id="area8">
+        <div class="area-01 game-01" id="area9">
             <div class="container-fluid">
                 <h4 class="area__header">Game tương tác</h4>
-                <h3 class="text-center">Cô giáo đọc từ, bé chọn hình</h3>
+                <h3 class="text-center">So sánh xa, gần</h3>
                 <br>
-                <div class="text-center" id="start2"><button class="btn btn-success" onclick="cardAppend1()">Bắt đầu</button></div>
-                <div class="row" id="ListText1">
-                    <div class="col-xs-6 col-sm-4">
-                        <div class="card disable" data-value="gamesunbot">
-                            <p><img src="../images/lv03/ep01/game-far.png" alt="" class="img-responsive"></p>
-                        </div>
-                    </div>
-                    <div class="col-xs-6 col-sm-4">
+                <div class="row">
+                    <div class="col-xs-2 col-xs-offset-5">
                         <div class="card disable" data-value="gameredbot">
                             <p><img src="../images/lv03/ep01/game-near.png" alt="" class="img-responsive"></p>
                         </div>
                     </div>
                 </div>
                 <br>
-                <div class="row" id="ListImage1">
-                    <div class="col-xs-12">
-                        <div class="card disable" data-value="gamebluebot" onclick="check($(this).attr('data-value'))">
+                <div class="row">
+                    <div class="col-xs-6 col-xs-offset-3">
+                        <div class="card" data-result="false">
                             <p><img src="../images/lv03/ep01/game-bluebot.png" alt="" class="img-responsive"></p>
                         </div>
                     </div>
-                    <div class="col-xs-12">
-                        <div class="card disable" data-value="gamesunbot" onclick="check($(this).attr('data-value'))">
+                    <div class="clearfix"></div><br>
+                    <div class="col-xs-6 col-xs-offset-3">
+                        <div class="card" data-result="false">
                             <p><img src="../images/lv03/ep01/game-sunbot.png" alt="" class="img-responsive"></p>
                         </div>
                     </div>
-                    <div class="col-xs-12">
-                        <div class="card disable" data-value="gameredbot" onclick="check($(this).attr('data-value'))">
+                    <div class="clearfix"></div><br>
+                    <div class="col-xs-6 col-xs-offset-3">
+                        <div class="card" data-result="true">
                             <p><img src="../images/lv03/ep01/game-redbot.png" alt="" class="img-responsive"></p>
+                        </div>
+                    </div>
+                </div>
+                <!-- part 2 -->
+                <div class="col-xs-10 col-xs-offset-1">
+                    <br>
+                    <hr>
+                </div>
+                <div class="row">
+                    <div class="col-xs-2 col-xs-offset-5">
+                        <div class="card disable" data-value="gamesunbot">
+                            <p><img src="../images/lv03/ep01/game-far.png" alt="" class="img-responsive"></p>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-xs-6 col-xs-offset-3">
+                        <div class="card" data-result="false">
+                            <p><img src="../images/lv03/ep01/game-bluebot.png" alt="" class="img-responsive"></p>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div><br>
+                    <div class="col-xs-6 col-xs-offset-3">
+                        <div class="card" data-result="false">
+                            <p><img src="../images/lv03/ep01/game-redbot.png" alt="" class="img-responsive"></p>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div><br>
+                    <div class="col-xs-6 col-xs-offset-3">
+                        <div class="card" data-result="true">
+                            <p><img src="../images/lv03/ep01/game-sunbot.png" alt="" class="img-responsive"></p>
                         </div>
                     </div>
                 </div>
@@ -273,26 +393,12 @@
         });
 
         // game 1 js
-        function cardAppend() {
-            var _listText = $("#ListText .card");
-            var randomCard = _listText[Math.floor(Math.random() * _listText.length)];
-            randomCard.classList.add("show");
-            $('#start1').hide();
-            $("#ListText .card").parent(".col-xs-6").addClass("col-xs-offset-3 col-sm-offset-4");
-            $("#ListImage .card").removeClass('disable');
-        }
-
-        function check(cardid) {
-            var carda = $('#ListText .card.show').attr('data-value');
-            var cardb = $('#ListText1 .card.show').attr('data-value');
-            if (carda == cardid) {
-                $('#answer-true').show();
-            } else if (cardb == cardid) {
-                $('#answer-true').show();
-            } else {
-                $('#answer-false').show();
-            }
-        };
+        $("[data-result=true]").on("click", function() {
+            $("#answer-true").show();
+        });
+        $("[data-result=false]").on("click", function() {
+            $("#answer-false").show();
+        });
         // game 2 js
         function cardAppend1() {
             var _listText = $("#ListText1 .card");
