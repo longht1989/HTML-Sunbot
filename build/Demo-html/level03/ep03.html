@@ -114,22 +114,22 @@
                 <div class="row">
                     <div class="col-sm-6 col-sm-offset-3">
                         <div class="row sortable card-grid" id="sortable">
-                            <div class="col-xs-6">
+                            <div class="col-xs-6 draggable">
                                 <div class="card" data-value="2">
                                     <p><img src="../images/lv03/ep03/game-piece-2.png" alt="" class="img-responsive"></p>
                                 </div>
                             </div>
-                            <div class="col-xs-6">
+                            <div class="col-xs-6 draggable">
                                 <div class="card" data-value="4">
                                     <p><img src="../images/lv03/ep03/game-piece-4.png" alt="" class="img-responsive"></p>
                                 </div>
                             </div>
-                            <div class="col-xs-6">
+                            <div class="col-xs-6 draggable">
                                 <div class="card" data-value="1">
                                     <p><img src="../images/lv03/ep03/game-piece-1.png" alt="" class="img-responsive"></p>
                                 </div>
                             </div>
-                            <div class="col-xs-6">
+                            <div class="col-xs-6 draggable">
                                 <div class="card" data-value="3">
                                     <p><img src="../images/lv03/ep03/game-piece-3.png" alt="" class="img-responsive"></p>
                                 </div>
@@ -158,22 +158,22 @@
                 <div class="row">
                     <div class="col-sm-6 col-sm-offset-3">
                         <div class="row sortable card-grid" id="sortable1">
-                            <div class="col-xs-6">
+                            <div class="col-xs-6 draggable">
                                 <div class="card" data-value="2">
                                     <p><img src="../images/lv03/ep03/game-piece-2-ziczac.png" alt="" class="img-responsive"></p>
                                 </div>
                             </div>
-                            <div class="col-xs-6">
+                            <div class="col-xs-6 draggable">
                                 <div class="card" data-value="4">
                                     <p><img src="../images/lv03/ep03/game-piece-4-ziczac.png" alt="" class="img-responsive"></p>
                                 </div>
                             </div>
-                            <div class="col-xs-6">
+                            <div class="col-xs-6 draggable">
                                 <div class="card" data-value="1">
                                     <p><img src="../images/lv03/ep03/game-piece-1-ziczac.png" alt="" class="img-responsive"></p>
                                 </div>
                             </div>
-                            <div class="col-xs-6">
+                            <div class="col-xs-6 draggable">
                                 <div class="card" data-value="3">
                                     <p><img src="../images/lv03/ep03/game-piece-3-ziczac.png" alt="" class="img-responsive"></p>
                                 </div>
@@ -287,16 +287,19 @@
         while (divs.length) {
             parent.append(divs.splice(Math.floor(Math.random() * divs.length), 1)[0]);
         }
-        // sortable & dragable
+        // sortable & draggable
         $(".sortable").sortable({
             revert: true
         });
-        $("#draggable").draggable({
+        $(".draggable").draggable({
             connectToSortable: ".sortable",
-            helper: "clone",
-            revert: "invalid"
+            // helper: "clone",
+            revert: "invalid",
+            stop: function(event, ui) {
+                $('.draggable.ui-sortable-handle').removeAttr("style")
+            }
         });
-        $("ul, li").disableSelection();
+        // $(".droppable").droppable();
         // game 2
         // random
         var parent1 = $("#sortable1");
