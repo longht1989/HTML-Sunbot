@@ -113,23 +113,23 @@
                 <br>
                 <div class="row">
                     <div class="col-sm-6 col-sm-offset-3">
-                        <div class="row sortable card-grid" id="sortable">
-                            <div class="col-xs-6 draggable">
+                        <div class="row card-grid" id="sortable">
+                            <div class="col-xs-6" id="griditem1">
                                 <div class="card" data-value="2">
                                     <p><img src="../images/lv03/ep03/game-piece-2.png" alt="" class="img-responsive"></p>
                                 </div>
                             </div>
-                            <div class="col-xs-6 draggable">
+                            <div class="col-xs-6" id="griditem2">
                                 <div class="card" data-value="4">
                                     <p><img src="../images/lv03/ep03/game-piece-4.png" alt="" class="img-responsive"></p>
                                 </div>
                             </div>
-                            <div class="col-xs-6 draggable">
+                            <div class="col-xs-6" id="griditem3">
                                 <div class="card" data-value="1">
                                     <p><img src="../images/lv03/ep03/game-piece-1.png" alt="" class="img-responsive"></p>
                                 </div>
                             </div>
-                            <div class="col-xs-6 draggable">
+                            <div class="col-xs-6" id="griditem4">
                                 <div class="card" data-value="3">
                                     <p><img src="../images/lv03/ep03/game-piece-3.png" alt="" class="img-responsive"></p>
                                 </div>
@@ -157,23 +157,23 @@
                 <br>
                 <div class="row">
                     <div class="col-sm-6 col-sm-offset-3">
-                        <div class="row sortable card-grid" id="sortable1">
-                            <div class="col-xs-6 draggable">
+                        <div class="row card-grid" id="sortable1">
+                            <div class="col-xs-6" id="cardgrid5">
                                 <div class="card" data-value="2">
                                     <p><img src="../images/lv03/ep03/game-piece-2-ziczac.png" alt="" class="img-responsive"></p>
                                 </div>
                             </div>
-                            <div class="col-xs-6 draggable">
+                            <div class="col-xs-6" id="cardgrid6">
                                 <div class="card" data-value="4">
                                     <p><img src="../images/lv03/ep03/game-piece-4-ziczac.png" alt="" class="img-responsive"></p>
                                 </div>
                             </div>
-                            <div class="col-xs-6 draggable">
+                            <div class="col-xs-6" id="cardgrid7">
                                 <div class="card" data-value="1">
                                     <p><img src="../images/lv03/ep03/game-piece-1-ziczac.png" alt="" class="img-responsive"></p>
                                 </div>
                             </div>
-                            <div class="col-xs-6 draggable">
+                            <div class="col-xs-6" id="cardgrid8">
                                 <div class="card" data-value="3">
                                     <p><img src="../images/lv03/ep03/game-piece-3-ziczac.png" alt="" class="img-responsive"></p>
                                 </div>
@@ -287,16 +287,18 @@
         while (divs.length) {
             parent.append(divs.splice(Math.floor(Math.random() * divs.length), 1)[0]);
         }
-        // sortable & draggable
-        $(".sortable").sortable({
-            revert: true
-        });
-        $(".draggable").draggable({
-            connectToSortable: ".sortable",
-            // helper: "clone",
-            revert: "invalid",
-            stop: function(event, ui) {
-                $('.draggable.ui-sortable-handle').removeAttr("style")
+        //click and swap content
+        var count = 1;
+        var saveID;
+        $(".card-grid .col-xs-6").click(function() {
+            if (count == 1) {
+                saveID = $(this).attr('id');
+                count++;
+            } else if (count == 2) {
+                var tmp = $(this).html();
+                $(this).html($("#" + saveID).html());
+                $("#" + saveID).html(tmp);
+                count = 1;
             }
         });
         // $(".droppable").droppable();
