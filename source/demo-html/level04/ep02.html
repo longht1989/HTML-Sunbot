@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <title>Sunbot - Level 4 - Episode 2</title>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../../App_Themes/img/favicon.ico">
+    <!-- CSS Customization -->
+    <link rel="stylesheet" href="../../App_Themes/css/sunbot.min.css">
+    <!-- JS modernizr + Jquery + Components JS-->
+    <script src="../../Jscripts/sunbot.min.js"></script>
+    <script src="../../Jscripts/jquery-ui-1.11.4.custom/jquery-ui.min.js"></script>
+    <script src="../../Jscripts/jquery-ui-1.11.4.custom/jquery.ui.touch-punch.min.js"></script>
+</head>
+
+<body>
+    <div class="lv04-ep02">
+        <!-- main content -->
+        <!-- header area -->
+        <div class="area area-01" id="area1">
+            <h3 class="episode__header text-center animated fadeInDown" style="position: absolute; top:0;left:0;right:0;z-index: 10;padding-top: 20px;color:white; text-shadow: 2px 2px 0 rgba(0,0,0,.35), -1px -1px 0 rgba(0,0,0,.35),1px -1px 0 rgba(0,0,0,.35), -1px 1px 0 rgba(0,0,0,.35), 1px 1px 0 rgba(0,0,0,.35);">Sunbot đi siêu thị</h3>
+            <div class="area__bg">
+                <p><img class="img-responsive" src="../images/lv04/sunbot-supermarket.png" alt=""></p>
+            </div>
+            <div class="area-control">
+                <a class="area-next"><img src="http://admin.sunbot.vn/build/App_Themes/img/next.png" alt=""></a>
+            </div>
+        </div>
+        <!-- .end header area -->
+        <div class="area area-02" id="area2" style="padding: 24px 0;">
+            <div class="container-fluid">
+                <h4 class="area__header text-uppercase" style="color: #da3e21;">Bé đi siêu thị nào?</h4>
+                <div class="area__paragraph">
+                    <h4 class="text-center text-uppercase" style="font-size: 36px">Bài thơ: Bé đi chơi siêu thị</h4>
+                    <p>Bé đi chơi siêu thị</p>
+                    <p>Vui thật quá là vui</p>
+                    <p>Mẹ còn bận lựa hàng</p>
+                    <p>Bé ngạc nhiên đứng ngắm</p>
+                    <p>Những gian hàng nối nhau</p>
+                    <p>Xanh trắng đỏ tím vàng</p>
+                    <p>Bé thích đi siêu thị</p>
+                </div>
+            </div>
+            <div class="area-control">
+                <a class="area-prev"><img src="http://admin.sunbot.vn/build/App_Themes/img/prev.png" alt=""></a>
+                <a class="area-next"><img src="http://admin.sunbot.vn/build/App_Themes/img/next.png" alt=""></a>
+            </div>
+        </div>
+        <!-- normal area -->
+        <div class="area area-01" id="area3">
+            <div class="area__bg">
+                <img class="img-responsive" src="../images/lv04/ep02/lv04-ep02.png" alt="">
+                <a class="area__clickable-01">
+                    <div class="area__button"><img src="../images/hint.gif" alt=""></div>
+                </a>
+                <a class="area__clickable-02">
+                    <div class="area__button"><img src="../images/hint.gif" alt=""></div>
+                </a>
+                <a class="area__clickable-03">
+                    <div class="area__button"><img src="../images/hint.gif" alt=""></div>
+                </a>
+                <a class="area__clickable-04">
+                    <div class="area__button"><img src="../images/hint.gif" alt=""></div>
+                </a>
+            </div>
+            <div class="area-control">
+                <a class="area-prev"><img src="http://admin.sunbot.vn/build/App_Themes/img/prev.png" alt=""></a>
+                <a class="area-next"><img src="http://admin.sunbot.vn/build/App_Themes/img/next.png" alt=""></a>
+            </div>
+        </div>
+        <div class="area area--popup area-04" id="area5">
+            <div class="container-fluid">
+                <img src="../images/lv04/ep02/food.png" alt="" class="img-responsive">
+                <a class="close-btn"><img src="../images/close-btn.png" alt=""></a>
+            </div>
+        </div>
+        <div class="area area--popup area-05" id="area6">
+            <div class="container-fluid">
+                <img src="../images/lv04/ep02/electronics.png" alt="" class="img-responsive">
+                <a class="close-btn"><img src="../images/close-btn.png" alt=""></a>
+            </div>
+        </div>
+        <div class="area area--popup area-05" id="area7">
+            <div class="container-fluid">
+                <img src="../images/lv04/ep02/toy.png" alt="" class="img-responsive">
+                <a class="close-btn"><img src="../images/close-btn.png" alt=""></a>
+            </div>
+        </div>
+        <div class="area area--popup area-04" id="area8">
+            <div class="container-fluid">
+                <img src="../images/lv04/ep02/houseware.png" alt="" class="img-responsive">
+                <a class="close-btn"><img src="../images/close-btn.png" alt=""></a>
+            </div>
+        </div>
+        <!-- game zone -->
+        <div class="area-01 game-01" id="area9">
+            <div class="container-fluid">
+                <h4 class="area__header">Game tương tác</h4>
+                <h3 class="text-center">Con đoán thử xem các đồ vật sau được bán ở đâu</h3>
+                <br>
+                <div class="row">
+                    <div class="col-xs-3 col-xs-offset-3">
+                        <p class="card card-source" data-value="card-1"><img src="../images/lv04/ep02/game-fridge.png" alt="" class="img-responsive"></p>
+                    </div>
+                    <div class="col-xs-3 ">
+                        <p class="card disable hidden" id="card-1-result"><img src="../images/lv04/ep02/game-fridge-1.png" alt="" class="img-responsive"></p>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-xs-3 col-xs-offset-3">
+                        <p class="card card-source" data-value="card-2"><img src="../images/lv04/ep02/game-fish.png" alt="" class="img-responsive"></p>
+                    </div>
+                    <div class="col-xs-3 ">
+                        <p class="card disable hidden" id="card-2-result"><img src="../images/lv04/ep02/game-fish-1.png" alt="" class="img-responsive"></p>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-xs-3 col-xs-offset-3">
+                        <p class="card card-source" data-value="card-3"><img src="../images/lv04/ep02/game-phone.png" alt="" class="img-responsive"></p>
+                    </div>
+                    <div class="col-xs-3 ">
+                        <p class="card disable hidden" id="card-3-result"><img src="../images/lv04/ep02/game-phone-1.png" alt="" class="img-responsive"></p>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-xs-3 col-xs-offset-3">
+                        <p class="card card-source" data-value="card-4"><img src="../images/lv04/ep02/game-plate.png" alt="" class="img-responsive"></p>
+                    </div>
+                    <div class="col-xs-3 ">
+                        <p class="card disable hidden" id="card-4-result"><img src="../images/lv04/ep02/game-plate-1.png" alt="" class="img-responsive"></p>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-xs-3 col-xs-offset-3">
+                        <p class="card card-source" data-value="card-5"><img src="../images/lv04/ep02/game-vegetables.png" alt="" class="img-responsive"></p>
+                    </div>
+                    <div class="col-xs-3 ">
+                        <p class="card disable hidden" id="card-5-result"><img src="../images/lv04/ep02/game-vegetables-1.png" alt="" class="img-responsive"></p>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-xs-3 col-xs-offset-3">
+                        <p class="card card-source" data-value="card-6"><img src="../images/lv04/ep02/game-kinfe.png" alt="" class="img-responsive"></p>
+                    </div>
+                    <div class="col-xs-3 ">
+                        <p class="card disable hidden" id="card-6-result"><img src="../images/lv04/ep02/game-knife-1.png" alt="" class="img-responsive"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="area-control">
+                <a class="area-prev"><img src="http://admin.sunbot.vn/build/App_Themes/img/prev.png" alt=""></a>
+                <a class="area-next"><img src="http://admin.sunbot.vn/build/App_Themes/img/next.png" alt=""></a>
+            </div>
+        </div>
+        <!-- popup game 1 -->
+        <div class="area area--popup area-05" id="sortable1-popup">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-6 col-xs-offset-3">
+                        <br><br>
+                        <p>
+                            <img src="../images/lv04/ep01/game-bicycle.png" alt="" class="center-block img-responsive">
+                        </p>
+                    </div>
+                </div>
+                <a class="close-btn" onclick="close()"><img src="../images/close-btn.png" alt=""></a>
+            </div>
+        </div>
+        <div class="area area--popup area-05" id="sortable3-popup">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-6 col-xs-offset-3">
+                        <br><br>
+                        <p>
+                            <img src="../images/lv04/ep01/game-car.png" alt="" class="center-block img-responsive">
+                        </p>
+                    </div>
+                </div>
+                <a class="close-btn" onclick="close()"><img src="../images/close-btn.png" alt=""></a>
+            </div>
+        </div>
+        <div class="area area--popup area-05" id="sortable4-popup">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-6 col-xs-offset-3">
+                        <br><br>
+                        <p>
+                            <img src="../images/lv04/ep01/game-bus.png" alt="" class="center-block img-responsive">
+                        </p>
+                    </div>
+                </div>
+                <a class="close-btn" onclick="close()"><img src="../images/close-btn.png" alt=""></a>
+            </div>
+        </div>
+        <!-- game zone -->
+        <hr>
+        <div class="area-01 game-01" id="area10">
+            <div class="container-fluid">
+                <h4 class="area__header">Game tương tác</h4>
+                <h3 class="text-center">Nên hay không nên?</h3>
+                <br>
+                <h3 class="text-center text-danger">Khi ngồi trên các phương tiện giao thông</h3>
+                <br>
+                <div class="row">
+                    <div class="game-text">
+                        <div class="col-xs-offset-3 col-xs-3">
+                            <p class="card"><img src="../images/lv04/ep01/game-do-1.png" alt="" class="img-responsive"></p>
+                        </div>
+                        <div class="col-xs-3">
+                            <p class="card"><img src="../images/lv04/ep01/game-dont-1.png" alt="" class="img-responsive"></p>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="game-image">
+                        <br>
+                        <div class="col-xs-offset-3 col-xs-3">
+                            <p class="card disable"><img src="../images/lv04/ep01/game-do-1-text.png" alt="" class="img-responsive"></p>
+                        </div>
+                        <div class="col-xs-3">
+                            <p class="card disable"><img src="../images/lv04/ep01/game-dont-1-text.png" alt="" class="img-responsive"></p>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <hr>
+                <br>
+                <h3 class="text-center text-danger">Khi đèn đỏ</h3>
+                <br>
+                <div class="row">
+                    <div class="game-text">
+                        <div class="col-xs-offset-3 col-xs-3">
+                            <p class="card"><img src="../images/lv04/ep01/game-do-2.png" alt="" class="img-responsive"></p>
+                        </div>
+                        <div class="col-xs-3">
+                            <p class="card"><img src="../images/lv04/ep01/game-dont-2.png" alt="" class="img-responsive"></p>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="game-image">
+                        <br>
+                        <div class="col-xs-offset-3 col-xs-3">
+                            <p class="card disable"><img src="../images/lv04/ep01/game-do-2-text.png" alt="" class="img-responsive"></p>
+                        </div>
+                        <div class="col-xs-3">
+                            <p class="card disable"><img src="../images/lv04/ep01/game-dont-2-text.png" alt="" class="img-responsive"></p>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <hr>
+                <br>
+                <h3 class="text-center text-danger">Khi chờ xe buýt</h3>
+                <br>
+                <div class="row">
+                    <div class="game-text">
+                        <div class="col-xs-offset-3 col-xs-3">
+                            <p class="card"><img src="../images/lv04/ep01/game-do-3.png" alt="" class="img-responsive"></p>
+                        </div>
+                        <div class="col-xs-3">
+                            <p class="card"><img src="../images/lv04/ep01/game-dont-3.png" alt="" class="img-responsive"></p>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="game-image">
+                        <br>
+                        <div class="col-xs-offset-3 col-xs-3">
+                            <p class="card disable"><img src="../images/lv04/ep01/game-do-3-text.png" alt="" class="img-responsive"></p>
+                        </div>
+                        <div class="col-xs-3">
+                            <p class="card disable"><img src="../images/lv04/ep01/game-dont-3-text.png" alt="" class="img-responsive"></p>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <hr>
+                <br>
+                <h3 class="text-center text-danger">Khi tham gia giao thông</h3>
+                <br>
+                <div class="row">
+                    <div class="game-text">
+                        <div class="col-xs-offset-3 col-xs-3">
+                            <p class="card"><img src="../images/lv04/ep01/game-do-4.png" alt="" class="img-responsive"></p>
+                        </div>
+                        <div class="col-xs-3">
+                            <p class="card"><img src="../images/lv04/ep01/game-dont-4.png" alt="" class="img-responsive"></p>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="game-image">
+                        <br>
+                        <div class="col-xs-offset-3 col-xs-3">
+                            <p class="card disable"><img src="../images/lv04/ep01/game-do-4-text.png" alt="" class="img-responsive"></p>
+                        </div>
+                        <div class="col-xs-3">
+                            <p class="card disable"><img src="../images/lv04/ep01/game-dont-4-text.png" alt="" class="img-responsive"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- correct popup -->
+        <div class="area area--popup area-05" id="answer-true">
+            <div class="container-fluid">
+                <img src="http://admin.sunbot.vn/build/Demo-html/images/correct.png" alt="" class="img-responsive">
+                <a class="close-btn" onclick="close()"><img src="../images/close-btn.png" alt=""></a>
+            </div>
+        </div>
+        <!-- wrong popup -->
+        <div class="area area--popup area-04" id="answer-false">
+            <div class="container-fluid">
+                <img src="http://admin.sunbot.vn/build/Demo-html/images/wrong.png" alt="" class="img-responsive">
+                <a class="close-btn" onclick="close()"><img src="../images/close-btn.png" alt=""></a>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+    $(function() {
+        $(".close-btn").click(function() {
+            $("#area5").hide();
+            $("#area6").hide();
+            $("#area7").hide();
+            $("#area8").hide();
+            $("#answer-true").hide();
+            $("#answer-false").hide();
+            $("body").removeClass("fixed");
+            $('.area--popup').hide();
+        });
+        $('.area__clickable-01').click(function() {
+            $("#area5").show();
+            $("body").addClass("fixed");
+        });
+        $('.area__clickable-02').click(function() {
+            $("#area6").show();
+            $("body").addClass("fixed");
+        });
+        $('.area__clickable-03').click(function() {
+            $("#area7").show();
+            $("body").addClass("fixed");
+        });
+        $('.area__clickable-04').click(function() {
+            $("#area8").show();
+            $("body").addClass("fixed");
+        });
+        $("#area1 .area-next").click(function() {
+            $('html, body').animate({
+                scrollTop: $("#area2").offset().top
+            }, 500);
+        });
+        $("#area2 .area-next").click(function() {
+            $('html, body').animate({
+                scrollTop: $("#area3").offset().top
+            }, 500);
+        });
+        $("#area2 .area-prev").click(function() {
+            $('html, body').animate({
+                scrollTop: $("#area1").offset().top
+            }, 500);
+        });
+        $("#area3 .area-prev").click(function() {
+            $('html, body').animate({
+                scrollTop: $("#area2").offset().top
+            }, 500);
+        });
+        $("#area3 .area-next").click(function() {
+            $('html, body').animate({
+                scrollTop: $("#area4").offset().top
+            }, 500);
+        });
+        $("#area4 .area-prev").click(function() {
+            $('html, body').animate({
+                scrollTop: $("#area3").offset().top
+            }, 500);
+        });
+        $("#area4 .area-next").click(function() {
+            $('html, body').animate({
+                scrollTop: $("#area9").offset().top
+            }, 500);
+        });
+        $("#area9 .area-prev").click(function() {
+            $('html, body').animate({
+                scrollTop: $("#area4").offset().top
+            }, 500);
+        });
+        $("#area9 .area-next").click(function() {
+            $('html, body').animate({
+                scrollTop: $("#area10").offset().top
+            }, 500);
+        });
+        $("#area10 .area-prev").click(function() {
+            $('html, body').animate({
+                scrollTop: $("#area9").offset().top
+            }, 500);
+        });
+        // sortable & dragable
+        $(".sortable").sortable({
+            revert: true
+        });
+        $("#draggable").draggable({
+            connectToSortable: ".sortable",
+            helper: "clone",
+            revert: "invalid"
+        });
+        $("ul, li").disableSelection();
+        // true/false answer
+        $("[data-result=false]").on("click", function() {
+            $("#answer-false").show();
+        });
+        $("[data-result=true]").on("click", function() {
+            $("#answer-true").show();
+        });
+        $('.card-source').on('click', openCouple);
+    });
+
+    function openCouple(datavalue) {
+        var Couplesource = $(this).data('value');
+        console.log("#" + Couplesource + "-result");
+        $("#" + Couplesource + "-result").removeClass('hidden');
+    }
+
+    // game 02
+    $(".game-text").on("click", function() {
+        $(this).find(".card").addClass('disable selected');
+        $(this).siblings(".game-image").show();
+    })
+    </script>
+    <!-- .end normal area -->
+    <!-- JS Global Customise -->
+    <style type="text/css" media="screen">
+    .lv04-ep02 .area__clickable-01 {
+        position: absolute;
+        top: 6%;
+        left: 10%;
+        width: 35%;
+        height: 41%;
+
+    }
+
+    .lv04-ep02 .area__clickable-02 {
+        position: absolute;
+        top: 6%;
+        left: 55%;
+        width: 35%;
+        height: 41%;
+    }
+
+    .lv04-ep02 .area__clickable-03 {
+        position: absolute;
+        top: 53%;
+        left: 10%;
+        width: 35%;
+        height: 41%;
+    }
+
+    .lv04-ep02 .area__clickable-04 {
+        position: absolute;
+        top: 53%;
+        left: 55%;
+        width: 35%;
+        height: 41%;
+    }
+
+    .area-02 {
+        padding: 0;
+    }
+
+    .area--popup {
+        z-index: 11;
+    }
+
+    .game-01 {
+        padding: 32px 0;
+    }
+
+    .card {
+        border-radius: 10px;
+        overflow: hidden;
+        cursor: pointer;
+        transition: all 0.2s linear;
+    }
+
+    .card:hover {
+        transform: scale(0.95);
+    }
+
+    .card.hidden {
+        display: none;
+    }
+
+    .card.selected {
+        opacity: 0.5;
+    }
+
+    .col-xs-20p {
+        width: 20%;
+        float: left;
+        padding: 0 10px;
+    }
+
+    *[class^="area__clickable"] {
+        cursor: pointer;
+    }
+
+    #ListText .card,
+    #ListText1 .card {
+        display: none;
+    }
+
+    #ListText .card.show,
+    #ListText1 .card.show {
+        display: block;
+    }
+
+    .game-image {
+        display: none;
+    }
+    </style>
+    </div>
+</body>
+
+</html>
