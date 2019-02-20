@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <title>Sunbot - Level 4 - Episode 4</title>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../../App_Themes/img/favicon.ico">
+    <!-- CSS Customization -->
+    <link rel="stylesheet" href="../../App_Themes/css/sunbot.min.css">
+    <!-- JS modernizr + Jquery + Components JS-->
+    <script src="../../Jscripts/sunbot.min.js"></script>
+    <script src="../../Jscripts/jquery-ui-1.11.4.custom/jquery-ui.min.js"></script>
+    <script src="../../Jscripts/jquery-ui-1.11.4.custom/jquery.ui.touch-punch.min.js"></script>
+</head>
+
+<body>
+    <div class="lv04-ep04">
+        <!-- main content -->
+        <!-- header area -->
+        <div class="area area-01" id="area1">
+            <h3 class="episode__header text-center animated fadeInDown" style="position: absolute; top:0;left:0;right:0;z-index: 10;padding-top: 20px;color:white; text-shadow: 2px 2px 0 rgba(0,0,0,.35), -1px -1px 0 rgba(0,0,0,.35),1px -1px 0 rgba(0,0,0,.35), -1px 1px 0 rgba(0,0,0,.35), 1px 1px 0 rgba(0,0,0,.35);">Sunbot đi siêu thị</h3>
+            <div class="area__bg">
+                <p><img class="img-responsive" src="../images/lv04/sunbot-supermarket.png" alt=""></p>
+            </div>
+            <div class="area-control">
+                <a class="area-next"><img src="http://admin.sunbot.vn/build/App_Themes/img/next.png" alt=""></a>
+            </div>
+        </div>
+        <!-- .end header area -->
+        <div class="area area-02" id="area2" style="padding: 24px 0;">
+            <div class="container-fluid">
+                <h4 class="area__header text-uppercase" style="color: #da3e21;">Các quầy hàng trong siêu thị</h4>
+                <h4 class="text-center text-uppercase" style="line-height: 1.4;max-width: 80%;margin: auto;">Các bạn ơi trong siêu thị có rất nhiều các quầy hàng được chia thành các nhóm gian hàng khác nhau. Chúng ta cùng xem có những nhóm gian hàng nào nhé</h4>
+                <div class="area__bg">
+                    <img class="img-responsive" src="../images/lv04/ep04/bg.png" alt="">
+                    <a class="area__clickable-01">
+                        <div class="area__button"><img src="../images/hint.gif" alt=""></div>
+                    </a>
+                    <a class="area__clickable-02">
+                        <div class="area__button"><img src="../images/hint.gif" alt=""></div>
+                    </a>
+                    <a class="area__clickable-03">
+                        <div class="area__button"><img src="../images/hint.gif" alt=""></div>
+                    </a>
+                    <a class="area__clickable-04">
+                        <div class="area__button"><img src="../images/hint.gif" alt=""></div>
+                    </a>
+                    <a class="area__clickable-05">
+                        <div class="area__button"><img src="../images/hint.gif" alt=""></div>
+                    </a>
+                </div>
+            </div>
+            <div class="area-control">
+                <a class="area-prev"><img src="http://admin.sunbot.vn/build/App_Themes/img/prev.png" alt=""></a>
+                <a class="area-next"><img src="http://admin.sunbot.vn/build/App_Themes/img/next.png" alt=""></a>
+            </div>
+        </div>
+        <!-- area popup -->
+        <div class="area area--popup area-05" id="area5">
+            <div class="container-fluid">
+                <img src="../images/lv04/ep04/freashfood.png" alt="" class="img-responsive">
+                <a class="close-btn"><img src="../images/close-btn.png" alt=""></a>
+            </div>
+        </div>
+        <div class="area area--popup area-04" id="area6">
+            <div class="container-fluid">
+                <img src="../images/lv04/ep04/icefood.png" alt="" class="img-responsive">
+                <a class="close-btn"><img src="../images/close-btn.png" alt=""></a>
+            </div>
+        </div>
+        <div class="area area--popup area-05" id="area7">
+            <div class="container-fluid">
+                <img src="../images/lv04/ep04/dryfood.png" alt="" class="img-responsive">
+                <a class="close-btn"><img src="../images/close-btn.png" alt=""></a>
+            </div>
+        </div>
+        <div class="area area--popup area-04" id="area8">
+            <div class="container-fluid">
+                <img src="../images/lv04/ep04/drink.png" alt="" class="img-responsive">
+                <a class="close-btn"><img src="../images/close-btn.png" alt=""></a>
+            </div>
+        </div>
+        <div class="area area--popup area-05" id="area11">
+            <div class="container-fluid">
+                <img src="../images/lv04/ep04/houseware.png" alt="" class="img-responsive">
+                <a class="close-btn"><img src="../images/close-btn.png" alt=""></a>
+            </div>
+        </div>
+        <!-- game zone -->
+        <div class="area-01 game-01" id="area9">
+            <div class="container-fluid">
+                <h4 class="area__header">Game tương tác</h4>
+                <h3 class="text-center">Yêu cầu: Cô sẽ đọc những câu hỏi, trẻ sẽ trả lời vì sao</h3>
+                <br>
+                <div class="row">
+                    <div class="col-xs-2 col-xs-offset-5">
+                        <div class="card disable">
+                            <p><img src="../images/lv04/ep04/game-hungry.png" alt="" class="img-responsive"></p>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-xs-3 col-xs-offset-3">
+                        <div class="card card-source" data-popup='hungry'>
+                            <p><img src="../images/lv04/ep04/game-hungry-1.png" alt="" class="img-responsive"></p>
+                        </div>
+                    </div>
+                    <div class="col-xs-3">
+                        <div class="card" data-result='false'>
+                            <p><img src="../images/lv04/ep04/game-hungry-2.png" alt="" class="img-responsive"></p>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-xs-offset-3 col-xs-6">
+                        <hr>
+                    </div>
+                </div>
+                <!--  -->
+                <br>
+                <div class="row">
+                    <div class="col-xs-2 col-xs-offset-5">
+                        <div class="card disable">
+                            <p><img src="../images/lv04/ep04/game-shoes.png" alt="" class="img-responsive"></p>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-xs-3 col-xs-offset-3">
+                        <div class="card" data-result='false'>
+                            <p><img src="../images/lv04/ep04/game-shoes-2.png" alt="" class="img-responsive"></p>
+                        </div>
+                    </div>
+                    <div class="col-xs-3">
+                        <div class="card card-source" data-popup='shoes'>
+                            <p><img src="../images/lv04/ep04/game-shoes-1.png" alt="" class="img-responsive"></p>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-xs-offset-3 col-xs-6">
+                        <hr>
+                    </div>
+                </div>
+                <!--  -->
+                <br>
+                <div class="row">
+                    <div class="col-xs-2 col-xs-offset-5">
+                        <div class="card disable">
+                            <p><img src="../images/lv04/ep04/game-helmet.png" alt="" class="img-responsive"></p>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-xs-3 col-xs-offset-3">
+                        <div class="card card-source" data-popup='helmet'>
+                            <p><img src="../images/lv04/ep04/game-helmet-1.png" alt="" class="img-responsive"></p>
+                        </div>
+                    </div>
+                    <div class="col-xs-3">
+                        <div class="card" data-result='false'>
+                            <p><img src="../images/lv04/ep04/game-helmet-2.png" alt="" class="img-responsive"></p>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-xs-offset-3 col-xs-6">
+                        <hr>
+                    </div>
+                </div>
+                <!--  -->
+                <br>
+                <div class="row">
+                    <div class="col-xs-2 col-xs-offset-5">
+                        <div class="card disable">
+                            <p><img src="../images/lv04/ep04/game-teeth.png" alt="" class="img-responsive"></p>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-xs-3 col-xs-offset-3">
+                        <div class="card" data-result='false'>
+                            <p><img src="../images/lv04/ep04/game-teeth-2.png" alt="" class="img-responsive"></p>
+                        </div>
+                    </div>
+                    <div class="col-xs-3">
+                        <div class="card card-source" data-popup='teeth'>
+                            <p><img src="../images/lv04/ep04/game-teeth-1.png" alt="" class="img-responsive"></p>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-xs-offset-3 col-xs-6">
+                        <hr>
+                    </div>
+                </div>
+                <!--  -->
+                <br>
+                <div class="row">
+                    <div class="col-xs-2 col-xs-offset-5">
+                        <div class="card disable">
+                            <p><img src="../images/lv04/ep04/game-school.png" alt="" class="img-responsive"></p>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-xs-3 col-xs-offset-3">
+                        <div class="card" data-result='false'>
+                            <p><img src="../images/lv04/ep04/game-school-2.png" alt="" class="img-responsive"></p>
+                        </div>
+                    </div>
+                    <div class="col-xs-3">
+                        <div class="card card-source" data-popup='school'>
+                            <p><img src="../images/lv04/ep04/game-school-1.png" alt="" class="img-responsive"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="area-control">
+                <a class="area-prev"><img src="http://admin.sunbot.vn/build/App_Themes/img/prev.png" alt=""></a>
+                <a class="area-next"><img src="http://admin.sunbot.vn/build/App_Themes/img/next.png" alt=""></a>
+            </div>
+        </div>
+        <!-- popup game 1 -->
+        <div class="area area--popup area-05" id="game-hungry">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-6 col-xs-offset-3">
+                        <br>
+                        <br>
+                        <p class="center-block">
+                            <img src="../images/lv04/ep04/game-hungry-1.png" alt="" class="img-responsive">
+                        </p>
+                    </div>
+                </div>
+                <a class="close-btn" onclick="close()"><img src="../images/close-btn.png" alt=""></a>
+            </div>
+        </div>
+        <div class="area area--popup area-05" id="game-shoes">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-6 col-xs-offset-3">
+                        <br>
+                        <br>
+                        <p>
+                            <img src="../images/lv04/ep04/game-shoes-1.png" alt="" class="img-responsive">
+                        </p>
+                    </div>
+                </div>
+                <a class="close-btn" onclick="close()"><img src="../images/close-btn.png" alt=""></a>
+            </div>
+        </div>
+        <div class="area area--popup area-05" id="game-helmet">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-6 col-xs-offset-3">
+                        <br>
+                        <br>
+                        <p>
+                            <img src="../images/lv04/ep04/game-helmet-1.png" alt="" class="img-responsive">
+                        </p>
+                    </div>
+                </div>
+                <a class="close-btn" onclick="close()"><img src="../images/close-btn.png" alt=""></a>
+            </div>
+        </div>
+        <div class="area area--popup area-05" id="game-teeth">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-6 col-xs-offset-3">
+                        <br>
+                        <br>
+                        <p>
+                            <img src="../images/lv04/ep04/game-teeth-1.png" alt="" class="img-responsive">
+                        </p>
+                    </div>
+                </div>
+                <a class="close-btn" onclick="close()"><img src="../images/close-btn.png" alt=""></a>
+            </div>
+        </div>
+        <div class="area area--popup area-05" id="game-school">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-6 col-xs-offset-3">
+                        <br>
+                        <br>
+                        <p>
+                            <img src="../images/lv04/ep04/game-school-1.png" alt="" class="img-responsive">
+                        </p>
+                    </div>
+                </div>
+                <a class="close-btn" onclick="close()"><img src="../images/close-btn.png" alt=""></a>
+            </div>
+        </div>
+        <hr>
+        <!-- game 2 -->
+        <div class="area-01 game-01" id="area10">
+            <div class="container-fluid">
+                <h4 class="area__header">Game tương tác: Mẹ muốn mua phần nào?</h4>
+                <h3 class="text-center">Giáo viên đọc yêu cầu “Mẹ muốn mua phần nhiều/ít hơn”. Trẻ sẽ chọn phần đúng</h3>
+                <br>
+                <br>
+                <!--  -->
+                <h3 class="text-center">Mẹ muốn mua quả na phần nhiều hơn</h3>
+                <br>
+                <div class="row">
+                    <div class="col-xs-4">
+                        <div class="card" data-result='false'>
+                            <p><img src="../images/lv04/ep04/game-custardapple-2.png" alt="" class="img-responsive"></p>
+                        </div>
+                    </div>
+                    <div class="col-xs-4">
+                        <div class="card disable off" id="game-custardapple">
+                            <p><img src="../images/lv04/ep04/game-custardapple.png" alt="" class="img-responsive"></p>
+                        </div>
+                    </div>
+                    <div class="col-xs-4">
+                        <div class="card card-show" data-show='game-custardapple'>
+                            <p><img src="../images/lv04/ep04/game-custardapple-1.png" alt="" class="img-responsive"></p>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <hr>
+                <br>
+                <!--  -->
+                <h3 class="text-center">Mẹ muốn mua kem phần ít hơn</h3>
+                <br>
+                <div class="row">
+                    <div class="col-xs-4">
+                        <div class="card card-show" data-show='game-icecream'>
+                            <p><img src="../images/lv04/ep04/game-icecream-1.png" alt="" class="img-responsive"></p>
+                        </div>
+                    </div>
+                    <div class="col-xs-4">
+                        <div class="card disable off" id="game-icecream">
+                            <p><img src="../images/lv04/ep04/game-icecream.png" alt="" class="img-responsive"></p>
+                        </div>
+                    </div>
+                    <div class="col-xs-4">
+                        <div class="card" data-result='false'>
+                            <p><img src="../images/lv04/ep04/game-icecream-2.png" alt="" class="img-responsive"></p>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <hr>
+                <br>
+                <!--  -->
+                <h3 class="text-center">Mẹ muốn mua cá phần nhiều hơn</h3>
+                <br>
+                <div class="row">
+                    <div class="col-xs-4">
+                        <div class="card card-show" data-show='game-fish'>
+                            <p><img src="../images/lv04/ep04/game-fish-1.png" alt="" class="img-responsive"></p>
+                        </div>
+                    </div>
+                    <div class="col-xs-4">
+                        <div class="card disable off" id="game-fish">
+                            <p><img src="../images/lv04/ep04/game-fish.png" alt="" class="img-responsive"></p>
+                        </div>
+                    </div>
+                    <div class="col-xs-4">
+                        <div class="card" data-result='false'>
+                            <p><img src="../images/lv04/ep04/game-fish-2.png" alt="" class="img-responsive"></p>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <hr>
+                <br>
+                <!--  -->
+                <h3 class="text-center">Mẹ muốn mua cua phần ít hơn</h3>
+                <br>
+                <div class="row">
+                    <div class="col-xs-4">
+                        <div class="card card-show" data-show='game-crab'>
+                            <p><img src="../images/lv04/ep04/game-crab-1.png" alt="" class="img-responsive"></p>
+                        </div>
+                    </div>
+                    <div class="col-xs-4">
+                        <div class="card disable off" id="game-crab">
+                            <p><img src="../images/lv04/ep04/game-crab.png" alt="" class="img-responsive"></p>
+                        </div>
+                    </div>
+                    <div class="col-xs-4">
+                        <div class="card" data-result='false'>
+                            <p><img src="../images/lv04/ep04/game-crab-2.png" alt="" class="img-responsive"></p>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <hr>
+                <br>
+                <!--  -->
+                <h3 class="text-center">Mẹ muốn mua sữa phần nhiều hơn</h3>
+                <br>
+                <div class="row">
+                    <div class="col-xs-4">
+                        <div class="card card-show" data-show='game-milk'>
+                            <p><img src="../images/lv04/ep04/game-milk-1.png" alt="" class="img-responsive"></p>
+                        </div>
+                    </div>
+                    <div class="col-xs-4">
+                        <div class="card disable off" id="game-milk">
+                            <p><img src="../images/lv04/ep04/game-milk.png" alt="" class="img-responsive"></p>
+                        </div>
+                    </div>
+                    <div class="col-xs-4">
+                        <div class="card" data-result='false'>
+                            <p><img src="../images/lv04/ep04/game-milk-2.png" alt="" class="img-responsive"></p>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <hr>
+                <br>
+                <!--  -->
+                <h3 class="text-center">Mẹ muốn mua rau phần nhiều hơn</h3>
+                <br>
+                <div class="row">
+                    <div class="col-xs-4">
+                        <div class="card" data-result='false'>
+                            <p><img src="../images/lv04/ep04/game-vegetable-1.png" alt="" class="img-responsive"></p>
+                        </div>
+                    </div>
+                    <div class="col-xs-4">
+                        <div class="card disable off" id="game-vegetable">
+                            <p><img src="../images/lv04/ep04/game-vegetable.png" alt="" class="img-responsive"></p>
+                        </div>
+                    </div>
+                    <div class="col-xs-4">
+                        <div class="card card-show" data-show='game-vegetable'>
+                            <p><img src="../images/lv04/ep04/game-vegetable-2.png" alt="" class="img-responsive"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- correct popup -->
+        <div class="area area--popup area-05" id="answer-true">
+            <div class="container-fluid">
+                <img src="http://admin.sunbot.vn/build/Demo-html/images/correct.png" alt="" class="img-responsive">
+                <a class="close-btn" onclick="close()"><img src="../images/close-btn.png" alt=""></a>
+            </div>
+        </div>
+        <!-- wrong popup -->
+        <div class="area area--popup area-04" id="answer-false">
+            <div class="container-fluid">
+                <img src="http://admin.sunbot.vn/build/Demo-html/images/wrong.png" alt="" class="img-responsive">
+                <a class="close-btn" onclick="close()"><img src="../images/close-btn.png" alt=""></a>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+    $(function() {
+        $(".close-btn").click(function() {
+            $("#area5").hide();
+            $("#area6").hide();
+            $("#area7").hide();
+            $("#area8").hide();
+            $("#answer-true").hide();
+            $("#answer-false").hide();
+            $("body").removeClass("fixed");
+            $('.area--popup').hide();
+        });
+        $('.area__clickable-01').click(function() {
+            $("#area5").show();
+            $("body").addClass("fixed");
+        });
+        $('.area__clickable-02').click(function() {
+            $("#area6").show();
+            $("body").addClass("fixed");
+        });
+        $('.area__clickable-03').click(function() {
+            $("#area7").show();
+            $("body").addClass("fixed");
+        });
+        $('.area__clickable-04').click(function() {
+            $("#area8").show();
+            $("body").addClass("fixed");
+        });
+        $('.area__clickable-05').click(function() {
+            $("#area11").show();
+            $("body").addClass("fixed");
+        });
+        $("#area1 .area-next").click(function() {
+            $('html, body').animate({
+                scrollTop: $("#area2").offset().top
+            }, 500);
+        });
+        $("#area2 .area-next").click(function() {
+            $('html, body').animate({
+                scrollTop: $("#area9").offset().top
+            }, 500);
+        });
+        $("#area2 .area-prev").click(function() {
+            $('html, body').animate({
+                scrollTop: $("#area1").offset().top
+            }, 500);
+        });
+        $("#area3 .area-prev").click(function() {
+            $('html, body').animate({
+                scrollTop: $("#area2").offset().top
+            }, 500);
+        });
+        $("#area3 .area-next").click(function() {
+            $('html, body').animate({
+                scrollTop: $("#area4").offset().top
+            }, 500);
+        });
+        $("#area4 .area-prev").click(function() {
+            $('html, body').animate({
+                scrollTop: $("#area3").offset().top
+            }, 500);
+        });
+        $("#area4 .area-next").click(function() {
+            $('html, body').animate({
+                scrollTop: $("#area9").offset().top
+            }, 500);
+        });
+        $("#area9 .area-prev").click(function() {
+            $('html, body').animate({
+                scrollTop: $("#area4").offset().top
+            }, 500);
+        });
+        $("#area9 .area-next").click(function() {
+            $('html, body').animate({
+                scrollTop: $("#area10").offset().top
+            }, 500);
+        });
+        $("#area10 .area-prev").click(function() {
+            $('html, body').animate({
+                scrollTop: $("#area9").offset().top
+            }, 500);
+        });
+        // sortable & dragable
+        $(".sortable").sortable({
+            revert: true
+        });
+        $("#draggable").draggable({
+            connectToSortable: ".sortable",
+            helper: "clone",
+            revert: "invalid"
+        });
+        $("ul, li").disableSelection();
+        // true/false answer
+        $("[data-result=false]").on("click", function() {
+            $("#answer-false").show();
+        });
+        $("[data-result=true]").on("click", function() {
+            $("#answer-true").show();
+        });
+        $('.card-source').on('click', showPopup);
+        $('.card-show').on('click', showOff);
+    });
+
+
+
+    function showPopup() {
+        var popupSection = $(this).data('popup');
+        console.log(popupSection);
+        $("#game-" + popupSection).show();
+    }
+
+    function showOff() {
+        var cardShow = $(this).data('show');
+        console.log(cardShow);
+        $('#' + cardShow).removeClass('off');
+    }
+
+    // game 02
+    $(".game-text").on("click", function() {
+        $(this).find(".card").addClass('disable selected');
+        $(this).siblings(".game-image").show();
+    })
+    </script>
+    <!-- .end normal area -->
+    <!-- JS Global Customise -->
+    <style type="text/css" media="screen">
+    .lv04-ep04 .area__clickable-01 {
+        position: absolute;
+        top: 6%;
+        left: 3%;
+        width: 29%;
+        height: 38%;
+    }
+
+    .lv04-ep04 .area__clickable-02 {
+        position: absolute;
+        top: 6%;
+        left: 68%;
+        width: 29%;
+        height: 38%;
+    }
+
+    .lv04-ep04 .area__clickable-03 {
+        position: absolute;
+        top: 31%;
+        left: 36%;
+        width: 28%;
+        height: 38%;
+    }
+
+    .lv04-ep04 .area__clickable-04 {
+        position: absolute;
+        top: 57%;
+        left: 3%;
+        width: 28%;
+        height: 38%;
+    }
+
+    .lv04-ep04 .area__clickable-05 {
+        position: absolute;
+        top: 57%;
+        left: 68%;
+        width: 28%;
+        height: 38%;
+    }
+
+    .area-02 {
+        padding: 0;
+    }
+
+    .area--popup {
+        z-index: 11;
+    }
+
+    .game-01 {
+        padding: 32px 0;
+    }
+
+    .card {
+        border-radius: 10px;
+        overflow: hidden;
+        cursor: pointer;
+        transition: all 0.2s linear;
+    }
+
+    .card:hover {
+        transform: scale(0.95);
+    }
+
+    .card.hidden {
+        display: none;
+    }
+
+    .card.selected {
+        opacity: 0.5;
+    }
+
+    .card.off {
+        opacity: 0;
+    }
+
+    .col-xs-20p {
+        width: 20%;
+        float: left;
+        padding: 0 10px;
+    }
+
+    *[class^="area__clickable"] {
+        cursor: pointer;
+    }
+
+    #ListText .card,
+    #ListText1 .card {
+        display: none;
+    }
+
+    #ListText .card.show,
+    #ListText1 .card.show {
+        display: block;
+    }
+
+    .game-image {
+        display: none;
+    }
+    </style>
+    </div>
+</body>
+
+</html>
